@@ -1,0 +1,4 @@
+/depot/vnc-4_1_2/bin/vncserver -geometry 1880x1000
+/depot/vnc-4_1_2/bin/vncserver -kill :2
+/depot/vnc-4_1_2/bin/vncserver -geometry 1880x1160
+

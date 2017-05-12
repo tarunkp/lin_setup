@@ -1,0 +1,99 @@
+"\C-x\C-r": re-read-init-file
+
+# Set mode to vi
+set editing-mode vi
+# Bash 4.3 onwards, this show editing mode character at the start of prompt 
+# emacs ('@'), vi command (':'), or vi insertion ('+')
+set show-mode-in-prompt on
+
+# use Alt-e/Esc+e to toggle between emacs and vi key bindings
+set keymap emacs
+"\ee": vi-editing-mode
+set keymap vi-command
+"\ee": emacs-editing-mode
+#"z": emacs-editing-mode
+set keymap vi-insert
+"\ee": emacs-editing-mode
+# to check, u can alias to readlinemode
+# bind -P | grep editing
+
+
+
+# these are for vi-command mode
+set keymap vi-command
+# Incremental searching of command history
+"k": history-search-backward
+"j": history-search-forward
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+# clear screen
+"\C-l":clear-screen
+
+# these are for vi-insert mode
+set keymap vi-insert
+# Incremental searching of command history
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+"\e[C": forward-char
+"\e[D": backward-char
+"\e[5~": history-search-backward
+"\e[6~": history-search-forward
+"\C-p": history-search-backward
+"\C-n": history-search-forward
+"\C-e": end-of-line
+"\C-k": kill-line
+# Edit options before rerunning previous command, eg: ls a b c -> ls -al a b c
+"\C-o": "\e-0eli "
+# glob patterns without executing, eg: 'rm *x'
+"\C-e": glob-expand-word
+# Two escapes clear command line.
+"\e\e": "\C-a\C-k"
+"\e\e": "\e0\C-ki"
+#"\e[C": forward-char
+#"\e[D": backward-char
+# clear screen
+"\C-l":clear-screen
+#    "\eOd": backward-word
+#    "\eOc": forward-word
+#$if mode=vi
+#$endif
+
+TAB: menu-complete
+
+# Magic space
+$if Bash
+  Space: magic-space
+  # Quote the current or previous word
+  "\C-xq": "\eb\"\ef\""
+$endif
+
+# Insert-Option Macro
+"\M-o": "\C-p\C-a\M-f "
+# Ctrl+Alt+B Send a command in the background, discarding all of its output
+"\e\C-b": "\C-e > /dev/null 2>& &\C-m"
+
+# keep hidden files hidden
+#set match-hidden-files off
+set match-hidden-files on
+
+# ignore case
+set completion-ignore-case on
+
+# append / for directory and * for files
+set visible-stats on
+
+# cycle thru potential completions
+set show-all-if-ambiguous on
+
+# Meta+s cycle thru the list
+"\M-s": menu-complete
+
+# Enable command line wrapping for longer commands instead of hiding it partially 
+# when TERM=screen***
+set horizontal-scroll-mode off
+
+# utf8
+set meta-flag on
+set convert-meta off
+set output-meta on
+

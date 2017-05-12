@@ -1,0 +1,25 @@
+:set arrowstyle=highlight
+:set autosourcereload
+:set cgdbmodekey=<F1>
+:set ignorecase
+:set showtgdbcommands
+:set wrapscan
+
+
+:set tabstop=4
+:set winminheight=2
+
+
+:map <F5>  :continue<CR>
+:map <F10> :next<CR>
+:map <F11> :step<CR>
+:map <S-F11> :finish<CR>
+
+:map u :up<CR>
+:map d :down<CR>
+
+:highlight SelectedLineNr cterm=reverse ctermfg=Yellow ctermbg=Black
+:highlight IncSearch      ctermfg=3
+
+
+

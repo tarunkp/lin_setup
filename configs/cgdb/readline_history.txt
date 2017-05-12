@@ -1,0 +1,3303 @@
+set args  -prodtype  synplify_pro  -encrypt  -pro  -rundir  /remote/sbgindia_dev/tarunk/regressions/synreg_results/16090/feature_flow/altera/initial_values/sync_dff_one_bit/dffe/vlog/stratixv   -part ND_MINICHIP_PART1    -maxfan 50 -automatic_compile_point -verification_mode 0 -pipe -fixgatedclocks 1 -fixgeneratedclocks 1 -syn_altera_model on -mif_files_dirs " " -validate_mif_files -reporting_ctd 0 -RWCheckOnRam 1 -overilog "test.vm" -ovhdl "test.vhm" -summaryfile /remote/sbgindia_dev/tarunk/regressions/synreg_results/16090/feature_flow/altera/initial_values/sync_dff_one_bit/dffe/vlog/stratixv/synlog/report/test_fpga_mapper.xml  -top_level_module  test  -map  -dc_root  /global/apps5/syn_2013.03  -licensetype  synplifypro  -flow mapping  -mp  4  -prjfile  /remote/sbgindia_dev/tarunk/regressions/synreg_results/16090/feature_flow/altera/initial_values/sync_dff_one_bit/dffe/vlog/stratixv/scratchproject.prs  -implementation  stratixv  -multisrs  -vqm41  -ovqm  /remote/sbgindia_dev/tarunk/regressions/synreg_results/16090/feature_flow/altera/initial_values/sync_dff_one_bit/dffe/vlog/stratixv/test.vqm   -freq 1.000   /remote/sbgindia_dev/tarunk/regressions/synreg_results/16090/feature_flow/altera/initial_values/sync_dff_one_bit/dffe/vlog/stratixv/synwork/test_prem.srd  -sap  /remote/sbgindia_dev/tarunk/regressions/synreg_results/16090/feature_flow/altera/initial_values/sync_dff_one_bit/dffe/vlog/stratixv/test.sap  -otap  /remote/sbgindia_dev/tarunk/regressions/synreg_results/16090/feature_flow/altera/initial_values/sync_dff_one_bit/dffe/vlog/stratixv/test.tap  -omap  /remote/sbgindia_dev/tarunk/regressions/synreg_results/16090/feature_flow/altera/initial_values/sync_dff_one_bit/dffe/vlog/stratixv/test.map  -devicelib  /remote/sbgindia_rel/unix/latest_syn201509/lib/altera/altera.v  -devicelib  /remote/sbgindia_rel/unix/latest_syn201509/lib/altera/altera_mult_add.v  -devicelib  /remote/sbgindia_rel/unix/latest_syn201509/lib/altera/quartus_II150/altera_mf.v  -devicelib  /remote/sbgindia_rel/unix/latest_syn201509/lib/altera/quartus_II150/altera_lpm.v  -devicelib  /remote/sbgindia_rel/unix/latest_syn201509/lib/altera/quartus_II150/altera_primitives.v  -sap  /remote/sbgindia_dev/tarunk/regressions/synreg_results/16090/feature_flow/altera/initial_values/sync_dff_one_bit/dffe/vlog/stratixv/test.sap  -ologparam  /remote/sbgindia_dev/tarunk/regressions/synreg_results/16090/feature_flow/altera/initial_values/sync_dff_one_bit/dffe/vlog/stratixv/syntmp/test.plg  -osyn  /remote/sbgindia_dev/tarunk/regressions/synreg_results/16090/feature_flow/altera/initial_values/sync_dff_one_bit/dffe/vlog/stratixv/test.srm  -prjdir  /remote/sbgindia_dev/tarunk/regressions/synreg_results/16090/feature_flow/altera/initial_values/sync_dff_one_bit/dffe/vlog/stratixv/  -prjname  test  -log  /remote/sbgindia_dev/tarunk/regressions/synreg_results/16090/feature_flow/altera/initial_values/sync_dff_one_bit/dffe/vlog/stratixv/synlog/test_fpga_mapper.srr 
+show args
+b al_writeacfcliques
+r
+n
+c
+quit
+quit
+show args
+bexit
+bstart
+r
+s
+b main
+r
+c
+quit
+quit
+b xcalConverseControlSets
+bexit
+r
+w5
+up 2
+up
+p argv
+p *argv
+p argv[0]@80
+down 3
+up
+p a
+p k
+up
+down
+i b
+quit
+y
+bexit
+bstart
+r
+w12
+quit
+y
+bexit
+bstart
+r
+up
+up
+up
+r
+y
+n
+p srsfiles
+p srsfiles.data
+p *srsfiles.data
+quit
+y
+bexit
+bstart
+r
+quit
+y
+set args  -prodtype  synplify_pro  -encrypt  -pro  -rundir  /slowfs/sbgindia_dev/tarunk/qor/csrepl/v2_nco/new0/results   -part 5SGXEA4H2FC35-3    -maxfan 30 -verification_mode 0 -pipe -fixgatedclocks 1 -fixgeneratedclocks 1 -syn_altera_model on -mif_files_dirs " " -validate_mif_files -reporting_ctd 0 -RWCheckOnRam 1 -summaryfile /slowfs/sbgindia_dev/tarunk/qor/csrepl/v2_nco/new0/results/synlog/report/v2_nco_fpga_mapper.xml  -top_level_module  v2_nco_dual  -map  -licensetype  synplifypremierdp_ipro  -flow mapping  -mp  4  -prjfile  /slowfs/sbgindia_dev/tarunk/qor/csrepl/v2_nco/new0/results/scratchproject.prs  -implementation  results  -multisrs  -vqm41  -ovqm  /slowfs/sbgindia_dev/tarunk/qor/csrepl/v2_nco/new0/results/v2_nco.vqm   -freq 1.000   -tcl  /slowfs/sbgindia_dev/tarunk/qor/csrepl/v2_nco/new0/stratix5_ffonly.sdc  /slowfs/sbgindia_dev/tarunk/qor/csrepl/v2_nco/new0/results/synwork/v2_nco_prem.srd  -sap  /slowfs/sbgindia_dev/tarunk/qor/csrepl/v2_nco/new0/results/v2_nco.sap  -otap  /slowfs/sbgindia_dev/tarunk/qor/csrepl/v2_nco/new0/results/v2_nco.tap  -omap  /slowfs/sbgindia_dev/tarunk/qor/csrepl/v2_nco/new0/results/v2_nco.map  -devicelib  /remote/sbgindia_dev/tarunk/code/maprc_lin1/fpga201509/lib/altera/altera.v  -devicelib  /remote/sbgindia_dev/tarunk/code/maprc_lin1/fpga201509/lib/altera/altera_mult_add.v  -devicelib  /remote/sbgindia_dev/tarunk/code/maprc_lin1/fpga201509/lib/altera/quartus_II150/stratixv.v  -devicelib  /remote/sbgindia_dev/tarunk/code/maprc_lin1/fpga201509/lib/altera/quartus_II150/altera_mf.v  -devicelib  /remote/sbgindia_dev/tarunk/code/maprc_lin1/fpga201509/lib/altera/quartus_II150/altera_lpm.v  -devicelib  /remote/sbgindia_dev/tarunk/code/maprc_lin1/fpga201509/lib/altera/quartus_II150/altera_primitives.v  -sap  /slowfs/sbgindia_dev/tarunk/qor/csrepl/v2_nco/new0/results/v2_nco.sap  -ologparam  /slowfs/sbgindia_dev/tarunk/qor/csrepl/v2_nco/new0/results/syntmp/v2_nco.plg  -osyn  /slowfs/sbgindia_dev/tarunk/qor/csrepl/v2_nco/new0/results/v2_nco.srm  -prjdir  /slowfs/sbgindia_dev/tarunk/qor/csrepl/v2_nco/new0/  -prjname  v2_nco  -log  /slowfs/sbgindia_dev/tarunk/qor/csrepl/v2_nco/new0/results/synlog/v2_nco_fpga_mapper.srr
+bexit
+bstart
+r
+quit
+y
+show args
+quit
+show args
+quit
+show args
+quit
+t
+bexit
+show args
+set args  -prodtype  synplify_pro  -encrypt  -pro  -rundir  /remote/sbgindia_dev/tarunk/regressions/synreg_results/17996/feature_flow/multiprocessing/pro_tests/incr_flow/runtime_comparison/Toshiba_8ME   -part EP4SGX70DFC29-3    -maxfan 10000 -verification_mode 0 -pipe -fixgatedclocks 0 -fixgeneratedclocks 0 -syn_altera_model on -mif_files_dirs " " -validate_mif_files -automatic_compile_point -reporting_ctd 0 -RWCheckOnRam 1 -summaryfile /remote/sbgindia_dev/tarunk/regressions/synreg_results/17996/feature_flow/multiprocessing/pro_tests/incr_flow/runtime_comparison/Toshiba_8ME/synlog/report/mmTop_fpga_mapper.xml  -top_level_module  mmTop  -map  -dc_root  /global/apps5/syn_2013.03  -licensetype  synplifypro  -flow mapping  -mp  4  -prjfile  /remote/sbgindia_dev/tarunk/regressions/synreg_results/17996/feature_flow/multiprocessing/pro_tests/incr_flow/runtime_comparison/Toshiba_8ME/scratchproject.prs  -implementation  Toshiba_8ME  -multisrs  -vqm41  -ovqm  /remote/sbgindia_dev/tarunk/regressions/synreg_results/17996/feature_flow/multiprocessing/pro_tests/incr_flow/runtime_comparison/Toshiba_8ME/mmTop.vqm   -freq 1.000   -tcl  /remote/sbgindia_dev/tarunk/regressions/synreg_results/17996/feature_flow/multiprocessing/pro_tests/incr_flow/runtime_comparison/Toshiba_8ME/constraint/mm_Top_pin.sdc  -tcl  /remote/sbgindia_dev/tarunk/regressions/synreg_results/17996/feature_flow/multiprocessing/pro_tests/incr_flow/runtime_comparison/Toshiba_8ME/proj.sdc  /remote/sbgindia_dev/tarunk/regressions/synreg_results/17996/feature_flow/multiprocessing/pro_tests/incr_flow/runtime_comparison/Toshiba_8ME/synwork/mmTop_prem.srd  -sap  /remote/sbgindia_dev/tarunk/regressions/synreg_results/17996/feature_flow/multiprocessing/pro_tests/incr_flow/runtime_comparison/Toshiba_8ME/mmTop.sap  -otap  /remote/sbgindia_dev/tarunk/regressions/synreg_results/17996/feature_flow/multiprocessing/pro_tests/incr_flow/runtime_comparison/Toshiba_8ME/mmTop.tap  -omap  /remote/sbgindia_dev/tarunk/regressions/synreg_results/17996/feature_flow/multiprocessing/pro_tests/incr_flow/runtime_comparison/Toshiba_8ME/mmTop.map  -devicelib  /remote/sbgindia_dev/tarunk/code/maprc_lin1/fpga201509/lib/altera/altera.v  -devicelib  /remote/sbgindia_dev/tarunk/code/maprc_lin1/fpga201509/lib/altera/quartus_II91/stratixiv.v  -devicelib  /remote/sbgindia_dev/tarunk/code/maprc_lin1/fpga201509/lib/altera/quartus_II91/altera_mf.v  -devicelib  /remote/sbgindia_dev/tarunk/code/maprc_lin1/fpga201509/lib/altera/quartus_II91/altera_lpm.v  -devicelib  /remote/sbgindia_dev/tarunk/code/maprc_lin1/fpga201509/lib/altera/quartus_II91/altera_primitives.v  -sap  /remote/sbgindia_dev/tarunk/regressions/synreg_results/17996/feature_flow/multiprocessing/pro_tests/incr_flow/runtime_comparison/Toshiba_8ME/mmTop.sap  -ologparam  /remote/sbgindia_dev/tarunk/regressions/synreg_results/17996/feature_flow/multiprocessing/pro_tests/incr_flow/runtime_comparison/Toshiba_8ME/syntmp/mmTop.plg  -osyn  /remote/sbgindia_dev/tarunk/regressions/synreg_results/17996/feature_flow/multiprocessing/pro_tests/incr_flow/runtime_comparison/Toshiba_8ME/mmTop.srm  -prjdir  /remote/sbgindia_dev/tarunk/regressions/synreg_results/17996/feature_flow/multiprocessing/pro_tests/incr_flow/runtime_comparison/Toshiba_8ME/  -prjname  proj  -log  /remote/sbgindia_dev/tarunk/regressions/synreg_results/17996/feature_flow/multiprocessing/pro_tests/incr_flow/runtime_comparison/Toshiba_8ME/synlog/mmTop_fpga_mapper.srr 
+r
+up
+up
+up
+up
+up
+up
+up
+kill
+y
+r
+up
+c
+r
+r
+c
+quit
+set args  -prodtype  synplify_pro  -encrypt  -pro  -rundir  /slowfs/sbgindia_dev/tarunk/qor/csrepl/altera_fir_filter/new1/syn730_stratixv_ffonly   -part 5SGXMA7N3FC45-2    -maxfan 30 -verification_mode 0 -pipe -fixgatedclocks 1 -fixgeneratedclocks 1 -syn_altera_model on -mif_files_dirs " " -validate_mif_files -reporting_ctd 0 -RWCheckOnRam 1 -summaryfile /slowfs/sbgindia_dev/tarunk/qor/csrepl/altera_fir_filter/new1/syn730_stratixv_ffonly/synlog/report/fir_filter_fpga_mapper.xml  -top_level_module  fir_filter  -map  -dc_root  /remote/sbg_toolkits/synopsys/syn_2013.03  -licensetype  synplifypro  -flow mapping  -mp  4  -prjfile  /slowfs/sbgindia_dev/tarunk/qor/csrepl/altera_fir_filter/new1/syn730_stratixv_ffonly/scratchproject.prs  -implementation  syn730_stratixv_ffonly  -multisrs  -vqm41  -ovqm  /slowfs/sbgindia_dev/tarunk/qor/csrepl/altera_fir_filter/new1/syn730_stratixv_ffonly/fir_filter.vqm   -autoconstraint  -freq 1.000   -tcl  /slowfs/sbgindia_dev/tarunk/qor/csrepl/altera_fir_filter/new1_ffonly.sdc  -tcl  /slowfs/sbgindia_dev/tarunk/qor/csrepl/altera_fir_filter/new1_io_constraints.sdc  /slowfs/sbgindia_dev/tarunk/qor/csrepl/altera_fir_filter/new1/syn730_stratixv_ffonly/synwork/fir_filter_prem.srd  -sap  /slowfs/sbgindia_dev/tarunk/qor/csrepl/altera_fir_filter/new1/syn730_stratixv_ffonly/fir_filter.sap  -otap  /slowfs/sbgindia_dev/tarunk/qor/csrepl/altera_fir_filter/new1/syn730_stratixv_ffonly/fir_filter.tap  -omap  /slowfs/sbgindia_dev/tarunk/qor/csrepl/altera_fir_filter/new1/syn730_stratixv_ffonly/fir_filter.map  -devicelib  /remote/sbg_rel/unix/syn201603_103R/lib/altera/altera.v  -devicelib  /remote/sbg_rel/unix/syn201603_103R/lib/altera/altera_mult_add.v  -devicelib  /remote/sbg_rel/unix/syn201603_103R/lib/altera/quartus_II150/stratixv.v  -devicelib  /remote/sbg_rel/unix/syn201603_103R/lib/altera/quartus_II150/altera_mf.v  -devicelib  /remote/sbg_rel/unix/syn201603_103R/lib/altera/quartus_II150/altera_lpm.v  -devicelib  /remote/sbg_rel/unix/syn201603_103R/lib/altera/quartus_II150/altera_primitives.v  -sap  /slowfs/sbgindia_dev/tarunk/qor/csrepl/altera_fir_filter/new1/syn730_stratixv_ffonly/fir_filter.sap  -ologparam  /slowfs/sbgindia_dev/tarunk/qor/csrepl/altera_fir_filter/new1/syn730_stratixv_ffonly/syntmp/fir_filter.plg  -osyn  /slowfs/sbgindia_dev/tarunk/qor/csrepl/altera_fir_filter/new1/syn730_stratixv_ffonly/fir_filter.srm  -prjdir  /slowfs/sbgindia_dev/tarunk/qor/csrepl/altera_fir_filter/new1/  -prjname  stratix5  -log  /slowfs/sbgindia_dev/tarunk/qor/csrepl/altera_fir_filter/new1/syn730_stratixv_ffonly/synlog/fir_filter_fpga_mapper.srr
+bexit
+bstart
+r
+pwd
+b genrProcessControlSet
+c
+w12
+c
+w12
+nwrite "aac.srm"
+pwd
+b xcalInsertSclrMapBufs
+r
+y
+c
+dis 2
+w12
+nwrite "aaa.srm"
+fin
+n
+c
+fin
+n
+fin
+fin
+n
+nwrite "aab.srm"
+r
+y
+pnn nl->owner->owner 
+p BNameStr
+p strcmp
+p !strcmp(BNameStr(nl->owner->owner), "fir_filter")
+cond 4 !strcmp(BNameStr(nl->owner->owner), "fir_filter")
+c
+pnn nl->owner->owner
+r
+y
+c
+c
+r
+y
+cond 4
+r
+y
+pnn nl->owner->owner
+c
+disp BNameStr(nl->owner->owner)
+pnn nl->owner->owner
+cond 4 !strcmp(BNameStr(nl->owner->owner->h.name), "fir_filter")
+r
+y
+pnn nl->owner->owner
+n
+dis disp 1
+i disp
+i b
+quit
+y
+set args  -prodtype  synplify_pro  -encrypt  -pro  -rundir  /slowfs/sbgindia_dev/tarunk/qor/csrepl/altera_fir_filter/new1/syn730_stratixv_ffonly   -part 5SGXMA7N3FC45-2    -maxfan 30 -verification_mode 0 -pipe -fixgatedclocks 1 -fixgeneratedclocks 1 -syn_altera_model on -mif_files_dirs " " -validate_mif_files -reporting_ctd 0 -RWCheckOnRam 1 -summaryfile /slowfs/sbgindia_dev/tarunk/qor/csrepl/altera_fir_filter/new1/syn730_stratixv_ffonly/synlog/report/fir_filter_fpga_mapper.xml  -top_level_module  fir_filter  -map  -dc_root  /remote/sbg_toolkits/synopsys/syn_2013.03  -licensetype  synplifypro  -flow mapping  -mp  4  -prjfile  /slowfs/sbgindia_dev/tarunk/qor/csrepl/altera_fir_filter/new1/syn730_stratixv_ffonly/scratchproject.prs  -implementation  syn730_stratixv_ffonly  -multisrs  -vqm41  -ovqm  /slowfs/sbgindia_dev/tarunk/qor/csrepl/altera_fir_filter/new1/syn730_stratixv_ffonly/fir_filter.vqm   -autoconstraint  -freq 1.000   -tcl  /slowfs/sbgindia_dev/tarunk/qor/csrepl/altera_fir_filter/new1_ffonly.sdc  -tcl  /slowfs/sbgindia_dev/tarunk/qor/csrepl/altera_fir_filter/new1_io_constraints.sdc  /slowfs/sbgindia_dev/tarunk/qor/csrepl/altera_fir_filter/new1/syn730_stratixv_ffonly/synwork/fir_filter_prem.srd  -sap  /slowfs/sbgindia_dev/tarunk/qor/csrepl/altera_fir_filter/new1/syn730_stratixv_ffonly/fir_filter.sap  -otap  /slowfs/sbgindia_dev/tarunk/qor/csrepl/altera_fir_filter/new1/syn730_stratixv_ffonly/fir_filter.tap  -omap  /slowfs/sbgindia_dev/tarunk/qor/csrepl/altera_fir_filter/new1/syn730_stratixv_ffonly/fir_filter.map  -devicelib  /remote/sbg_rel/unix/syn201603_103R/lib/altera/altera.v  -devicelib  /remote/sbg_rel/unix/syn201603_103R/lib/altera/altera_mult_add.v  -devicelib  /remote/sbg_rel/unix/syn201603_103R/lib/altera/quartus_II150/stratixv.v  -devicelib  /remote/sbg_rel/unix/syn201603_103R/lib/altera/quartus_II150/altera_mf.v  -devicelib  /remote/sbg_rel/unix/syn201603_103R/lib/altera/quartus_II150/altera_lpm.v  -devicelib  /remote/sbg_rel/unix/syn201603_103R/lib/altera/quartus_II150/altera_primitives.v  -sap  /slowfs/sbgindia_dev/tarunk/qor/csrepl/altera_fir_filter/new1/syn730_stratixv_ffonly/fir_filter.sap  -ologparam  /slowfs/sbgindia_dev/tarunk/qor/csrepl/altera_fir_filter/new1/syn730_stratixv_ffonly/syntmp/fir_filter.plg  -osyn  /slowfs/sbgindia_dev/tarunk/qor/csrepl/altera_fir_filter/new1/syn730_stratixv_ffonly/fir_filter.srm  -prjdir  /slowfs/sbgindia_dev/tarunk/qor/csrepl/altera_fir_filter/new1/  -prjname  stratix5  -log  /slowfs/sbgindia_dev/tarunk/qor/csrepl/altera_fir_filter/new1/syn730_stratixv_ffonly/synlog/fir_filter_fpga_mapper.srr
+bexit
+b xcalInsertSclrMapBufs
+cond 2 !strcmp(BNameStr(nl->owner->owner->h.name), "fir_filter")
+b genrProcessControlSet
+r
+pnn nl->owner->owner 
+n
+c
+n
+c
+pnn ip
+n
+u 604
+n
+p np->tmp
+p fo_threshold
+u 606
+p np->tmp
+s
+n
+c
+n
+s
+n
+fin
+fin
+i b
+s
+n
+fin
+fin
+nwrite "aab.srm"
+I B
+c
+w12
+nwrite "aac.srm"
+n
+s
+fin
+n
+c
+pnn dip
+pnn ip
+c
+pnn ip
+c
+pnn ip
+c
+pnn ip
+c
+pnn ip
+c
+pnn ip
+c
+pnn ip
+c
+c
+c
+pnn ip
+n
+s
+n
+s
+n
+pnn dip
+up
+pnn ip
+down
+n
+s
+n
+s
+n
+pn basename
+n
+s
+n
+s
+n
+s
+n
+p *sffgroup
+c
+dis 10
+c
+n
+pn csName1
+p sffgroup
+p *sffgroup
+p *sffgroup->infop
+p sffgroup->infop->ffip
+pnn sffgroup->infop->ffip
+n
+c
+n
+pnn sffgroup->infop->ffip
+p *sffgroup->infop
+p *sffgroup
+n
+c
+c
+i b
+dis 11
+c
+w12
+c
+c
+s
+n
+c
+s
+n
+c
+s
+p sffDAptr
+p *sffDAptr
+c
+dis 12
+c
+c
+r
+i b
+dis 3 6
+c
+c
+c
+r
+c
+w12
+c
+n
+p sffgroup2->cnt
+n
+c
+n
+p sffgroup2->cnt
+p sffgroup2
+p *sffgroup2
+pnn sffgroup2->head->infop->ffip 
+n
+s
+pnn sffinfo->ffip 
+n
+c
+c
+w12
+n
+p sffgroup->cnt
+c
+p sffgroup->cnt
+n
+p sffgroup->cnt
+p sffgroup->infop 
+pnn sffgroup->infop->ffip 
+p *sffgroup2
+n
+s
+n
+kill
+y
+pwd
+quit
+quit
+set args  -prodtype  synplify_pro  -encrypt  -pro  -rundir  /remote/sbgindia_dev/tarunk/tmp/6_tap_2pipe_sig   -part 5SGXEA4H2FC35-2    -maxfan 30 -verification_mode 0 -pipe -fixgatedclocks 1 -fixgeneratedclocks 1 -syn_altera_model on -mif_files_dirs " " -validate_mif_files -reporting_ctd 0 -RWCheckOnRam 1 -overilog "test.vm" -summaryfile /remote/sbgindia_dev/tarunk/tmp/6_tap_2pipe_sig/synlog/report/test_fpga_mapper.xml  -map  -licensetype  synplifypremierdp_ipro  -flow mapping  -mp  4  -prjfile  /remote/sbgindia_dev/tarunk/tmp/6_tap_2pipe_sig/scratchproject.prs  -implementation  6_tap_2pipe_sig  -multisrs  -vqm41  -ovqm  /remote/sbgindia_dev/tarunk/tmp/6_tap_2pipe_sig/test.vqm   -autoconstraint  -freq 1.000   /remote/sbgindia_dev/tarunk/tmp/6_tap_2pipe_sig/synwork/test_prem.srd  -sap  /remote/sbgindia_dev/tarunk/tmp/6_tap_2pipe_sig/test.sap  -otap  /remote/sbgindia_dev/tarunk/tmp/6_tap_2pipe_sig/test.tap  -omap  /remote/sbgindia_dev/tarunk/tmp/6_tap_2pipe_sig/test.map  -devicelib  /remote/sbgindia_dev/tarunk/code/maprc_lin1/fpga201509sp11/lib/altera/altera.v  -devicelib  /remote/sbgindia_dev/tarunk/code/maprc_lin1/fpga201509sp11/lib/altera/altera_mult_add.v  -devicelib  /remote/sbgindia_dev/tarunk/code/maprc_lin1/fpga201509sp11/lib/altera/quartus_II80/altera_mf.v  -devicelib  /remote/sbgindia_dev/tarunk/code/maprc_lin1/fpga201509sp11/lib/altera/quartus_II80/altera_lpm.v  -devicelib  /remote/sbgindia_dev/tarunk/code/maprc_lin1/fpga201509sp11/lib/altera/quartus_II80/altera_primitives.v  -sap  /remote/sbgindia_dev/tarunk/tmp/6_tap_2pipe_sig/test.sap  -ologparam  /remote/sbgindia_dev/tarunk/tmp/6_tap_2pipe_sig/syntmp/test.plg  -osyn  /remote/sbgindia_dev/tarunk/tmp/6_tap_2pipe_sig/test.srm  -prjdir  /remote/sbgindia_dev/tarunk/tmp/6_tap_2pipe_sig/  -prjname  test  -log  /remote/sbgindia_dev/tarunk/tmp/6_tap_2pipe_sig/synlog/test_fpga_mapper.srr
+bexit
+r
+quit
+set args  -prodtype  synplify_pro  -encrypt  -pro  -rundir  /remote/sbgindia_dev/tarunk/tmp/6_tap_2pipe_sig   -part 5SGXEA4H2FC35-2    -maxfan 30 -verification_mode 0 -pipe -fixgatedclocks 1 -fixgeneratedclocks 1 -syn_altera_model on -mif_files_dirs " " -validate_mif_files -reporting_ctd 0 -RWCheckOnRam 1 -overilog "test.vm" -summaryfile /remote/sbgindia_dev/tarunk/tmp/6_tap_2pipe_sig/synlog/report/test_fpga_mapper.xml  -map  -licensetype  synplifypremierdp_ipro  -flow mapping  -mp  4  -prjfile  /remote/sbgindia_dev/tarunk/tmp/6_tap_2pipe_sig/scratchproject.prs  -implementation  6_tap_2pipe_sig  -multisrs  -vqm41  -ovqm  /remote/sbgindia_dev/tarunk/tmp/6_tap_2pipe_sig/test.vqm   -autoconstraint  -freq 1.000   /remote/sbgindia_dev/tarunk/tmp/6_tap_2pipe_sig/synwork/test_prem.srd  -sap  /remote/sbgindia_dev/tarunk/tmp/6_tap_2pipe_sig/test.sap  -otap  /remote/sbgindia_dev/tarunk/tmp/6_tap_2pipe_sig/test.tap  -omap  /remote/sbgindia_dev/tarunk/tmp/6_tap_2pipe_sig/test.map  -devicelib  /remote/sbgindia_dev/tarunk/code/maprc_lin1/fpga201509sp11/lib/altera/altera.v  -devicelib  /remote/sbgindia_dev/tarunk/code/maprc_lin1/fpga201509sp11/lib/altera/altera_mult_add.v  -devicelib  /remote/sbgindia_dev/tarunk/code/maprc_lin1/fpga201509sp11/lib/altera/quartus_II80/altera_mf.v  -devicelib  /remote/sbgindia_dev/tarunk/code/maprc_lin1/fpga201509sp11/lib/altera/quartus_II80/altera_lpm.v  -devicelib  /remote/sbgindia_dev/tarunk/code/maprc_lin1/fpga201509sp11/lib/altera/quartus_II80/altera_primitives.v  -sap  /remote/sbgindia_dev/tarunk/tmp/6_tap_2pipe_sig/test.sap  -ologparam  /remote/sbgindia_dev/tarunk/tmp/6_tap_2pipe_sig/syntmp/test.plg  -osyn  /remote/sbgindia_dev/tarunk/tmp/6_tap_2pipe_sig/test.srm  -prjdir  /remote/sbgindia_dev/tarunk/tmp/6_tap_2pipe_sig/  -prjname  test  -log  /remote/sbgindia_dev/tarunk/tmp/6_tap_2pipe_sig/synlog/test_fpga_mapper.srr
+bexit
+r
+c
+r
+c
+pwd
+pwd
+r
+c
+i b
+quit
+bexit
+set args  -prodtype  synplify_pro  -encrypt  -pro  -rundir  /remote/sbgindia_dev/tarunk/tmp/verilog/rev_2   -part 5SGXEA4H2FC35-2    -maxfan 30 -verification_mode 0 -pipe -retiming -fixgatedclocks 1 -fixgeneratedclocks 1 -syn_altera_model on -mif_files_dirs " " -validate_mif_files -reporting_ctd 0 -RWCheckOnRam 1 -overilog "test.vm" -summaryfile /remote/sbgindia_dev/tarunk/tmp/verilog/rev_2/synlog/report/test_fpga_mapper.xml  -top_level_module  test  -map  -licensetype  synplifypremierdp_ipro  -flow mapping  -mp  4  -prjfile  /remote/sbgindia_dev/tarunk/tmp/verilog/rev_2/scratchproject.prs  -implementation  rev_2  -multisrs  -vqm41  -ovqm  /remote/sbgindia_dev/tarunk/tmp/verilog/rev_2/test.vqm   -freq 200.000   -tcl  /remote/sbgindia_dev/tarunk/tmp/verilog/test.sdc  /remote/sbgindia_dev/tarunk/tmp/verilog/rev_2/synwork/test_prem.srd  -sap  /remote/sbgindia_dev/tarunk/tmp/verilog/rev_2/test.sap  -otap  /remote/sbgindia_dev/tarunk/tmp/verilog/rev_2/test.tap  -omap  /remote/sbgindia_dev/tarunk/tmp/verilog/rev_2/test.map  -devicelib  /remote/sbgindia_dev/tarunk/code/maprc_lin2/fpga201509sp1/lib/altera/altera.v  -devicelib  /remote/sbgindia_dev/tarunk/code/maprc_lin2/fpga201509sp1/lib/altera/altera_mult_add.v  -devicelib  /remote/sbgindia_dev/tarunk/code/maprc_lin2/fpga201509sp1/lib/altera/quartus_II150/stratixv.v  -devicelib  /remote/sbgindia_dev/tarunk/code/maprc_lin2/fpga201509sp1/lib/altera/quartus_II150/altera_mf.v  -devicelib  /remote/sbgindia_dev/tarunk/code/maprc_lin2/fpga201509sp1/lib/altera/quartus_II150/altera_lpm.v  -devicelib  /remote/sbgindia_dev/tarunk/code/maprc_lin2/fpga201509sp1/lib/altera/quartus_II150/altera_primitives.v  -sap  /remote/sbgindia_dev/tarunk/tmp/verilog/rev_2/test.sap  -ologparam  /remote/sbgindia_dev/tarunk/tmp/verilog/rev_2/syntmp/test.plg  -osyn  /remote/sbgindia_dev/tarunk/tmp/verilog/rev_2/test.srm  -prjdir  /remote/sbgindia_dev/tarunk/tmp/verilog/  -prjname  test  -log  /remote/sbgindia_dev/tarunk/tmp/verilog/rev_2/synlog/test_fpga_mapper.srr
+r
+w12
+kill
+y
+r
+w12
+c
+pwd
+quit
+bexit
+set args  -mp  4  -prjfile  /remote/sbgindia_dev/tarunk/tmp/counter4/scratchproject.prs  -implementation  counter4  -prodtype  synplify_pro  -encrypt  -pro  -rundir  /remote/sbgindia_dev/tarunk/tmp/counter4   -part 5SGXEA4H2FC35-2    -maxfan 100 -verification_mode 0 -fixgatedclocks 1 -fixgeneratedclocks 1 -syn_altera_model on -mif_files_dirs " " -validate_mif_files -reporting_ctd 0 -RWCheckOnRam 1 -overilog "test.vm" -ovhdl "test.vhm" -summaryfile /remote/sbgindia_dev/tarunk/tmp/counter4/synlog/report/test_premap.xml  -map  -vqm41  -ovqm  /remote/sbgindia_dev/tarunk/tmp/counter4/test.vqm  -conchk_prepass  /remote/sbgindia_dev/tarunk/tmp/counter4/test_cck.rpt   -freq 10.000   /remote/sbgindia_dev/tarunk/tmp/counter4/synwork/test_mult.srs  -flow prepass  -gcc_prepass  -osrd  /remote/sbgindia_dev/tarunk/tmp/counter4/synwork/test_prem.srd  -qsap  /remote/sbgindia_dev/tarunk/tmp/counter4/test.sap  -devicelib  /remote/sbgindia_dev/tarunk/code/maprc_lin2/fpga201509sp1/lib/altera/altera.v  -devicelib  /remote/sbgindia_dev/tarunk/code/maprc_lin2/fpga201509sp1/lib/altera/altera_mult_add.v  -devicelib  /remote/sbgindia_dev/tarunk/code/maprc_lin2/fpga201509sp1/lib/altera/quartus_II150/stratixv.v  -devicelib  /remote/sbgindia_dev/tarunk/code/maprc_lin2/fpga201509sp1/lib/altera/quartus_II150/altera_mf.v  -devicelib  /remote/sbgindia_dev/tarunk/code/maprc_lin2/fpga201509sp1/lib/altera/quartus_II150/altera_lpm.v  -devicelib  /remote/sbgindia_dev/tarunk/code/maprc_lin2/fpga201509sp1/lib/altera/quartus_II150/altera_primitives.v  -ologparam  /remote/sbgindia_dev/tarunk/tmp/counter4/syntmp/test.plg  -osyn  /remote/sbgindia_dev/tarunk/tmp/counter4/synwork/test_prem.srd  -prjdir  /remote/sbgindia_dev/tarunk/tmp/counter4/  -prjname  proj  -log  /remote/sbgindia_dev/tarunk/tmp/counter4/synlog/test_premap.srr
+show args
+p NCreateInstW
+r
+c
+p NCreateInst
+p NCreateInstW
+b NCreateInstW
+r
+w12
+p v
+p NVprims[171]
+pnn NVprims[171]->owner
+cond 2 v == NVprims[171]
+c
+w12
+up
+up
+up
+up
+up
+pwd
+kill
+y
+pwd
+quit
+set args  -prodtype  synplify_premier  -encrypt  -pro  -rundir  /slowfs/sbgindia_dev/tarunk/tmp/9000637435   -part 5SGXEA4H2FC35-2    -maxfan 30 -advanced_synthesis -verification_mode 0 -pipe -fixgatedclocks 1 -fixgeneratedclocks 1 -syn_altera_model on -mif_files_dirs " " -fast_synthesis 0 -validate_mif_files -reporting_ctd 0 -RWCheckOnRam 1 -summaryfile /slowfs/sbgindia_dev/tarunk/tmp/9000637435/synlog/report/rrc_fpga_top_fpga_mapper.xml  -top_level_module  rrc_fpga_top  -map  -dc_root  /remote/sbg_toolkits/synopsys/syn_2013.03  -licensetype  synplifypremier  -flow mapping  -mp  4  -prjfile  /slowfs/sbgindia_dev/tarunk/tmp/9000637435/scratchproject.prs  -implementation  9000637435  -multisrs  -vqm41  -ovqm  /slowfs/sbgindia_dev/tarunk/tmp/9000637435/rrc_fpga_top.vqm   -autoconstraint  -freq 1.000   /slowfs/sbgindia_dev/tarunk/tmp/9000637435/synwork/rrc_fpga_top_prem.srd  -sap  /slowfs/sbgindia_dev/tarunk/tmp/9000637435/rrc_fpga_top.sap  -otap  /slowfs/sbgindia_dev/tarunk/tmp/9000637435/rrc_fpga_top.tap  -omap  /slowfs/sbgindia_dev/tarunk/tmp/9000637435/rrc_fpga_top.map  -devicelib  /remote/sbgindia_dev/tarunk/code/maprc_lin1/fpga201509sp1/lib/altera/altera.v  -devicelib  /remote/sbgindia_dev/tarunk/code/maprc_lin1/fpga201509sp1/lib/altera/altera_mult_add.v  -devicelib  /remote/sbgindia_dev/tarunk/code/maprc_lin1/fpga201509sp1/lib/altera/quartus_II130/stratixv.v  -devicelib  /remote/sbgindia_dev/tarunk/code/maprc_lin1/fpga201509sp1/lib/altera/quartus_II130/altera_mf.v  -devicelib  /remote/sbgindia_dev/tarunk/code/maprc_lin1/fpga201509sp1/lib/altera/quartus_II130/altera_lpm.v  -devicelib  /remote/sbgindia_dev/tarunk/code/maprc_lin1/fpga201509sp1/lib/altera/quartus_II130/altera_primitives.v  -sap  /slowfs/sbgindia_dev/tarunk/tmp/9000637435/rrc_fpga_top.sap  -ologparam  /slowfs/sbgindia_dev/tarunk/tmp/9000637435/syntmp/rrc_fpga_top.plg  -osyn  /slowfs/sbgindia_dev/tarunk/tmp/9000637435/rrc_fpga_top.srm  -prjdir  /slowfs/sbgindia_dev/tarunk/tmp/9000637435/  -prjname  rrc_fpga_a0  -log  /slowfs/sbgindia_dev/tarunk/tmp/9000637435/synlog/rrc_fpga_top_fpga_mapper.srr
+show args
+bexit
+r
+w12
+c
+quit
+set args  -prodtype  synplify_pro  -encrypt  -pro  -rundir  /slowfs/sbg_builds9/tarunk/tests/samples/regs/reg1/virtex7   -part XC7VX485TFFG1157-1    -enable_prepacking -use_vivado -overilog "and.vm" -maxfan 10000 -m1 -pipe -verification_mode 0 -fixgatedclocks 1 -fixgeneratedclocks 1 -summaryfile /slowfs/sbg_builds9/tarunk/tests/samples/regs/reg1/virtex7/synlog/report/and_fpga_mapper.xml -RWCheckOnRam 1 -reporting_ctd 0 -preserve_slash_names  -formal_partition  0  -licensetype  synplifypremierdp_ipro  -flow mapping  -mp  4  -prjfile  /slowfs/sbg_builds9/tarunk/tests/samples/regs/reg1/virtex7/scratchproject.prs  -implementation  virtex7  -multisrs  -oedif  /slowfs/sbg_builds9/tarunk/tests/samples/regs/reg1/virtex7/and.edf   -autoconstraint  -freq 1.000   /slowfs/sbg_builds9/tarunk/tests/samples/regs/reg1/virtex7/synwork/and_prem.srd  -sap  /slowfs/sbg_builds9/tarunk/tests/samples/regs/reg1/virtex7/and.sap  -otap  /slowfs/sbg_builds9/tarunk/tests/samples/regs/reg1/virtex7/and.tap  -omap  /slowfs/sbg_builds9/tarunk/tests/samples/regs/reg1/virtex7/and.map  -devicelib  /slowfs/sbg_builds9/tarunk/code/map610dev_lin5/fpga201603/lib/xilinx/unisim_retarget.v  -devicelib  /slowfs/sbg_builds9/tarunk/code/map610dev_lin5/fpga201603/lib/xilinx/unisim_vivado.v  -sap  /slowfs/sbg_builds9/tarunk/tests/samples/regs/reg1/virtex7/and.sap  -ologparam  /slowfs/sbg_builds9/tarunk/tests/samples/regs/reg1/virtex7/syntmp/and.plg  -osyn  /slowfs/sbg_builds9/tarunk/tests/samples/regs/reg1/virtex7/and.srm  -prjdir  /slowfs/sbg_builds9/tarunk/tests/samples/regs/reg1/  -prjname  and  -log  /slowfs/sbg_builds9/tarunk/tests/samples/regs/reg1/virtex7/synlog/and_fpga_mapper.srr
+bexit
+b opttcl_inittimingdata_area_chip
+r
+n
+b opttcl_loadencryptedfile
+n
+n
+r
+y
+n
+p display_time_data
+r
+y
+n
+p newgrade
+p partprefix
+n
+n
+w12
+up
+down
+n
+n
+p path
+n
+n
+p membuf
+n
+p membuf
+u 624
+n
+p result
+b xct_routedly_core
+n
+i b
+c
+i b
+quit
+y
+bexit
+b mspflow_test.cpp:4677
+c
+r
+s
+fins
+fins
+fins
+n
+w
+w3
+r
+y
+s
+fins
+fins
+n
+i b
+b mspflow_test.cpp:4681
+del 2
+i b
+r
+y
+n
+s
+fins
+fins
+fins
+fins
+fins
+fins
+fins
+fins
+fin
+n
+s
+b AssignGroup
+c
+n
+fin
+fin
+fin
+fin
+fin
+fin
+fin
+fin
+fin
+fin
+fin
+n
+s
+n
+s
+s
+s
+pnn dp
+n
+pnn skelname 
+pn skelname 
+n
+fin
+n
+s
+fin
+n
+s
+p dumpfile
+n
+p dirtyViewFn
+s
+n
+fin
+n
+s
+n
+w4
+up
+down
+fin
+pwd
+i b
+quit
+y
+bexit
+b mspflow_test.cpp:4681
+r
+n
+n
+s
+p NEnvPropagateNum
+n
+b DoLeafCount
+s
+n
+s
+n
+up
+down
+s
+n
+up
+down
+n
+s
+n
+s
+n
+s
+n
+s
+n
+s
+n
+fin
+n
+s
+n
+fin
+up
+up
+down
+down
+n
+s
+fin
+n
+p count
+n
+p snode
+pn snodee
+pn snode->name
+s
+w3
+up
+up
+up
+r
+y
+n
+s
+b AssignGroup
+c
+n
+fin
+n
+fin
+n
+s
+n
+u 790
+u8 800
+U8 800
+u 800
+n
+p settings
+p settings.dumpContextNLs =1
+s
+n
+s
+n
+b MSPCollectAndLoadSrsNode
+n
+p svp
+p *svp
+p svp->name
+pnn svp
+n
+pnn sdp
+n
+s
+n
+pnn design
+s
+n
+pn vanme
+pn vname
+n
+p srsEnt->numsrsfiles
+p srsEnt->srsfilenames 
+p srsEnt->srsfilenames[0] 
+p srsEnt->srsfilenames[1]
+n
+n
+p svp
+p vp
+pnn svp
+pnn vp
+n
+s
+n
+p srs_path
+n
+p snode->groupid
+n
+p baction
+p aaction
+dow
+fin
+n
+p srs_path
+fin
+fin
+n
+p srs_path
+fin
+fin
+fin
+fin
+fin
+fin
+fin
+s
+n
+u 1420
+n
+n
+s
+fin
+n
+kill
+y
+r
+del 8
+c
+up
+up
+up
+up
+up
+down
+fin
+fin
+fin
+fin
+fin
+fin
+n
+c
+c
+dis 9
+c
+r
+y
+kill
+y
+i b
+dis 9
+c
+r
+en 9
+c
+up
+kill
+y
+r
+dis 9
+c
+en 9
+c
+up
+b MSPSrsBatchManInit
+n
+i b
+kill
+y
+quit
+bexit
+b mspflow_test.cpp:4681
+r
+b MSPSrsBatchManInit
+n
+i b
+b MSPCreateContextNetlistAllNodes
+c
+up
+kill
+y
+quit
+set args -mp  4  -prjfile  /slowfs/sbg_builds9/tarunk/tests/dist/demo/dist/scratchproject.prs  -implementation  dist  -prodtype  synplify_premier_dp  -encrypt  -pro  -rundir  /slowfs/sbg_builds9/tarunk/tests/dist/demo/dist   -part XC6VLX75TFF484-1    -enable_prepacking -maxfan 100 -m1 -verification_mode 0 -fixgatedclocks 1 -fixgeneratedclocks 1 -banetdly 1 -amptest 0 -overilog "oc_des_des3perf_mod.vm" -summaryfile /slowfs/sbg_builds9/tarunk/tests/dist/demo/dist/synlog/report/oc_des_des3perf_mod_global_prep.xml -RWCheckOnRam 1 -fast_synthesis 1 -reporting_ctd 0 -preserve_slash_names  -formal_partition  0  -licensetype  synplifypremierdp_ipro  -oedif  /slowfs/sbg_builds9/tarunk/tests/dist/demo/dist/oc_des_des3perf_mod.edf  -msp  2  -conchk_prepass  /slowfs/sbg_builds9/tarunk/tests/dist/demo/dist/oc_des_des3perf_mod_cck.rpt   -freq 180.440   -tcl  /slowfs/sbg_builds9/tarunk/tests/dist/demo/local_constraint_files/lattice_ecp2_ffonly.sdc  /slowfs/sbg_builds9/tarunk/tests/dist/demo/dist/synwork/oc_des_des3perf_mod_od_c.srs  -flow prepass  -gcc_prepass  -qsap  /slowfs/sbg_builds9/tarunk/tests/dist/demo/dist/oc_des_des3perf_mod.sap  -devicelib  /slowfs/sbg_builds9/tarunk/code/maprc_lin5/fpga201603/lib/xilinx/unisim_m10i.v  -devicelib  /slowfs/sbg_builds9/tarunk/code/maprc_lin5/fpga201603/lib/xilinx/unisim.v  -ologparam  /slowfs/sbg_builds9/tarunk/tests/dist/demo/dist/syntmp/oc_des_des3perf_mod.plg  -osyn  /slowfs/sbg_builds9/tarunk/tests/dist/demo/dist/synwork/oc_des_des3perf_mod_glob.srs  -prjdir  /slowfs/sbg_builds9/tarunk/tests/dist/demo/  -prjname  default_xilinx_ecp3_ffonly  -log  /slowfs/sbg_builds9/tarunk/tests/dist/demo/dist/synlog/oc_des_des3perf_mod_global_prep.srr 
+bexit
+b MSPSrsBatchManReport(void)
+r
+kill
+quit
+bexit
+b MSPSrsBatchManReport(void)
+set args -mp  4  -prjfile  /slowfs/sbg_builds9/tarunk/tests/dist/demo/dist/scratchproject.prs  -implementation  dist  -prodtype  synplify_premier_dp  -encrypt  -pro  -rundir  /slowfs/sbg_builds9/tarunk/tests/dist/demo/dist   -part XC6VLX75TFF484-1    -enable_prepacking -maxfan 100 -m1 -verification_mode 0 -fixgatedclocks 1 -fixgeneratedclocks 1 -banetdly 1 -amptest 0 -overilog "oc_des_des3perf_mod.vm" -summaryfile /slowfs/sbg_builds9/tarunk/tests/dist/demo/dist/synlog/report/oc_des_des3perf_mod_global_prep.xml -RWCheckOnRam 1 -fast_synthesis 1 -reporting_ctd 0 -preserve_slash_names  -formal_partition  0  -licensetype  synplifypremierdp_ipro  -oedif  /slowfs/sbg_builds9/tarunk/tests/dist/demo/dist/oc_des_des3perf_mod.edf  -msp  2  -conchk_prepass  /slowfs/sbg_builds9/tarunk/tests/dist/demo/dist/oc_des_des3perf_mod_cck.rpt   -freq 180.440   -tcl  /slowfs/sbg_builds9/tarunk/tests/dist/demo/local_constraint_files/lattice_ecp2_ffonly.sdc  /slowfs/sbg_builds9/tarunk/tests/dist/demo/dist/synwork/oc_des_des3perf_mod_od_c.srs  -flow prepass  -gcc_prepass  -qsap  /slowfs/sbg_builds9/tarunk/tests/dist/demo/dist/oc_des_des3perf_mod.sap  -devicelib  /slowfs/sbg_builds9/tarunk/code/maprc_lin5/fpga201603/lib/xilinx/unisim_m10i.v  -devicelib  /slowfs/sbg_builds9/tarunk/code/maprc_lin5/fpga201603/lib/xilinx/unisim.v  -ologparam  /slowfs/sbg_builds9/tarunk/tests/dist/demo/dist/syntmp/oc_des_des3perf_mod.plg  -osyn  /slowfs/sbg_builds9/tarunk/tests/dist/demo/dist/synwork/oc_des_des3perf_mod_glob.srs  -prjdir  /slowfs/sbg_builds9/tarunk/tests/dist/demo/  -prjname  default_xilinx_ecp3_ffonly  -log  /slowfs/sbg_builds9/tarunk/tests/dist/demo/dist/synlog/oc_des_des3perf_mod_global_prep.srr 
+r
+n
+p srsBatchMan.curBatch
+n
+p batch->maxTime
+p jobRunTime
+n
+p batch->totalTime/batch->maxTime
+p numLic
+n
+s
+n
+s
+fin
+n
+p *schedule
+p cur
+p cur->next
+p (*schedule)->accRunTime
+p runTime
+n
+s
+n
+p runTime
+n
+s
+n
+p runTime
+n
+p (*schedule)->accRunTime
+p runTime
+p (*schedule)->accRunTime
+p (*schedule)->next->accRunTime
+p (*schedule)->next->next->accRunTime
+p (*schedule)->next->next->next->accRunTime
+p cur->accRunTime 
+n
+p (*schedule)->next->next->next->accRunTime
+p (*schedule)->next->next->accRunTime
+p (*schedule)->next->next->next->next->accRunTime
+p (*schedule)->accRunTime
+p (*schedule)->next->accRunTime
+p (*schedule)->next->next->accRunTime
+p runTime
+kill
+y
+r
+n
+s
+n
+p runTime
+p (*schedule)->accRunTime
+p (*schedule)->next->accRunTime
+p (*schedule)->next->next->accRunTime
+n
+s
+n
+p runTime
+p (*schedule)->accRunTime
+p (*schedule)->next->accRunTime
+p (*schedule)->next->next->accRunTime
+n
+p cur->accRunTime 
+p cur->next->accRunTime 
+n
+p (*schedule)->accRunTime
+p (*schedule)->next->accRunTime
+p (*schedule)->next->next->accRunTime
+p (*schedule)->next->next->next->accRunTime
+p (*schedule)->next->next->next->next->accRunTime
+n
+s
+n
+p runTime
+n
+p newTime
+p maxTime
+n
+s
+n
+s
+n
+p runTime
+p maxTime
+p sNode->accRunTime
+n
+s
+n
+p maxTime
+p runTime
+p sNode->accRunTime
+n
+p sNode->next->accRunTime
+n
+p (*schedule)->accRunTime
+p (*schedule)->next->accRunTime
+p (*schedule)->next->next->accRunTime
+p (*schedule)->next->next->next->accRunTime
+p (*schedule)->next->next->next->next->accRunTime
+n
+p (*schedule)->next->next->next->next->accRunTime
+p (*schedule)->next->next->next->accRunTime
+p (*schedule)->accRunTime
+n
+p k
+p srsBatchMan.numJobs
+n
+p needMore
+p j
+n
+p srsBatchMan.numJobs
+p batch->numJobs
+p srsBatchMan.batches[i]->numJobs
+p srsBatchMan.batches[0]->numJobs
+p srsBatchMan.batches[1]->numJobs
+p srsBatchMan.batches[2]->numJobs
+p srsBatchMan.batches[3]->numJobs
+p srsBatchMan.batches[4]->numJobs
+p srsBatchMan.batches[5]->numJobs
+p srsBatchMan.batches[6]->numJobs
+p srsBatchMan.batches[7]->numJobs
+kill
+y
+r
+kill
+y
+b main
+r
+p nl_timingdata
+p &nl_timingdata
+watch (*(int *)0x44a8a20)
+c
+up
+up
+p &nl_timingdata.routetable
+watch (*(int *)0x44a8a88)
+c
+up
+up
+up
+c
+c
+up 3
+c
+up3
+up 3
+down
+dis 2
+c
+i b
+en 2
+dis 4
+c
+p count
+up
+up
+down
+down
+up 6
+up 6
+down
+where
+down 20
+n
+p d
+p count
+p save
+up 6
+up 2
+down
+up
+p nl_timingdata.route_scale
+fin
+p nl_timingdata.route_scale
+r
+y
+c
+c
+r
+y
+del 3
+c
+p display_time_files=1
+p display_time_data=1
+n
+p path
+n
+p path
+n
+p result
+p path
+show args
+i b
+set args -mp  4  -prjfile  /slowfs/sbg_builds9/tarunk/tests/dist/demo/dist/scratchproject.prs  -implementation  dist  -prodtype  synplify_premier_dp  -encrypt  -pro  -rundir  /slowfs/sbg_builds9/tarunk/tests/dist/demo/dist   -part XCVU125-FLVB1760-3-e    -enable_prepacking -use_vivado -overilog "oc_des_des3perf_mod.vm" -maxfan 100 -m1 -verification_mode 0 -fixgatedclocks 1 -fixgeneratedclocks 1 -banetdly 1 -amptest 0 -summaryfile /slowfs/sbg_builds9/tarunk/tests/dist/demo/dist/synlog/report/oc_des_des3perf_mod_global_prep.xml -RWCheckOnRam 1 -fast_synthesis 1 -reporting_ctd 0 -preserve_slash_names -optimize_ngc  -formal_partition  0  -licensetype  synplifypremierdp_ipro  -oedif  /slowfs/sbg_builds9/tarunk/tests/dist/demo/dist/oc_des_des3perf_mod.edf  -msp  2  -conchk_prepass  /slowfs/sbg_builds9/tarunk/tests/dist/demo/dist/oc_des_des3perf_mod_cck.rpt   -freq 180.440   -tcl  /slowfs/sbg_builds9/tarunk/tests/dist/demo/default_xilinx_ecp3_ffonly.fdc  /slowfs/sbg_builds9/tarunk/tests/dist/demo/dist/synwork/oc_des_des3perf_mod_od_c.srs  -flow prepass  -gcc_prepass  -qsap  /slowfs/sbg_builds9/tarunk/tests/dist/demo/dist/oc_des_des3perf_mod.sap  -devicelib  /remote/sbg_rel/unix/fpga201603_284R/lib/xilinx/unisim_retarget.v  -devicelib  /remote/sbg_rel/unix/fpga201603_284R/lib/xilinx/unisim_vivado.v  -ologparam  /slowfs/sbg_builds9/tarunk/tests/dist/demo/dist/syntmp/oc_des_des3perf_mod.plg  -osyn  /slowfs/sbg_builds9/tarunk/tests/dist/demo/dist/synwork/oc_des_des3perf_mod_glob.srs  -prjdir  /slowfs/sbg_builds9/tarunk/tests/dist/demo/  -prjname  default_xilinx_ecp3_ffonly  -log  /slowfs/sbg_builds9/tarunk/tests/dist/demo/dist/synlog/oc_des_des3perf_mod_global_prep.srr  
+r
+y
+p display_time_files=1
+p display_time_data=1
+n
+p newgrade
+p partprefix
+n
+p path
+n
+p path
+n
+p xilinxprefix
+n
+p path
+n
+pwd
+kill
+y
+quit
+set args  -prodtype  synplify_premier  -encrypt  -pro  -rundir  /slowfs/sbg_builds9/tarunk/tests/braviti/small/ copy/logical_synthesis_enhanced   -part XC7VX485TFFG1157-1    -enable_prepacking -use_vivado -overilog "OR1200V7R.vm" -advanced_synthesis -maxfan 500 -m1 -verification_mode 0 -fixgatedclocks 1 -            fixgeneratedclocks 1 -banetdly 1 -amptest 0 -summaryfile /slowfs/sbg_builds9/tarunk/tests/braviti/     small/copy/logical_synthesis_enhanced/synlog/report/OR1200V7R_fpga_mapper.xml -RWCheckOnRam 1 -        fast_synthesis 0 -reporting_ctd 0 -preserve_slash_names -optimize_ngc  -top_level_module  OR1200V7R  - formal_partition  0  -licensetype  synplifypremier_ipro  -flow mapping  -mp  4  -prjfile  /slowfs/     sbg_builds9/tarunk/tests/braviti/small/copy/logical_synthesis_enhanced/scratchproject.prs  -           implementation  logical_synthesis_enhanced  -multisrs  -ta_num_paths  100  -ta_num_points  5  -oedif  /slowfs/sbg_builds9/tarunk/tests/braviti/small/copy/logical_synthesis_enhanced/OR1200V7R.edf   -freq 1. 000   -tcl  /slowfs/sbg_builds9/tarunk/tests/braviti/small/copy/OR1200V7R.fdc  /slowfs/sbg_builds9/    tarunk/tests/braviti/small/copy/logical_synthesis_enhanced/synwork/OR1200V7R_prem.srd  -sap  /slowfs/  sbg_builds9/tarunk/tests/braviti/small/copy/logical_synthesis_enhanced/OR1200V7R.sap  -otap  /slowfs/  sbg_builds9/tarunk/tests/braviti/small/copy/logical_synthesis_enhanced/OR1200V7R.tap  -omap  /slowfs/  sbg_builds9/tarunk/tests/braviti/small/copy/logical_synthesis_enhanced/OR1200V7R.map  -devicelib  /    slowfs/sbg_builds9/tarunk/code/map610dev_lin5/fpga201603/lib/xilinx/unisim_retarget.v  -devicelib  /   slowfs/sbg_builds9/tarunk/code/map610dev_lin5/fpga201603/lib/xilinx/unisim_vivado.v  -sap  /slowfs/    sbg_builds9/tarunk/tests/braviti/small/copy/logical_synthesis_enhanced/OR1200V7R.sap  -ologparam  /    slowfs/sbg_builds9/tarunk/tests/braviti/small/copy/logical_synthesis_enhanced/syntmp/OR1200V7R.plg  -  osyn  /slowfs/sbg_builds9/tarunk/tests/braviti/small/copy/logical_synthesis_enhanced/OR1200V7R.srm  -  prjdir  /slowfs/sbg_builds9/tarunk/tests/braviti/small/copy/  -prjname  OR1200V7R  -log  /slowfs/      sbg_builds9/tarunk/tests/braviti/small/copy/logical_synthesis_enhanced/synlog/OR1200V7R_fpga_mapper.srr
+show args
+set args  -prodtype  synplify_premier  -encrypt  -pro  -rundir  /slowfs/sbg_builds9/tarunk/tests/braviti/small/copy/logical_synthesis_enhanced   -part XC7VX485TFFG1157-1    -enable_prepacking -use_vivado -overilog "OR1200V7R.vm" -advanced_synthesis -maxfan 500 -m1 -verification_mode 0 -fixgatedclocks 1 -fixgeneratedclocks 1 -banetdly 1 -amptest 0 -summaryfile /slowfs/sbg_builds9/tarunk/tests/braviti/small/copy/logical_synthesis_enhanced/synlog/report/OR1200V7R_fpga_mapper.xml -RWCheckOnRam 1 -fast_synthesis 0 -reporting_ctd 0 -preserve_slash_names -optimize_ngc  -top_level_module  OR1200V7R  -formal_partition  0  -licensetype  synplifypremier_ipro  -flow mapping  -mp  4  -prjfile  /slowfs/sbg_builds9/tarunk/tests/braviti/small/copy/logical_synthesis_enhanced/scratchproject.prs  -implementation  logical_synthesis_enhanced  -multisrs  -ta_num_paths  100  -ta_num_points  5  -oedif  /slowfs/sbg_builds9/tarunk/tests/braviti/small/copy/logical_synthesis_enhanced/OR1200V7R.edf   -freq 1.000   -tcl  /slowfs/sbg_builds9/tarunk/tests/braviti/small/copy/OR1200V7R.fdc  /slowfs/sbg_builds9/tarunk/tests/braviti/small/copy/logical_synthesis_enhanced/synwork/OR1200V7R_prem.srd  -sap  /slowfs/sbg_builds9/tarunk/tests/braviti/small/copy/logical_synthesis_enhanced/OR1200V7R.sap  -otap  /slowfs/sbg_builds9/tarunk/tests/braviti/small/copy/logical_synthesis_enhanced/OR1200V7R.tap  -omap  /slowfs/sbg_builds9/tarunk/tests/braviti/small/copy/logical_synthesis_enhanced/OR1200V7R.map  -devicelib  /slowfs/sbg_builds9/tarunk/code/map610dev_lin5/fpga201603/lib/xilinx/unisim_retarget.v  -devicelib  /slowfs/sbg_builds9/tarunk/code/map610dev_lin5/fpga201603/lib/xilinx/unisim_vivado.v  -sap  /slowfs/sbg_builds9/tarunk/tests/braviti/small/copy/logical_synthesis_enhanced/OR1200V7R.sap  -ologparam  /slowfs/sbg_builds9/tarunk/tests/braviti/small/copy/logical_synthesis_enhanced/syntmp/OR1200V7R.plg  -osyn  /slowfs/sbg_builds9/tarunk/tests/braviti/small/copy/logical_synthesis_enhanced/OR1200V7R.srm  -prjdir  /slowfs/sbg_builds9/tarunk/tests/braviti/small/copy/  -prjname  OR1200V7R  -log  /slowfs/sbg_builds9/tarunk/tests/braviti/small/copy/logical_synthesis_enhanced/synlog/OR1200V7R_fpga_mapper.srr
+b NFlowRunBraviti
+r
+i b
+quit
+pwd
+quit
+pwd
+bexit
+set args /slowfs/sbg_builds9/tarunk/code/map610dev_lin6/fpga201609/bin/m_actel  -prodtype  synplify_pro  -encrypt  -pro  -rundir  /slowfs/sbg_builds9/tarunk/regr/synreg_res/78319/feature_flow/HighRel/Microsemi/syn_encoding_safe/m_actel/x_1ar1sr_soh_e_201509   -part 54SX08  -grade -3    -maxfan 10000 -RWCheckOnRam 0 -overilog "state_test.vm" -summaryfile /slowfs/sbg_builds9/tarunk/regr/synreg_res/78319/feature_flow/HighRel/Microsemi/syn_encoding_safe/m_actel/x_1ar1sr_soh_e_201509/synlog/report/state_test_fpga_mapper.xml -act2  -dc_root  /global/apps3/syn_2016.03  -multisrs  -oedif  /slowfs/sbg_builds9/tarunk/regr/synreg_res/78319/feature_flow/HighRel/Microsemi/syn_encoding_safe/m_actel/x_1ar1sr_soh_e_201509/state_test.edn   -freq 1.000   /slowfs/sbg_builds9/tarunk/regr/synreg_res/78319/feature_flow/HighRel/Microsemi/syn_encoding_safe/m_actel/x_1ar1sr_soh_e_201509/synwork/state_test_mult.srs  -devicelib  /slowfs/sbg_builds9/tarunk/code/map610dev_lin6/fpga201609/lib/actel/a54sx.v  -ologparam  /slowfs/sbg_builds9/tarunk/regr/synreg_res/78319/feature_flow/HighRel/Microsemi/syn_encoding_safe/m_actel/x_1ar1sr_soh_e_201509/syntmp/state_test.plg  -osyn  /slowfs/sbg_builds9/tarunk/regr/synreg_res/78319/feature_flow/HighRel/Microsemi/syn_encoding_safe/m_actel/x_1ar1sr_soh_e_201509/state_test.srm  -prjdir  /slowfs/sbg_builds9/tarunk/regr/synreg_res/78319/feature_flow/HighRel/Microsemi/syn_encoding_safe/m_actel/x_1ar1sr_soh_e_201509/  -prjname  state_test  -log  /slowfs/sbg_builds9/tarunk/regr/synreg_res/78319/feature_flow/HighRel/Microsemi/syn_encoding_safe/m_actel/x_1ar1sr_soh_e_201509/synlog/state_test_fpga_mapper.srr
+b NFracDecompSM_orig
+r
+quit
+y
+bexit
+set args  -prodtype  synplify_pro  -encrypt  -pro  -rundir  /slowfs/sbg_builds9/tarunk/regr/synreg_res/78319/feature_flow/HighRel/Microsemi/syn_encoding_safe/m_actel/x_1ar1sr_soh_e_201509   -part 54SX08  -grade -3    -maxfan 10000 -RWCheckOnRam 0 -overilog "state_test.vm" -summaryfile /slowfs/sbg_builds9/tarunk/regr/synreg_res/78319/feature_flow/HighRel/Microsemi/syn_encoding_safe/m_actel/x_1ar1sr_soh_e_201509/synlog/report/state_test_fpga_mapper.xml -act2  -dc_root  /global/apps3/syn_2016.03  -multisrs  -oedif  /slowfs/sbg_builds9/tarunk/regr/synreg_res/78319/feature_flow/HighRel/Microsemi/syn_encoding_safe/m_actel/x_1ar1sr_soh_e_201509/state_test.edn   -freq 1.000   /slowfs/sbg_builds9/tarunk/regr/synreg_res/78319/feature_flow/HighRel/Microsemi/syn_encoding_safe/m_actel/x_1ar1sr_soh_e_201509/synwork/state_test_mult.srs  -devicelib  /slowfs/sbg_builds9/tarunk/code/map610dev_lin6/fpga201609/lib/actel/a54sx.v  -ologparam  /slowfs/sbg_builds9/tarunk/regr/synreg_res/78319/feature_flow/HighRel/Microsemi/syn_encoding_safe/m_actel/x_1ar1sr_soh_e_201509/syntmp/state_test.plg  -osyn  /slowfs/sbg_builds9/tarunk/regr/synreg_res/78319/feature_flow/HighRel/Microsemi/syn_encoding_safe/m_actel/x_1ar1sr_soh_e_201509/state_test.srm  -prjdir  /slowfs/sbg_builds9/tarunk/regr/synreg_res/78319/feature_flow/HighRel/Microsemi/syn_encoding_safe/m_actel/x_1ar1sr_soh_e_201509/  -prjname  state_test  -log  /slowfs/sbg_builds9/tarunk/regr/synreg_res/78319/feature_flow/HighRel/Microsemi/syn_encoding_safe/m_actel/x_1ar1sr_soh_e_201509/synlog/state_test_fpga_mapper.srr
+b NFracDecompSM_orig
+r
+up
+up
+up
+up
+up
+up
+up
+up
+quit
+y
+bexit
+set args -prodtype  synplify_pro  -encrypt  -pro  -rundir  /slowfs/sbg_builds9/tarunk/regr/synreg_res/78319/feature_flow/HighRel/Microsemi/syn_encoding_safe/m_actel/x_1ar1sr_soh_e_201509   -part 54SX08  -grade -3    -maxfan 10000 -RWCheckOnRam 0 -overilog "state_test.vm" -summaryfile /slowfs/sbg_builds9/tarunk/regr/synreg_res/78319/feature_flow/HighRel/Microsemi/syn_encoding_safe/m_actel/x_1ar1sr_soh_e_201509/synlog/report/state_test_fpga_mapper.xml -act2  -dc_root  /global/apps3/syn_2016.03  -multisrs  -oedif  /slowfs/sbg_builds9/tarunk/regr/synreg_res/78319/feature_flow/HighRel/Microsemi/syn_encoding_safe/m_actel/x_1ar1sr_soh_e_201509/state_test.edn   -freq 1.000   /slowfs/sbg_builds9/tarunk/regr/synreg_res/78319/feature_flow/HighRel/Microsemi/syn_encoding_safe/m_actel/x_1ar1sr_soh_e_201509/synwork/state_test_mult.srs  -devicelib  /slowfs/sbg_builds9/tarunk/code/map610dev_lin6/fpga201609/lib/actel/a54sx.v  -ologparam  /slowfs/sbg_builds9/tarunk/regr/synreg_res/78319/feature_flow/HighRel/Microsemi/syn_encoding_safe/m_actel/x_1ar1sr_soh_e_201509/syntmp/state_test.plg  -osyn  /slowfs/sbg_builds9/tarunk/regr/synreg_res/78319/feature_flow/HighRel/Microsemi/syn_encoding_safe/m_actel/x_1ar1sr_soh_e_201509/state_test.srm  -prjdir  /slowfs/sbg_builds9/tarunk/regr/synreg_res/78319/feature_flow/HighRel/Microsemi/syn_encoding_safe/m_actel/x_1ar1sr_soh_e_201509/  -prjname  state_test  -log  /slowfs/sbg_builds9/tarunk/regr/synreg_res/78319/feature_flow/HighRel/Microsemi/syn_encoding_safe/m_actel/x_1ar1sr_soh_e_201509/synlog/state_test_fpga_mapper.srr
+b NFracDecompSM_orig
+r
+b NFracDecompSM_new
+r
+y
+n
+c
+up
+up
+up
+kill
+y
+r
+fin
+n
+fin
+c
+up
+up
+up
+up
+down
+r
+y
+n
+u 2412
+n
+p fsm_init_flop_state
+n
+p hasPhaseShiftFlop
+n
+p create_ghosts
+n
+u 2752
+n
+u 2790
+n
+p rstidx
+n
+p ennp2
+n
+fin
+nwrite "aaa.srm"
+pwd
+r
+y
+b NCreateInstW
+cond 4 strstr(BNameStr(n),"present_state")
+c
+up
+c
+up
+c
+c
+cond 4 strstr(BNameStr(n),"present_state")
+cond 4 strstr(BNameStr(n),"present_state[")
+c
+pnn ennp
+p !fsm_enable_extract
+p fsm_enable_extract
+kill
+y
+r
+dis 4
+c
+c
+c
+r
+fin
+c
+c
+r
+c
+c
+pwd
+kill
+quit
+set args -tsl PprUDqpo -mp 4 -prjfile /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/scratchproject.prs -implementation p0 -prodtype protocompiler -encrypt -pro -rundir /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0 -part XC7V2000TFLG1925-1 -haps_target HAPS-70 -enable_prepacking -use_vivado -overilog top.vm -maxfan 10000 -m1 -pipe -verification_mode 0 -fixgatedclocks 1 -fixgeneratedclocks 1 -banetdly 1 -amptest 0 -split_generated_modules 1 -resolveMultipleDriver -summaryfile /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/synlog/report/top_global_prep.xml -RWCheckOnRam 1 -fast_synthesis 1 -protoware_mode -reporting_ctd 0 -preserve_slash_names -incremental_debug 0 -optimize_ngc -new_timebudgeting 1 -formal_partition 0 -dc_root /global/apps3/syn_2016.03 -licensetype ProtoCompiler -oedif /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/top.edf -msp 2 -conchk_prepass /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/top_cck.rpt -freq 1.000 -tcl /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/top.fdc -upf /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/top.upf /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/synwork/top_od_c.srs -flow prepass -gcc_prepass -qsap /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/top.sap -devicelib /slowfs/sbg_builds9/tarunk/code/map610dev_lin6/fpga201609/lib/xilinx/unisim_retarget.v -devicelib /slowfs/sbg_builds9/tarunk/code/map610dev_lin6/fpga201609/lib/xilinx/unisim_vivado.v -ologparam  -osyn /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/synwork/top_glob.srs -prjdir /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/ -prjname datastate -dc_naming -log /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/synlog/top_global_prep.srr1
+bexit
+r
+quit
+set args -tsl PprUDqpo -mp 4 -prjfile /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/scratchproject.prs -implementation p0 -prodtype protocompiler -encrypt -pro -rundir /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0 -part XC7V2000TFLG1925-1 -haps_target HAPS-70 -enable_prepacking -use_vivado -overilog top.vm -maxfan 10000 -m1 -pipe -verification_mode 0 -fixgatedclocks 1 -fixgeneratedclocks 1 -banetdly 1 -amptest 0 -split_generated_modules 1 -resolveMultipleDriver -summaryfile /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/synlog/report/top_global_prep.xml -RWCheckOnRam 1 -fast_synthesis 1 -protoware_mode -reporting_ctd 0 -preserve_slash_names -incremental_debug 0 -optimize_ngc -new_timebudgeting 1 -formal_partition 0 -dc_root /global/apps3/syn_2016.03 -licensetype ProtoCompiler -oedif /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/top.edf -msp 2 -conchk_prepass /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/top_cck.rpt -freq 1.000 -tcl /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/top.fdc -upf /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/top.upf /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/synwork/top_od_c.srs -flow prepass -gcc_prepass -qsap /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/top.sap -devicelib /slowfs/sbg_builds9/tarunk/code/map610dev_lin6/fpga201609/lib/xilinx/unisim_retarget.v -devicelib /slowfs/sbg_builds9/tarunk/code/map610dev_lin6/fpga201609/lib/xilinx/unisim_vivado.v -ologparam  -osyn /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/synwork/top_glob.srs -prjdir /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/ -prjname datastate -dc_naming -log /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/synlog/top_global_prep.srr1
+bexit
+r
+up
+up
+down
+r
+y
+n
+jumb 6796
+jum 6796
+c
+up
+up
+up
+up
+set args -tsl PprUDqpo -mp 4 -prjfile /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/scratchproject.prs -implementation p0 -prodtype protocompiler -encrypt -pro -rundir /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0 -part XC7V2000TFLG1925-1 -haps_target HAPS-70 -enable_prepacking -use_vivado -overilog top.vm -maxfan 10000 -m1 -pipe -verification_mode 0 -fixgatedclocks 1 -fixgeneratedclocks 1 -banetdly 1 -amptest 0 -split_generated_modules 1 -resolveMultipleDriver -summaryfile /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/synlog/report/top_global_prep.xml -RWCheckOnRam 1 -fast_synthesis 1 -protoware_mode -reporting_ctd 0 -preserve_slash_names -incremental_debug 0 -optimize_ngc -new_timebudgeting 1 -formal_partition 0 -dc_root /global/apps3/syn_2016.03 -licensetype ProtoCompiler -oedif /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/top.edf -msp 2 -conchk_prepass /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/top_cck.rpt -freq 1.000 -tcl /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/top.fdc -upf /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/top.upf /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/synwork/top_od_c.srs -flow prepass -gcc_prepass -qsap /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/top.sap -devicelib /slowfs/sbg_builds9/tarunk/code/map610dev_lin6/fpga201609/lib/xilinx/unisim_retarget.v -devicelib /slowfs/sbg_builds9/tarunk/code/map610dev_lin6/fpga201609/lib/xilinx/unisim_vivado.v -ologparam  -osyn /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/synwork/top_glob.srs -prjdir /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/ -prjname datastate -dc_naming -log /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/synlog/top_global_prep.srr
+r
+y
+jum 6796
+c
+up
+up
+up
+p a
+r
+y
+c
+r
+y
+jum 6796
+c
+up
+i b
+quit
+y
+set args   -mp  4  -prjfile  /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/scratchproject.prs  -implementation  p0  -prodtype  protocompiler  -encrypt  -pro  -rundir  /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0   -part XC7V2000TFLG1925-1    -haps_target HAPS-70 -enable_prepacking -use_vivado -overilog "top.vm" -maxfan 10000 -m1 -pipe -verification_mode 0 -fixgatedclocks 1 -fixgeneratedclocks 1 -banetdly 1 -amptest 0 -split_generated_modules 1 -resolveMultipleDriver -summaryfile /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/synlog/report/top_global_prep.xml -RWCheckOnRam 1 -fast_synthesis 1 -protoware_mode -reporting_ctd 0 -preserve_slash_names -incremental_debug 0 -optimize_ngc -new_timebudgeting 1  -formal_partition  0  -dc_root  /global/apps3/syn_2016.03  -licensetype  ProtoCompiler  -oedif  /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/top.edf  -msp  2  -conchk_prepass  /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/top_cck.rpt   -freq 1.000   -tcl  /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/top.fdc  -upf  /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/top.upf  /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/synwork/top_od_c.srs  -flow prepass  -gcc_prepass  -qsap  /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/top.sap  -devicelib  /slowfs/sbg_builds9/tarunk/code/map610dev_lin6/fpga201609/lib/xilinx/unisim_retarget.v  -devicelib  /slowfs/sbg_builds9/tarunk/code/map610dev_lin6/fpga201609/lib/xilinx/unisim_vivado.v  -ologparam  ""  -osyn  /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/synwork/top_glob.srs  -prjdir  /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/  -prjname  datastate  -dc_naming  -log  /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/synlog/top_global_prep.srr
+bexit
+r
+up
+up
+up
+up
+up
+down
+p snode->name
+pn snode->name
+up
+b NConvertFsmToEnableFsmIp
+r
+y
+up
+up
+down
+b NFloeDoMap
+n
+b NFlowDoMap
+r
+y
+p nSrsNode
+b MSPRunGlobalPrep
+r
+y
+b BjobCreate 
+c
+up
+down
+p puts(arg)
+set args -prjfile /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/scratchproject.prs -imp
+lementation p0 -prodtype protocompiler -encrypt -pro -part XC7V2000TFLG1925-1 -haps_target HAPS-70 -enable_prepacking -use_vivado -maxfan 10000 -m1 -pipe -verification_mode 0 -fixgatedclocks 1 -fixgenera
+tedclocks 1 -banetdly 1 -amptest 0 -split_generated_modules 1 -resolveMultipleDriver -RWCheckOnRam 1 -fast_synthesis 1 -protoware_mode -reporting_ctd 0 -preserve_slash_names -incremental_debug 0 -optimiz
+e_ngc -new_timebudgeting 1 -formal_partition 0 -dc_root /global/apps3/syn_2016.03 -licensetype ProtoCompiler -oedif /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/cloc
+k_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/top.edf -freq 1.000 -upf /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conve
+rsion/distributed/gated_clock/basic/macros/state_machine/ex1/top.upf /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macr
+os/state_machine/ex1/impl/pre_map/p0/synwork/top_glob.srs -flow prepass -gcc_prepass -devicelib /slowfs/sbg_builds9/tarunk/code/map610dev_lin6/fpga201609/lib/xilinx/unisim_retarget.v -devicelib /slowfs/s
+bg_builds9/tarunk/code/map610dev_lin6/fpga201609/lib/xilinx/unisim_vivado.v -osyn /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clo
+ck/basic/macros/state_machine/ex1/impl/pre_map/p0/synwork/top_glob.srs -prjdir /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/
+basic/macros/state_machine/ex1/impl/pre_map/p0/ -prjname datastate -dc_naming -imspcdbpath /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/
+gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/synwork/top_glob_srs/cdb.srs -qsap /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distribut
+ed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/synwork/top_glob.sap -msp 100 -log /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distri
+buted/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/synwork/top_glob.srr  -rundir /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distribu
+ted/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/synwork/top_glob
+set args -prjfile /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/scratchproject.prs -implementation p0 -prodtype protocompiler -encrypt -pro -part XC7V2000TFLG1925-1 -haps_target HAPS-70 -enable_prepacking -use_vivado -maxfan 10000 -m1 -pipe -verification_mode 0 -fixgatedclocks 1 -fixgeneratedclocks 1 -banetdly 1 -amptest 0 -split_generated_modules 1 -resolveMultipleDriver -RWCheckOnRam 1 -fast_synthesis 1 -protoware_mode -reporting_ctd 0 -preserve_slash_names -incremental_debug 0 -optimize_ngc -new_timebudgeting 1 -formal_partition 0 -dc_root /global/apps3/syn_2016.03 -licensetype ProtoCompiler -oedif /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/top.edf -freq 1.000 -upf /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/top.upf /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/synwork/top_glob.srs -flow prepass -gcc_prepass -devicelib /slowfs/sbg_builds9/tarunk/code/map610dev_lin6/fpga201609/lib/xilinx/unisim_retarget.v -devicelib /slowfs/sbg_builds9/tarunk/code/map610dev_lin6/fpga201609/lib/xilinx/unisim_vivado.v -osyn /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/synwork/top_glob.srs -prjdir /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/ -prjname datastate -dc_naming -imspcdbpath /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/synwork/top_glob_srs/cdb.srs -qsap /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/synwork/top_glob.sap -msp 100 -log /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/synwork/top_glob.srr  -rundir /slowfs/sbg_builds9/tarunk/regr/synreg_res/25502/incoming_tests/ryanr/feature_flow/clock_conversion/distributed/gated_clock/basic/macros/state_machine/ex1/impl/pre_map/p0/synwork/top_glob
+i b
+r
+y
+n
+p widths
+n
+p widths
+n
+p nip->ports
+n
+p kp->inputs[i].special
+pn kp->inputs[i].name
+set args /slowfs/sbg_builds9/tarunk/code/map610dev_lin6/fpga201609/linux_a_64/m_xilinx -prjfile /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/scratchproject.prs -implementation rtl_encode_seq_vm -prodtype synplify_premier_dp -encrypt -pro -part XC7VX485TFFG1157-1 -enable_prepacking -use_vivado -maxfan 10000 -m1 -pipe -verification_mode 0 -fixgatedclocks 1 -fixgeneratedclocks 1 -banetdly 1 -amptest 0 -RWCheckOnRam 1 -fast_synthesis 0 -reporting_ctd 0 -preserve_slash_names -optimize_ngc -formal_partition 0 -dc_root /global/apps2/syn_2016.03-SP1 -licensetype synplifypremierdp -ovm /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/state_test.vm -freq 1.000 /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob.srs -flow prepass -gcc_prepass -devicelib /slowfs/sbg_builds9/tarunk/code/map610dev_lin6/fpga201609/lib/xilinx/unisim_retarget.v -devicelib /slowfs/sbg_builds9/tarunk/code/map610dev_lin6/fpga201609/lib/xilinx/unisim_vivado.v -osyn /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob.srs -prjdir /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/ -prjname state_test -ppid 29272 -imspcdbpath /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob_srs/cdb.srs -qsap /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob.sap -msp 199 -loga /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob.srr -rundir /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob -tsl LagLDope
+bexit
+r
+up
+r
+y
+jum 6796
+up
+p feInfo
+up
+up
+p *filename
+p filename
+set args -prjfile /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/scratchproject.prs -implementation rtl_encode_seq_vm -prodtype synplify_premier_dp -encrypt -pro -part XC7VX485TFFG1157-1 -enable_prepacking -use_vivado -maxfan 10000 -m1 -pipe -verification_mode 0 -fixgatedclocks 1 -fixgeneratedclocks 1 -banetdly 1 -amptest 0 -RWCheckOnRam 1 -fast_synthesis 0 -reporting_ctd 0 -preserve_slash_names -optimize_ngc -formal_partition 0 -dc_root /global/apps2/syn_2016.03-SP1 -licensetype synplifypremierdp -ovm /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/state_test.vm -freq 1.000 /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob.srs -flow prepass -gcc_prepass -devicelib /slowfs/sbg_builds9/tarunk/code/map610dev_lin6/fpga201609/lib/xilinx/unisim_retarget.v -devicelib /slowfs/sbg_builds9/tarunk/code/map610dev_lin6/fpga201609/lib/xilinx/unisim_vivado.v -osyn /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob.srs -prjdir /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/ -prjname state_test -ppid 29272 -imspcdbpath /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob_srs/cdb.srs -qsap /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob.sap -msp 199 -loga /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob.srr -rundir /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob -tsl LagLDope
+r
+y
+jum 6796
+up
+up
+up
+p a
+up
+down
+set args  -mp  4  -prjfile  /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/scratchproject.prs  -implementation  rtl_encode_seq_vm  -prodtype  synplify_premier_dp  -encrypt  -pro  -rundir  /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm   -part XC7VX485TFFG1157-1    -enable_prepacking -use_vivado -overilog "state_test.vm" -maxfan 10000 -m1 -pipe -verification_mode 0 -fixgatedclocks 1 -fixgeneratedclocks 1 -banetdly 1 -amptest 0 -summaryfile /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synlog/report/state_test_global_prep.xml -RWCheckOnRam 1 -fast_synthesis 0 -reporting_ctd 0 -preserve_slash_names -optimize_ngc  -formal_partition  0  -licensetype  synplifypremierdp_ipro  -ovm  /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/state_test.vm  -msp  2  -conchk_prepass  /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/state_test_cck.rpt   -freq 1.000   /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_od_c.srs  -flow prepass  -gcc_prepass  -qsap  /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/state_test.sap  -devicelib  /remote/sbg_builds1/tarunk/builds/syn201603_05_3/lib/xilinx/unisim_retarget.v  -devicelib  /remote/sbg_builds1/tarunk/builds/syn201603_05_3/lib/xilinx/unisim_vivado.v  -ologparam  /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/syntmp/state_test.plg  -osyn  /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob.srs  -prjdir  /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/  -prjname  state_test  -log  /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synlog/state_test_global_prep.srr 
+r
+y
+jum 6796
+up
+up
+p jcb
+p *jcb
+p puts(jcb->argCmd)
+set args -prjfile /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/scratchproject.prs -implementation rtl_enco
+de_seq_vm -prodtype synplify_premier_dp -encrypt -pro -part XC7VX485TFFG1157-1 -enable_prepacking -use_vivado -maxfan 10000 -m1 -pipe -verification_mode 0 -fixgatedclocks 1 -fixgeneratedclocks 1 -banetdl
+y 1 -amptest 0 -RWCheckOnRam 1 -fast_synthesis 0 -reporting_ctd 0 -preserve_slash_names -optimize_ngc -formal_partition 0 -licensetype synplifypremierdp_ipro -ovm /slowfs/sbg_builds9/tarunk/regr/synreg_r
+es/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/state_test.vm -freq 1.000 /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xili
+nx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob.srs -flow prepass -gcc_prepass -devicelib /remote/sbg_builds1/tarunk/builds/syn201603_05_3/lib
+/xilinx/unisim_retarget.v -devicelib /remote/sbg_builds1/tarunk/builds/syn201603_05_3/lib/xilinx/unisim_vivado.v -osyn /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate
+_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob.srs -prjdir /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario1
+8/merging_similar_state_machines/rtl_encode_seq_vm/ -prjname state_test -imspcdbpath /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_
+state_machines/rtl_encode_seq_vm/synwork/state_test_glob_srs/cdb.srs -qsap /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_mach
+ines/rtl_encode_seq_vm/synwork/state_test_glob.sap -msp 199 -loga /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_
+encode_seq_vm/synwork/state_test_glob.srr  -rundir /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/s
+ynwork/state_test_glob
+set args -prjfile /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/scratchproject.prs -implementation rtl_encode_seq_vm -prodtype synplify_premier_dp -encrypt -pro -part XC7VX485TFFG1157-1 -enable_prepacking -use_vivado -maxfan 10000 -m1 -pipe -verification_mode 0 -fixgatedclocks 1 -fixgeneratedclocks 1 -banetdly 1 -amptest 0 -RWCheckOnRam 1 -fast_synthesis 0 -reporting_ctd 0 -preserve_slash_names -optimize_ngc -formal_partition 0 -licensetype synplifypremierdp_ipro -ovm /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/state_test.vm -freq 1.000 /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob.srs -flow prepass -gcc_prepass -devicelib /remote/sbg_builds1/tarunk/builds/syn201603_05_3/lib/xilinx/unisim_retarget.v -devicelib /remote/sbg_builds1/tarunk/builds/syn201603_05_3/lib/xilinx/unisim_vivado.v -osyn /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob.srs -prjdir /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/ -prjname state_test -imspcdbpath /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob_srs/cdb.srs -qsap /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob.sap -msp 199 -loga /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob.srr  -rundir /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob
+r
+y
+jum 6796
+up
+up
+up
+kill
+y
+set args  -prjfile /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/scratchproject.prs -implementation rtl_encode_seq_vm -prodtype synplify_premier_dp -encrypt -pro -part XC7VX485TFFG1157-1 -enable_prepacking -use_vivado -maxfan 10000 -m1 -pipe -verification_mode 0 -fixgatedclocks 1 -fixgeneratedclocks 1 -banetdly 1 -amptest 0 -RWCheckOnRam 1 -fast_synthesis 0 -reporting_ctd 0 -preserve_slash_names -optimize_ngc -formal_partition 0 -licensetype synplifypremierdp_ipro -ovm /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/state_test.vm -freq 1.000 /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob.srs -flow prepass -gcc_prepass -devicelib /slowfs/sbg_builds9/tarunk/code/map610dev_lin6/fpga201609/lib/xilinx/unisim_retarget.v -devicelib /slowfs/sbg_builds9/tarunk/code/map610dev_lin6/fpga201609/lib/xilinx/unisim_vivado.v -osyn /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob.srs -prjdir /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/ -prjname state_test -ppid 1689 -imspcdbpath /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob_srs/cdb.srs -qsap /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob.sap -msp 199 -loga /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob.srr  -rundir /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob
+r
+jum 6796
+up
+up
+pnn ip
+nwrite "aaa.srm"
+r
+jum 6796
+up
+up
+up
+up
+down
+p a
+set args  -mp  4  -prjfile  /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/scratchproject.prs  -implementation  rtl_encode_seq_vm  -prodtype  synplify_premier_dp  -encrypt  -pro  -rundir  /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm   -part XC7VX485TFFG1157-1    -enable_prepacking -use_vivado -overilog "state_test.vm" -maxfan 10000 -m1 -pipe -verification_mode 0 -fixgatedclocks 1 -fixgeneratedclocks 1 -banetdly 1 -amptest 0 -summaryfile /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synlog/report/state_test_global_prep.xml -RWCheckOnRam 1 -fast_synthesis 0 -reporting_ctd 0 -preserve_slash_names -optimize_ngc  -formal_partition  0  -licensetype  synplifypremierdp_ipro  -ovm  /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/state_test.vm  -msp  2  -conchk_prepass  /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/state_test_cck.rpt   -freq 1.000   /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_od_c.srs  -flow prepass  -gcc_prepass  -qsap  /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/state_test.sap  -devicelib  /slowfs/sbg_builds9/tarunk/code/map610dev_lin6/fpga201609/lib/xilinx/unisim_retarget.v  -devicelib  /slowfs/sbg_builds9/tarunk/code/map610dev_lin6/fpga201609/lib/xilinx/unisim_vivado.v  -ologparam  /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/syntmp/state_test.plg  -osyn  /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob.srs  -prjdir  /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/  -prjname  state_test  -log  /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synlog/state_test_global_prep.srr  
+b MSPRunGlobalPrep
+r
+y
+jum 6796
+n
+p nSrsNode
+n
+n
+p batch_iteration
+n
+n
+up
+up
+up
+r
+y
+jum 6796
+c
+c
+p batch_iteration
+s
+n
+s
+n
+s
+n
+p tenv
+p tenv->argv
+p puts(tenv->args)s
+p puts(tenv->args)
+set args -prjfile /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/scratchproject.prs -implementation rtl_enco
+de_seq_vm -prodtype synplify_premier_dp -encrypt -pro -part XC7VX485TFFG1157-1 -enable_prepacking -use_vivado -maxfan 10000 -m1 -pipe -verification_mode 0 -fixgatedclocks 1 -fixgeneratedclocks 1 -banetdl
+y 1 -amptest 0 -RWCheckOnRam 1 -fast_synthesis 0 -reporting_ctd 0 -preserve_slash_names -optimize_ngc -formal_partition 0 -licensetype synplifypremierdp_ipro -ovm /slowfs/sbg_builds9/tarunk/regr/synreg_r
+es/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/state_test.vm -freq 1.000 /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xili
+nx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob.srs -flow prepass -gcc_prepass -devicelib /slowfs/sbg_builds9/tarunk/code/map610dev_lin6/fpga2
+01609/lib/xilinx/unisim_retarget.v -devicelib /slowfs/sbg_builds9/tarunk/code/map610dev_lin6/fpga201609/lib/xilinx/unisim_vivado.v -osyn /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xili
+nx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob.srs -prjdir /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migra
+te_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/ -prjname state_test -imspcdbpath /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario1
+8/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob_srs/cdb.srs -qsap /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_
+similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob.sap -msp 199 -loga /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_s
+tate_machines/rtl_encode_seq_vm/synwork/state_test_glob.srr  -rundir /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/r
+tl_encode_seq_vm/synwork/state_test_glob
+set args -prjfile /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/scratchproject.prs -implementation rtl_encode_seq_vm -prodtype synplify_premier_dp -encrypt -pro -part XC7VX485TFFG1157-1 -enable_prepacking -use_vivado -maxfan 10000 -m1 -pipe -verification_mode 0 -fixgatedclocks 1 -fixgeneratedclocks 1 -banetdly 1 -amptest 0 -RWCheckOnRam 1 -fast_synthesis 0 -reporting_ctd 0 -preserve_slash_names -optimize_ngc -formal_partition 0 -licensetype synplifypremierdp_ipro -ovm /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/state_test.vm -freq 1.000 /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob.srs -flow prepass -gcc_prepass -devicelib /slowfs/sbg_builds9/tarunk/code/map610dev_lin6/fpga201609/lib/xilinx/unisim_retarget.v -devicelib /slowfs/sbg_builds9/tarunk/code/map610dev_lin6/fpga201609/lib/xilinx/unisim_vivado.v -osyn /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob.srs -prjdir /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/ -prjname state_test -imspcdbpath /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob_srs/cdb.srs -qsap /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob.sap -msp 199 -loga /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob.srr  -rundir /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob
+b NConvertFsmToEnableFsmIp
+r
+y
+jum 6796
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+down
+b mspflow.cpp:5890
+set args  -mp  4  -prjfile  /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/scratchproject.prs  -implementation  rtl_encode_seq_vm  -prodtype  synplify_premier_dp  -encrypt  -pro  -rundir  /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm   -part XC7VX485TFFG1157-1    -enable_prepacking -use_vivado -overilog "state_test.vm" -maxfan 10000 -m1 -pipe -verification_mode 0 -fixgatedclocks 1 -fixgeneratedclocks 1 -banetdly 1 -amptest 0 -summaryfile /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synlog/report/state_test_global_prep.xml -RWCheckOnRam 1 -fast_synthesis 0 -reporting_ctd 0 -preserve_slash_names -optimize_ngc  -formal_partition  0  -licensetype  synplifypremierdp_ipro  -ovm  /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/state_test.vm  -msp  2  -conchk_prepass  /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/state_test_cck.rpt   -freq 1.000   /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_od_c.srs  -flow prepass  -gcc_prepass  -qsap  /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/state_test.sap  -devicelib  /slowfs/sbg_builds9/tarunk/code/map610dev_lin6/fpga201609/lib/xilinx/unisim_retarget.v  -devicelib  /slowfs/sbg_builds9/tarunk/code/map610dev_lin6/fpga201609/lib/xilinx/unisim_vivado.v  -ologparam  /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/syntmp/state_test.plg  -osyn  /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob.srs  -prjdir  /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/  -prjname  state_test  -log  /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synlog/state_test_global_prep.srr  
+r
+y
+jum 6796
+c
+c
+i b
+b MSPFlowPrep
+r
+y
+jum 6796
+c
+s
+n
+s
+n
+p puts(tenv->args)
+n
+set args -prjfile /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/scratchproject.prs -implementation rtl_encode_seq_vm -prodtype synplify_premier_dp -encrypt -pro -part XC7VX485TFFG1157-1 -enable_prepacking -use_vivado -maxfan 10000 -m1 -pipe -verification_mode 0 -fixgatedclocks 1 -fixgeneratedclocks 1 -banetdly 1 -amptest 0 -RWCheckOnRam 1 -fast_synthesis 0 -reporting_ctd 0 -preserve_slash_names -optimize_ngc -formal_partition 0 -licensetype synplifypremierdp_ipro -ovm /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/state_test.vm -freq 1.000 /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob.srs -flow prepass -gcc_prepass -devicelib /slowfs/sbg_builds9/tarunk/code/map610dev_lin6/fpga201609/lib/xilinx/unisim_retarget.v -devicelib /slowfs/sbg_builds9/tarunk/code/map610dev_lin6/fpga201609/lib/xilinx/unisim_vivado.v -osyn /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob.srs -prjdir /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/ -prjname state_test -imspcdbpath /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob_srs/cdb.srs -qsap /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob.sap -msp 100 -log /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob.srr  -rundir /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob
+n
+r
+y
+jum 6796
+n
+nwrite "aaa.srm"
+i b
+n
+n
+p n_numpins
+n
+p widths
+n
+u 3841
+n
+nwrite "aab.srm"
+bexit
+b mspflow.cpp:3975
+set args cmdline=/slowfs/sbg_builds9/tarunk/code/map610dev_lin6/fpga201609/linux_a_64/m_xilinx -tsl LagLDope -mp 4 -prjfile /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/mig[23/188]ts/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/scratchproject.prs -implementation rtl_encode_seq_vm -prodtype synplify_premier_dp -encrypt -pro -rundir /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm -part XC7VX485TFFG1157-1 -enable_prepacking -use_vivado -overilog state_test.vm -maxfan 10000 -m1 -pipe -verification_mode 0 -fixgatedclocks 1 -fixgeneratedclocks 1 -banetdly 1 -amptest 0 -summaryfile /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synlog/report/state_test_global_prep.xml -RWCheckOnRam 1 -fast_synthesis 0 -reporting_ctd 0 -preserve_slash_names -optimize_ngc -formal_partition 0 -dc_root /global/apps2/syn_2016.03-SP1 -licensetype synplifypremierdp -ovm /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/state_test.vm -msp 2 -conchk_prepass /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/state_test_cck.rpt -freq 1.000 /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_od_c.srs -flow prepass -gcc_prepass -qsap /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/state_test.sap -devicelib /slowfs/sbg_builds9/tarunk/code/map610dev_lin6/fpga201609/lib/xilinx/unisim_retarget.v -devicelib /slowfs/sbg_builds9/tarunk/code/map610dev_lin6/fpga201609/lib/xilinx/unisim_vivado.v -ologparam /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/syntmp/state_test.plg -osyn /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob.srs -prjdir /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/ -prjname state_test -log /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synlog/state_test_global_prep.srr
+r
+up
+up
+down
+r
+y
+jum 6796
+up
+p a 
+set args -tsl LagLDope -mp 4 -prjfile /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/mig[23/188]ts/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/scratchproject.prs -implementation rtl_encode_seq_vm -prodtype synplify_premier_dp -encrypt -pro -rundir /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm -part XC7VX485TFFG1157-1 -enable_prepacking -use_vivado -overilog state_test.vm -maxfan 10000 -m1 -pipe -verification_mode 0 -fixgatedclocks 1 -fixgeneratedclocks 1 -banetdly 1 -amptest 0 -summaryfile /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synlog/report/state_test_global_prep.xml -RWCheckOnRam 1 -fast_synthesis 0 -reporting_ctd 0 -preserve_slash_names -optimize_ngc -formal_partition 0 -dc_root /global/apps2/syn_2016.03-SP1 -licensetype synplifypremierdp -ovm /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/state_test.vm -msp 2 -conchk_prepass /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/state_test_cck.rpt -freq 1.000 /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_od_c.srs -flow prepass -gcc_prepass -qsap /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/state_test.sap -devicelib /slowfs/sbg_builds9/tarunk/code/map610dev_lin6/fpga201609/lib/xilinx/unisim_retarget.v -devicelib /slowfs/sbg_builds9/tarunk/code/map610dev_lin6/fpga201609/lib/xilinx/unisim_vivado.v -ologparam /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/syntmp/state_test.plg -osyn /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob.srs -prjdir /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/ -prjname state_test -log /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synlog/state_test_global_prep.srr
+r
+y
+jum 6796
+n
+n
+n
+n
+p batch_iteration
+n
+r
+y
+jum 6796
+c
+p batch_iteration
+n
+s
+n
+s
+n
+set args -prjfile /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/scratchproject.prs -implementation rtl_encode_seq_vm -prodtype synplify_premier_dp -encrypt -pro -part XC7VX485TFFG1157-1 -enable_prepacking -use_vivado -maxfan 10000 -m1 -pipe -verification_mode 0 -fixgatedclocks 1 -fixgeneratedclocks 1 -banetdly 1 -amptest 0 -RWCheckOnRam 1 -fast_synthesis 0 -reporting_ctd 0 -preserve_slash_names -optimize_ngc -formal_partition 0 -licensetype synplifypremierdp_ipro -ovm /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/state_test.vm -freq 1.000 /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob.srs -flow prepass -gcc_prepass -devicelib /slowfs/sbg_builds9/tarunk/code/map610dev_lin6/fpga201609/lib/xilinx/unisim_retarget.v -devicelib /slowfs/sbg_builds9/tarunk/code/map610dev_lin6/fpga201609/lib/xilinx/unisim_vivado.v -osyn /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob.srs -prjdir /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/ -prjname state_test -imspcdbpath /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob_srs/cdb.srs -qsap /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob.sap -msp 100 -log /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob.srr  -rundir /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob
+show args
+b NFlowMain
+r
+y
+n
+jum 6796
+n
+s
+n
+c
+up
+p i
+pnn ip
+up
+down
+p PIP(ip)
+kill
+y
+r
+c
+jum 6796
+c
+up
+set args -tsl LagLDope -mp 4 -prjfile /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/mig[23/188]ts/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/scratchproject.prs -implementation rtl_encode_seq_vm -prodtype synplify_premier_dp -encrypt -pro -rundir /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm -part XC7VX485TFFG1157-1 -enable_prepacking -use_vivado -overilog state_test.vm -maxfan 10000 -m1 -pipe -verification_mode 0 -fixgatedclocks 1 -fixgeneratedclocks 1 -banetdly 1 -amptest 0 -summaryfile /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synlog/report/state_test_global_prep.xml -RWCheckOnRam 1 -fast_synthesis 0 -reporting_ctd 0 -preserve_slash_names -optimize_ngc -formal_partition 0 -dc_root /global/apps2/syn_2016.03-SP1 -licensetype synplifypremierdp -ovm /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/state_test.vm -msp 2 -conchk_prepass /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/state_test_cck.rpt -freq 1.000 /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_od_c.srs -flow prepass -gcc_prepass -qsap /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/state_test.sap -devicelib /slowfs/sbg_builds9/tarunk/code/map610dev_lin6/fpga201609/lib/xilinx/unisim_retarget.v -devicelib /slowfs/sbg_builds9/tarunk/code/map610dev_lin6/fpga201609/lib/xilinx/unisim_vivado.v -ologparam /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/syntmp/state_test.plg -osyn /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob.srs -prjdir /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/ -prjname state_test -log /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synlog/state_test_global_prep.srr
+r
+y
+c
+jum 6796
+c
+c
+p batch_iteration
+c
+c
+r
+c
+jum 6796
+c
+c
+set args -tsl LagLDope -mp 4 -prjfile /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/mig[23/188]ts/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/scratchproject.prs -implementation rtl_encode_seq_vm -prodtype synplify_premier_dp -encrypt -pro -rundir /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm -part XC7VX485TFFG1157-1 -enable_prepacking -use_vivado -overilog state_test.vm -maxfan 10000 -m1 -pipe -verification_mode 0 -fixgatedclocks 1 -fixgeneratedclocks 1 -banetdly 1 -amptest 0 -summaryfile /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synlog/report/state_test_global_prep.xml -RWCheckOnRam 1 -fast_synthesis 0 -reporting_ctd 0 -preserve_slash_names -optimize_ngc -formal_partition 0 -dc_root /global/apps2/syn_2016.03-SP1 -licensetype synplifypremierdp -ovm /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/state_test.vm -msp 2 -conchk_prepass /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/state_test_cck.rpt -freq 1.000 /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_od_c.srs -flow prepass -gcc_prepass -qsap /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/state_test.sap -devicelib /slowfs/sbg_builds9/tarunk/code/map610dev_lin6/fpga201609/lib/xilinx/unisim_retarget.v -devicelib /slowfs/sbg_builds9/tarunk/code/map610dev_lin6/fpga201609/lib/xilinx/unisim_vivado.v -ologparam /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/syntmp/state_test.plg -osyn /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synwork/state_test_glob.srs -prjdir /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/ -prjname state_test -log /slowfs/sbg_builds9/tarunk/regr/synreg_res/28077/feature_flow/xilinx/virtex7/migrate_tests/scenario18/merging_similar_state_machines/rtl_encode_seq_vm/synlog/state_test_global_prep.srr
+r
+y
+c
+jum 6796
+c
+c
+up
+down
+kill
+y
+r
+show args
+c
+jum 6796
+c
+c
+up
+kill
+y
+r
+c
+jum 6796
+c
+c
+c
+c
+p4 sync
+kill
+quit
+quit
+pwd
+quit
+set args  -prodtype  synplify_premier_dp  -encrypt  -pro  -rundir  /slowfs/sbg_builds9/tarunk/tests/braviti/HPM/9001032212/rev_1   -part XC7VX485TFFG1157-1    -enable_prepacking -use_vivado -overilog "top.vm" -advanced_synthesis -maxfan 10000 -m1 -pipe -verification_mode 0 -fixgatedclocks 1 -fixgeneratedclocks 1 -banetdly 1 -amptest 0 -summaryfile /slowfs/sbg_builds9/tarunk/tests/braviti/HPM/9001032212/rev_1/synlog/report/top_fpga_mapper.xml -RWCheckOnRam 1 -fast_synthesis 0 -reporting_ctd 0 -preserve_slash_names -optimize_ngc  -top_level_module  top  -formal_partition  0  -licensetype  synplifypremierdp_ipro  -flow mapping  -mp  4  -prjfile  /slowfs/sbg_builds9/tarunk/tests/braviti/HPM/9001032212/rev_1/scratchproject.prs  -implementation  rev_1  -multisrs  -oedif  /slowfs/sbg_builds9/tarunk/tests/braviti/HPM/9001032212/rev_1/top.edf   -autoconstraint  -freq 1.000   -tcl  /slowfs/sbg_builds9/tarunk/tests/braviti/HPM/9001032212/rev_1/linkcons.tcl  -tcl  /slowfs/sbg_builds9/tarunk/tests/braviti/HPM/9001032212/rev_1/syntmp/cmp_modules.tcl  -tcl  /slowfs/sbg_builds9/tarunk/tests/braviti/HPM/9001032212/top.fdc  /slowfs/sbg_builds9/tarunk/tests/braviti/HPM/9001032212/rev_1/synwork/top_prem.srd  -sap  /slowfs/sbg_builds9/tarunk/tests/braviti/HPM/9001032212/rev_1/top.sap  -otap  /slowfs/sbg_builds9/tarunk/tests/braviti/HPM/9001032212/rev_1/top.tap  -omap  /slowfs/sbg_builds9/tarunk/tests/braviti/HPM/9001032212/rev_1/top.map  -devicelib  /remote/sbg_builds1/tarunk/builds/syn201603_05_3/lib/xilinx/unisim_retarget.v  -devicelib  /remote/sbg_builds1/tarunk/builds/syn201603_05_3/lib/xilinx/unisim_vivado.v  -sap  /slowfs/sbg_builds9/tarunk/tests/braviti/HPM/9001032212/rev_1/top.sap  -ologparam  /slowfs/sbg_builds9/tarunk/tests/braviti/HPM/9001032212/rev_1/syntmp/top.plg  -osyn  /slowfs/sbg_builds9/tarunk/tests/braviti/HPM/9001032212/rev_1/top.srm  -prjdir  /slowfs/sbg_builds9/tarunk/tests/braviti/HPM/9001032212/  -prjname  top  -log  /slowfs/sbg_builds9/tarunk/tests/braviti/HPM/9001032212/rev_1/synlog/top_fpga_mapper.srr
+bexit
+b nmapflow.c:1515
+r
+s
+n
+s
+n
+s
+s
+n
+s
+n
+pnn ip
+n
+n
+pnn ip
+c
+pnn ip
+c
+pnn ip
+c
+pnn ip
+c
+pnn ip
+c
+pnn ip
+c
+pnn ip
+c
+pnn ip
+c
+pnn ip
+c
+pnn ip
+c
+pnn ip
+c
+pnn ip
+c
+pnn ip
+c
+pnn ip
+c
+pnn ip
+c
+pnn ip
+s
+s
+n
+quit
+set args  -prodtype  synplify_premier_dp  -encrypt  -pro  -rundir  /slowfs/sbg_builds9/tarunk/tests/tmp/AlcatelEnh/virtex_ultrascale/pe_logic_synthesis   -part XCVU440-FLGB2377-3-e    -enable_prepacking -use_vivado -overilog "AlcatelEnhV4.vm" -maxfan 10000 -m1 -pipe -verification_mode 0 -fixgatedclocks 1 -fixgeneratedclocks 1 -banetdly 1 -amptest 0 -summaryfile /slowfs/sbg_builds9/tarunk/tests/tmp/AlcatelEnh/virtex_ultrascale/pe_logic_synthesis/synlog/report/AlcatelEnhV4_fpga_mapper.xml -RWCheckOnRam 1 -fast_synthesis 0 -reporting_ctd 0 -preserve_slash_names -optimize_ngc  -top_level_module  enh  -formal_partition  0  -dc_root  /global/apps2/syn_2016.03-SP1  -licensetype  synplifypremierdp  -flow mapping  -mp  4  -prjfile  /slowfs/sbg_builds9/tarunk/tests/tmp/AlcatelEnh/virtex_ultrascale/pe_logic_synthesis/scratchproject.prs  -implementation  pe_logic_synthesis  -multisrs  -oedif  /slowfs/sbg_builds9/tarunk/tests/tmp/AlcatelEnh/virtex_ultrascale/pe_logic_synthesis/AlcatelEnhV4.edf   -freq 1.000   -tcl  /slowfs/sbg_builds9/tarunk/tests/tmp/AlcatelEnh/virtex_ultrascale/virtex_ultrascale.fdc  -tcl  /slowfs/sbg_builds9/tarunk/tests/tmp/AlcatelEnh/virtex_ultrascale/virtex_ultrascale_io.fdc  /slowfs/sbg_builds9/tarunk/tests/tmp/AlcatelEnh/virtex_ultrascale/pe_logic_synthesis/synwork/AlcatelEnhV4_prem.srd  -sap  /slowfs/sbg_builds9/tarunk/tests/tmp/AlcatelEnh/virtex_ultrascale/pe_logic_synthesis/AlcatelEnhV4.sap  -otap  /slowfs/sbg_builds9/tarunk/tests/tmp/AlcatelEnh/virtex_ultrascale/pe_logic_synthesis/AlcatelEnhV4.tap  -omap  /slowfs/sbg_builds9/tarunk/tests/tmp/AlcatelEnh/virtex_ultrascale/pe_logic_synthesis/AlcatelEnhV4.map  -devicelib  /remote/sbg_rel/unix/syn201609_249R/lib/xilinx/unisim_retarget.v  -devicelib  /remote/sbg_rel/unix/syn201609_249R/lib/xilinx/unisim_vivado.v  -sap  /slowfs/sbg_builds9/tarunk/tests/tmp/AlcatelEnh/virtex_ultrascale/pe_logic_synthesis/AlcatelEnhV4.sap  -ologparam  /slowfs/sbg_builds9/tarunk/tests/tmp/AlcatelEnh/virtex_ultrascale/pe_logic_synthesis/syntmp/AlcatelEnhV4.plg  -osyn  /slowfs/sbg_builds9/tarunk/tests/tmp/AlcatelEnh/virtex_ultrascale/pe_logic_synthesis/AlcatelEnhV4.srm  -prjdir  /slowfs/sbg_builds9/tarunk/tests/tmp/AlcatelEnh/virtex_ultrascale/  -prjname  virtex_ultrascale  -log  /slowfs/sbg_builds9/tarunk/tests/tmp/AlcatelEnh/virtex_ultrascale/pe_logic_synthesis/synlog/AlcatelEnhV4_fpga_mapper.srr
+bexit
+b xcmaputil.c:1886
+r
+ p (ctl->count)
+n
+p fc
+drv->np
+p drv->np
+pnn drv->np
+ppn ctl->clr
+pnn ctl->clr
+pnn fc.reset
+kill
+y
+r
+n
+u 1919
+n
+c
+c
+cd /slowfs/sbg_builds9/tarunk/tests/tmp/AlcatelEnh/virtex7/pe_logic_synthesis
+set args  -prodtype  synplify_premier_dp  -encrypt  -pro  -rundir  /slowfs/sbg_builds9/tarunk/tests/tmp/AlcatelEnh/virtex7/pe_logic_synthesis   -part XC7V2000TFLG1925-1    -enable_prepacking -use_vivado -overilog "AlcatelEnhV4.vm" -maxfan 10000 -m1 -pipe -verification_mode 0 -fixgatedclocks 1 -fixgeneratedclocks 1 -banetdly 1 -amptest 0 -summaryfile /slowfs/sbg_builds9/tarunk/tests/tmp/AlcatelEnh/virtex7/pe_logic_synthesis/synlog/report/AlcatelEnhV4_fpga_mapper.xml -RWCheckOnRam 1 -fast_synthesis 0 -reporting_ctd 0 -preserve_slash_names -optimize_ngc  -top_level_module  enh  -formal_partition  0  -dc_root  /global/apps2/syn_2016.03-SP1  -licensetype  synplifypremierdp  -flow mapping  -mp  4  -prjfile  /slowfs/sbg_builds9/tarunk/tests/tmp/AlcatelEnh/virtex7/pe_logic_synthesis/scratchproject.prs  -implementation  pe_logic_synthesis  -multisrs  -oedif  /slowfs/sbg_builds9/tarunk/tests/tmp/AlcatelEnh/virtex7/pe_logic_synthesis/AlcatelEnhV4.edf   -freq 1.000   -tcl  /slowfs/sbg_builds9/tarunk/tests/tmp/AlcatelEnh/virtex7/virtex7.fdc  -tcl  /slowfs/sbg_builds9/tarunk/tests/tmp/AlcatelEnh/virtex7/virtex7_io.fdc  /slowfs/sbg_builds9/tarunk/tests/tmp/AlcatelEnh/virtex7/pe_logic_synthesis/synwork/AlcatelEnhV4_prem.srd  -sap  /slowfs/sbg_builds9/tarunk/tests/tmp/AlcatelEnh/virtex7/pe_logic_synthesis/AlcatelEnhV4.sap  -otap  /slowfs/sbg_builds9/tarunk/tests/tmp/AlcatelEnh/virtex7/pe_logic_synthesis/AlcatelEnhV4.tap  -omap  /slowfs/sbg_builds9/tarunk/tests/tmp/AlcatelEnh/virtex7/pe_logic_synthesis/AlcatelEnhV4.map  -devicelib  /remote/sbg_rel/unix/syn201609_249R/lib/xilinx/unisim_retarget.v  -devicelib  /remote/sbg_rel/unix/syn201609_249R/lib/xilinx/unisim_vivado.v  -sap  /slowfs/sbg_builds9/tarunk/tests/tmp/AlcatelEnh/virtex7/pe_logic_synthesis/AlcatelEnhV4.sap  -ologparam  /slowfs/sbg_builds9/tarunk/tests/tmp/AlcatelEnh/virtex7/pe_logic_synthesis/syntmp/AlcatelEnhV4.plg  -osyn  /slowfs/sbg_builds9/tarunk/tests/tmp/AlcatelEnh/virtex7/pe_logic_synthesis/AlcatelEnhV4.srm  -prjdir  /slowfs/sbg_builds9/tarunk/tests/tmp/AlcatelEnh/virtex7/  -prjname  virtex7  -log  /slowfs/sbg_builds9/tarunk/tests/tmp/AlcatelEnh/virtex7/pe_logic_synthesis/synlog/AlcatelEnhV4_fpga_mapper.srr
+r
+n
+p use_virtual_bufg_count
+n
+u 1919
+n
+p knt_c
+p knt_p
+p knt_e
+p knt_isSync 
+p kount_nonff 
+n
+fin
+p cnt
+n
+n
+p eff_lut
+iw9
+w9
+up
+up
+down
+down
+down
+kill
+y
+info file
+quit
+b netlist_iterator_test.cpp:206
+r
+pwd
+b 205
+jum 205
+y
+s
+fins
+p dumpfile
+n
+r
+y
+quit
+y
+b 205
+n
+b netlist_iterator_test.cpp:205
+r
+pwd
+s
+fins
+p dumpfile
+up
+pwd
+fin
+n
+kill
+y
+r
+n
+i b
+i b
+b netlist_iterator_test.cpp:251
+del 1
+r
+y
+ud
+n
+fin
+fin
+r
+y
+del 2
+b netlist_iterator_test.cpp:245
+r
+y
+bexit
+r
+up
+ud
+kill
+y
+r
+y
+n
+kill
+y
+r
+n
+kill
+y
+r
+y
+n
+n
+kill
+y
+r
+b UnitTestRecordNetlistTraversal
+c
+n
+p vName
+n
+p it->second
+n
+c
+n
+kill
+y
+r
+ud
+n
+p vName
+n
+c
+n
+p vName
+c
+n
+fin
+fin
+fin
+fin
+fin
+fin
+fin
+fin
+fin
+fin
+fin
+fin
+fin
+n
+kill
+y
+r
+n
+fin
+n
+p num
+n
+p it->second
+n
+p it->second
+n
+p it->second
+n
+n
+p it->second
+n
+n
+p it->second
+r
+y
+dis 5
+fin
+n
+p it->second
+p *vName
+pwd
+b netlist_iterator_test.cpp:209
+r
+y
+i b
+en 5
+r
+dis 5
+c
+p num
+kill
+y
+i b
+b netlist_iterator_test.cpp:282
+y
+r
+r
+y
+del 8
+r
+y
+del 9
+n
+b netlist_iterator_test.cpp:2812
+n
+b netlist_iterator_test.cpp:281
+c
+kill
+y
+r
+n
+p num1
+p num2
+n
+c
+fin
+c
+b NRbpUniqIdFixture
+n
+n
+b netlist_test.cpp:60
+r
+y
+c
+c
+kill
+y
+r
+b 330
+c
+del 10
+c
+del 6
+c
+i b
+r
+y
+kill
+y
+r
+ud
+p "x" "y"
+p p
+p
+p main
+set $y = "Twoone"
+p $x
+set $y = "Two"
+p $y
+p "$x$y
+p "$x$y"
+set $x = "ma" "in"
+x = "ma" "in"
+x  "ma" "in"
+b  "ma" "in"
+n
+x
+b x
+n
+zzz
+i
+nnn
+zzz "ma" "in"
+"ma" "in"
+p "ma" "in"
+p $33
+b $33
+p $33
+p main
+python print "hii
+python print "hi"
+y = main
+set $y = main
+p $y
+b $y
+p main
+p NFlowHierApply
+p NFlowHierApply
+python gdb.execute("set $y=\"" + os.uname()[4] + "\"")
+python gdb.execute("set $y=\"" + "osStr" + "\"")
+p $y
+python gdb.execute("set $y="osStr")
+python gdb.execute("set $y= "osStr")
+python gdb.execute("set $y= osStr")
+python gdb.execute("set $y=\"" + "osStr" + "\"")
+python gdb.execute("set $y=\"" + "osStr" + "\"")
+eval break $y
+help break
+set $x haha
+set $x = haha
+set $x = "haha"
+set $x  "haha"
+set $~X="haha"
+set $x="haha"
+print $X "jaja"
+output $X
+output $X "jaja"
+p "aa" "bb"
+output "aa" "bb"
+output
+define btest
+    output $arg0
+    output "_"
+    output $arg1
+    output "_Test::TestBody\n"
+end
+btest "1" "2
+btest "1" "2"
+p 1
+p "1" "_" "2" "_Test::TestBodY"
+echo "1" "_" "2" "_Test::TestBodY"
+p
+output "1" "_" "2" "_Test::TestBodY"
+p __func__
+p __FUNCTION__
+p __PRETTY_FUNCTION__
+p __GNUC__
+p __GNUG__
+output "1" "_" "2" "_Test::TestBodY"
+output "1" "_" "2" "_Test::TestBodY\n"
+output "1" "_" "2" "_Test::TestBodY"
+p
+print "1" "_" "2" "_Test::TestBodY"
+define btest
+    print $arg0 "_" $arg1 "_Test::TestBody"
+end
+y
+print $arg0 "_" $arg1 "_Test::TestBody"
+end
+btest "a" "b"
+ud
+btest "NetlistTraversalFixture" "NFlowHierLast"
+del 13
+btest NetlistTraversalFixture NFlowHierLast
+p NetlistTraversalFixture
+echo NetlistTraversalFixture
+echo NetlistTraversalFixture nflowVisitRepeatedViews
+show conv
+btest "NetlistTraversalFixture" "NFlowHierLast"
+printf NetlistTraversalFixture
+define btest
+y
+print " " $arg0 "_" $arg1 "_Test::TestBody "
+end
+y
+p NetlistTraversalFixture
+y
+p NetlistTraversalFixture
+ptype NetlistTraversalFixture
+ptype "NetlistTraversalFixture"
+eval "set $MyVar = \"Hello %d\"", 7
+p $MyVar
+btest "NetlistTraversalFixture" "NFlowHierLast"
+define btest
+y
+print " " $arg0 "_" $arg1 "_Test::TestBody "
+ eval  "break " $arg0 "_" $arg1 "_Test::TestBody "
+end
+btest "NetlistTraversalFixture" "NFlowHierLast"
+eval  "break " $arg0 "_" $arg1 "_Test::TestBody "
+eval "break " "NetlistTraversalFixture" "_" "NFlowHierLast" "_Test::TestBody "
+python gdb.execute( "break " +"NetlistTraversalFixture" + "_" + "NFlowHierLast" + "_Test::TestBody")
+define btest
+y
+python gdb.execute( "break " + $arg0 + "_" + $arg1 + "_Test::TestBody ")
+end
+btest "NetlistTraversalFixture" "NFlowHierLast"
+btest "NetlistTraversalFixture" "NFlowHierLast"
+del 14 15 16
+kill
+y
+r
+y
+dis 12
+btest "NetlistTraversalFixture" "NFlowHierLast"
+c
+r
+y
+kill
+y
+i b
+del 11
+kill
+r
+r
+y
+p num1
+kill
+y
+r
+n
+c
+c
+c
+r
+cc
+c
+kill
+y
+r
+c
+kill
+y
+r
+kill
+y
+r
+btest "NetlistTraversalFixture" "NFlowHierLast"
+del 18
+c
+r
+n
+kill
+y
+r
+del 17
+r
+y
+btest "NetlistTraversalFixture" "NFlowHierLast"
+c
+b NFlowHierGetVisitFlag
+b NFlowHierSetVisitFlag4Index
+kill
+y
+r
+c
+p nFlowVisitIndex
+p index
+p flowFlag
+n
+p pos
+kill
+y
+r
+c
+p index
+n
+p mask
+p mask & 15
+p vp->flowFlags
+n
+p vp->flowFlags
+n
+p flowFlag
+n
+c
+dis 22
+c
+n
+p flag
+c
+n
+p flag
+c
+dis 25
+c
+r
+y
+r
+y
+s
+fins
+s
+n
+s
+n
+s
+n
+p vp->flowFlags
+p/x vp->flowFlags
+n
+p/x flag
+ud
+n
+p flag
+b NFlowHierSetVisitFlag4Index
+r
+y
+c
+c
+fin
+n
+fin
+c
+p (*sn)->owner
+p (*sn)->owner->flowFlags
+p/x (*sn)->owner->flowFlags
+kill
+y
+r
+dis 27
+c
+dis
+c
+i b
+del 5
+del 3
+btest "NetlistTraversalFixture" "NFlowHierLast"
+r
+y
+kill
+y
+r
+yc
+c
+c
+r
+c
+r
+kill
+y
+r
+kill
+y
+r
+kill
+y
+r
+kill
+y
+r
+kill
+y
+r
+kill
+y
+r
+kill
+y
+r
+kill
+y
+r
+b nlsim.c:4196
+n
+quit
+y
+set args  -prodtype  synplify_premier_dp  -encrypt  -pro  -rundir  /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/v5   -part XC5VLX20TFF323-1    -en
+able_prepacking -maxfan 10000 -m1 -pipe -verification_mode 0 -fixgatedclocks 1 -fixgeneratedclocks 1 -banetdly 1 -amptest 0 -overilog "synReset.vm" -summaryfile /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/
+async_blk_virtex/v5/synlog/report/synReset_fpga_mapper.xml -RWCheckOnRam 1 -fast_synthesis 0 -advanced_synthesis -reporting_ctd 0 -preserve_slash_names -optimize_ngc  -formal_partition  0  -licensetype
+synplifypremierdp_ipro  -flow mapping  -mp  4  -prjfile  /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/v5/scratchproject.prs  -implementation  v5  -multisrs  -oedif  /slowfs/sbg_builds9/taru
+nk/tests/tmp/ram2/async_blk_virtex/v5/synReset.edf   -freq 1.000   -tcl  /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/synReset.sdc  /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virte
+x/v5/synwork/synReset_prem.srd  -sap  /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/v5/synReset.sap  -otap  /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/v5/synReset.tap  -omap
+ /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/v5/synReset.map  -devicelib  /remote/sbg_rel/unix/latest_fpga201703/lib/xilinx/unisim_m10i.v  -devicelib  /remote/sbg_rel/unix/latest_fpga20170
+3/lib/xilinx/unisim.v  -sap  /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/v5/synReset.sap  -ologparam  /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/v5/syntmp/synReset.plg  -os
+yn  /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/v5/synReset.srm  -prjdir  /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/  -prjname  synReset  -log  /slowfs/sbg_builds9/tarunk/
+quit
+set atgs   -prodtype  synplify_premier_dp  -encrypt  -pro  -rundir  /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/v5   -part XC5VLX20TFF323-1    -enable_prepacking -maxfan 10000 -m1 -pipe -verification_mode 0 -fixgatedclocks 1 -fixgeneratedclocks 1 -banetdly 1 -amptest 0 -overilog "synReset.vm" -summaryfile /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/v5/synlog/report/synReset_fpga_mapper.xml -RWCheckOnRam 1 -fast_synthesis 0 -advanced_synthesis -reporting_ctd 0 -preserve_slash_names -optimize_ngc  -formal_partition  0  -licensetype  synplifypremierdp_ipro  -flow mapping  -mp  4  -prjfile  /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/v5/scratchproject.prs  -implementation  v5  -multisrs  -oedif  /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/v5/synReset.edf   -freq 1.000   -tcl  /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/synReset.sdc  /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/v5/synwork/synReset_prem.srd  -sap  /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/v5/synReset.sap  -otap  /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/v5/synReset.tap  -omap  /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/v5/synReset.map  -devicelib  /remote/sbg_rel/unix/latest_fpga201703/lib/xilinx/unisim_m10i.v  -devicelib  /remote/sbg_rel/unix/latest_fpga201703/lib/xilinx/unisim.v  -sap  /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/v5/synReset.sap  -ologparam  /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/v5/syntmp/synReset.plg  -osyn  /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/v5/synReset.srm  -prjdir  /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/  -prjname  synReset  -log  /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/v5/synlog/synReset_fpga_mapper.srr  -jobname  "fpga_mapper"
+set args   -prodtype  synplify_premier_dp  -encrypt  -pro  -rundir  /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/v5   -part XC5VLX20TFF323-1    -enable_prepacking -maxfan 10000 -m1 -pipe -verification_mode 0 -fixgatedclocks 1 -fixgeneratedclocks 1 -banetdly 1 -amptest 0 -overilog "synReset.vm" -summaryfile /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/v5/synlog/report/synReset_fpga_mapper.xml -RWCheckOnRam 1 -fast_synthesis 0 -advanced_synthesis -reporting_ctd 0 -preserve_slash_names -optimize_ngc  -formal_partition  0  -licensetype  synplifypremierdp_ipro  -flow mapping  -mp  4  -prjfile  /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/v5/scratchproject.prs  -implementation  v5  -multisrs  -oedif  /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/v5/synReset.edf   -freq 1.000   -tcl  /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/synReset.sdc  /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/v5/synwork/synReset_prem.srd  -sap  /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/v5/synReset.sap  -otap  /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/v5/synReset.tap  -omap  /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/v5/synReset.map  -devicelib  /remote/sbg_rel/unix/latest_fpga201703/lib/xilinx/unisim_m10i.v  -devicelib  /remote/sbg_rel/unix/latest_fpga201703/lib/xilinx/unisim.v  -sap  /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/v5/synReset.sap  -ologparam  /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/v5/syntmp/synReset.plg  -osyn  /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/v5/synReset.srm  -prjdir  /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/  -prjname  synReset  -log  /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/v5/synlog/synReset_fpga_mapper.srr  -jobname  "fpga_mapper"
+bexit
+b nlsim.c:3696
+r
+p debug=10
+n
+r
+y
+c
+r
+y
+dis 3 4
+c
+r
+y
+c
+en 2 3
+r
+up
+up
+down
+down
+c
+c
+i b
+kill
+y
+quit
+set args   -prodtype  synplify_premier_dp  -encrypt  -pro  -rundir  /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/v5   -part XC5VLX20TFF323-1    -enable_prepacking -maxfan 10000 -m1 -pipe -verification_mode 0 -fixgatedclocks 1 -fixgeneratedclocks 1 -banetdly 1 -amptest 0 -overilog "synReset.vm" -summaryfile /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/v5/synlog/report/synReset_fpga_mapper.xml -RWCheckOnRam 1 -fast_synthesis 0 -advanced_synthesis -reporting_ctd 0 -preserve_slash_names -optimize_ngc  -formal_partition  0  -licensetype  synplifypremierdp_ipro  -flow mapping  -mp  4  -prjfile  /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/v5/scratchproject.prs  -implementation  v5  -multisrs  -oedif  /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/v5/synReset.edf   -freq 1.000   -tcl  /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/synReset.sdc  /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/v5/synwork/synReset_prem.srd  -sap  /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/v5/synReset.sap  -otap  /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/v5/synReset.tap  -omap  /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/v5/synReset.map  -devicelib  /remote/sbg_rel/unix/latest_fpga201703/lib/xilinx/unisim_m10i.v  -devicelib  /remote/sbg_rel/unix/latest_fpga201703/lib/xilinx/unisim.v  -sap  /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/v5/synReset.sap  -ologparam  /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/v5/syntmp/synReset.plg  -osyn  /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/v5/synReset.srm  -prjdir  /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/  -prjname  synReset  -log  /slowfs/sbg_builds9/tarunk/tests/tmp/ram2/async_blk_virtex/v5/synlog/synReset_fpga_mapper.srr  -jobname  "fpga_mapper"
+bexit
+b nlsim.c:3635
+r
+up
+up
+up
+kill
+y
+r
+c
+r
+y
+c
+b *NSimInitRAM2
+r
+y
+b NSimEvalRAM2
+c
+c
+c
+dis 5
+c
+n
+p debug=10
+n
+nwrites nl "aaasim.srm"
+pwd
+r
+y
+up
+up
+up
+up
+up
+r
+y
+p ip->ports[n_pininfo[7].pos].np
+pnn ip->ports[n_pininfo[7].pos].np
+p ip->ports[n_pininfo[6].pos].np
+pnn ip->ports[n_pininfo[6].pos].np
+pnn zero
+p NMoveConn(&ip->ports[n_pininfo[7].pos], zero)
+pnn ip->ports[n_pininfo[7].pos].np
+pnn ip->ports[n_pininfo[6].pos].np
+c
+c
+p debug=10
+n
+nwrites nl "aaasim.srm"
+kill
+y
+r
+c
+c
+c
+p debug=10
+n
+nwrites nl "aaasim.srm"
+n
+kill
+y
+r
+p NMoveConn(&ip->ports[n_pininfo[7].pos], zero)
+c
+c
+p debug=10
+n
+nwrites nl "aaasim.srm"
+kill
+y
+pwd
+i b
+b NSimInitRAM1
+b NSimEvalRAM1
+r
+c
+pnn up
+pnn ip
+up
+up
+up
+up
+down
+down
+down
+down
+n
+n
+c
+n
+c
+n
+c
+dsi 10
+dis 10
+c
+c
+c
+r
+n
+pnn ip
+c
+pnn ip
+up
+pnn ip
+down
+n
+pnn ip
+p PIP(ip)
+c
+pwd
+c
+pwd
+quit
+bexit
+r
+up
+up
+up
+kill
+y
+r
+up
+up
+up
+down
+p filename
+p prompt
+p strerror
+p strerror(errno)
+r
+y
+return
+y
+y
+return
+y
+return
+y
+return
+y
+return
+y
+return
+y
+quit
+y
+bexit
+r
+up
+quit
+y
+set args  -prodtype  synplify_pro  -encrypt  -pro  -rundir  /remote/sbg_qaresults/regression/33402/feature_flow/xilinx/Asymmetric_BlockRAM/vhdl/wideRD_narrowWR_scenario6_singleclk_singleprocess_wf   -part XC7VX485TFFG1157-1    -enable_prepacking -use_vivado -overilog "test.vm" -upf_iso_filter_elements_with_applies_to Enable -maxfan 10000 -m1 -pipe -verification_mode 0 -fixgatedclocks 1 -fixgeneratedclocks 1 -summaryfile /remote/sbg_qaresults/regression/33402/feature_flow/xilinx/Asymmetric_BlockRAM/vhdl/wideRD_narrowWR_scenario6_singleclk_singleprocess_wf/synlog/report/test_fpga_mapper.xml -RWCheckOnRam 1 -reporting_ctd 0 -preserve_slash_names  -formal_partition  0  -dc_root  /global/apps2/syn_2016.03-SP1  -licensetype  synplifypro  -flow mapping  -mp  4  -prjfile  /remote/sbg_qaresults/regression/33402/feature_flow/xilinx/Asymmetric_BlockRAM/vhdl/wideRD_narrowWR_scenario6_singleclk_singleprocess_wf/scratchproject.prs  -implementation  wideRD_narrowWR_scenario6_singleclk_singleprocess_wf  -multisrs  -oedif  /remote/sbg_qaresults/regression/33402/feature_flow/xilinx/Asymmetric_BlockRAM/vhdl/wideRD_narrowWR_scenario6_singleclk_singleprocess_wf/test.edf   -freq 1.000   /remote/sbg_qaresults/regression/33402/feature_flow/xilinx/Asymmetric_BlockRAM/vhdl/wideRD_narrowWR_scenario6_singleclk_singleprocess_wf/synwork/test_prem.srd  -sap  /remote/sbg_qaresults/regression/33402/feature_flow/xilinx/Asymmetric_BlockRAM/vhdl/wideRD_narrowWR_scenario6_singleclk_singleprocess_wf/test.sap  -otap  /remote/sbg_qaresults/regression/33402/feature_flow/xilinx/Asymmetric_BlockRAM/vhdl/wideRD_narrowWR_scenario6_singleclk_singleprocess_wf/test.tap  -omap  /remote/sbg_qaresults/regression/33402/feature_flow/xilinx/Asymmetric_BlockRAM/vhdl/wideRD_narrowWR_scenario6_singleclk_singleprocess_wf/test.map  -devicelib  /slowfs/sbg_builds9/tarunk/code/map610dev_lin6/fpga201703_excp/lib/xilinx/unisim_retarget.v  -devicelib  /slowfs/sbg_builds9/tarunk/code/map610dev_lin6/fpga201703_excp/lib/xilinx/unisim_vivado.v  -sap  /remote/sbg_qaresults/regression/33402/feature_flow/xilinx/Asymmetric_BlockRAM/vhdl/wideRD_narrowWR_scenario6_singleclk_singleprocess_wf/test.sap  -ologparam  /remote/sbg_qaresults/regression/33402/feature_flow/xilinx/Asymmetric_BlockRAM/vhdl/wideRD_narrowWR_scenario6_singleclk_singleprocess_wf/syntmp/test.plg  -osyn  /remote/sbg_qaresults/regression/33402/feature_flow/xilinx/Asymmetric_BlockRAM/vhdl/wideRD_narrowWR_scenario6_singleclk_singleprocess_wf/test.srm  -prjdir  /remote/sbg_qaresults/regression/33402/feature_flow/xilinx/Asymmetric_BlockRAM/vhdl/wideRD_narrowWR_scenario6_singleclk_singleprocess_wf/  -prjname  test  -log  /remote/sbg_qaresults/regression/33402/feature_flow/xilinx/Asymmetric_BlockRAM/vhdl/wideRD_narrowWR_scenario6_singleclk_singleprocess_wf/synlog/test_fpga_mapper.srr  -jobname  "fpga_mapper"
+bexit
+r
+up
+up
+up
+kill
+y
+r
+c
+pwd
+quit
+set args   -prodtype  protocompiler  -encrypt  -pro  -rundir  /slowfs/sbg_builds9/tarunk/tmp/base4_h80_r4_b1200_uni_full/slp_prj/mb1_uB/mb1_uB_hdl/map/m0   -part XCVU440-FLGA2892-1-c    -haps_target HAPS-80 -enable_prepacking -use_vivado -overilog "mb1_uB.vm" -incremental_synthesis 0 -upf_iso_filter_elements_with_applies_to Enable -maxfan 10000 -m1 -pipe -verification_mode 0 -fixgatedclocks 1 -fixgeneratedclocks 1 -banetdly 1 -amptest 0 -split_generated_modules 1 -resolveMultipleDriver -summaryfile /slowfs/sbg_builds9/tarunk/tmp/base4_h80_r4_b1200_uni_full/slp_prj/mb1_uB/mb1_uB_hdl/map/m0/synlog/report/mb1_uB_fpga_mapper.xml -RWCheckOnRam 1 -fast_synthesis 1 -protoware_mode -reporting_ctd 0 -preserve_slash_names -incremental_debug 1 -optimize_ngc -new_timebudgeting 1  -top_level_module  TraceBuildLib.mb1_uB  -formal_partition  0  -dc_root  /global/apps2/syn_2016.03-SP1  -licensetype  ProtoCompilerMP  -flow mapping  -suppress_remap  1  -mp  4  -prjfile  /slowfs/sbg_builds9/tarunk/tmp/base4_h80_r4_b1200_uni_full/slp_prj/mb1_uB/mb1_uB_hdl/map/m0/scratchproject.prs  -implementation  m0  -multisrs  -oedif  /slowfs/sbg_builds9/tarunk/tmp/base4_h80_r4_b1200_uni_full/slp_prj/mb1_uB/mb1_uB_hdl/map/m0/mb1_uB.edf   -freq 1.000   /slowfs/sbg_builds9/tarunk/tmp/base4_h80_r4_b1200_uni_full/slp_prj/mb1_uB/mb1_uB_hdl/map/m0/synwork/mb1_uB_prem.srd  -sap  /slowfs/sbg_builds9/tarunk/tmp/base4_h80_r4_b1200_uni_full/slp_prj/mb1_uB/mb1_uB_hdl/map/m0/mb1_uB.sap  -otap  /slowfs/sbg_builds9/tarunk/tmp/base4_h80_r4_b1200_uni_full/slp_prj/mb1_uB/mb1_uB_hdl/map/m0/mb1_uB.tap  -omap  /slowfs/sbg_builds9/tarunk/tmp/base4_h80_r4_b1200_uni_full/slp_prj/mb1_uB/mb1_uB_hdl/map/m0/mb1_uB.map  -devicelib  /remote/sbg_rel/unix/protocompiler201703_247R/lib/xilinx/unisim_retarget.v  -devicelib  /remote/sbg_rel/unix/protocompiler201703_247R/lib/xilinx/unisim_vivado.v  -sap  /slowfs/sbg_builds9/tarunk/tmp/base4_h80_r4_b1200_uni_full/slp_prj/mb1_uB/mb1_uB_hdl/map/m0/mb1_uB.sap  -ologparam  ""  -osyn  /slowfs/sbg_builds9/tarunk/tmp/base4_h80_r4_b1200_uni_full/slp_prj/mb1_uB/mb1_uB_hdl/map/m0/mb1_uB.srm  -prjdir  /slowfs/sbg_builds9/tarunk/tmp/base4_h80_r4_b1200_uni_full/slp_prj/mb1_uB/mb1_uB_hdl/map/m0/  -prjname  datastate  -dc_naming  -log  /slowfs/sbg_builds9/tarunk/tmp/base4_h80_r4_b1200_uni_full/slp_prj/mb1_uB/mb1_uB_hdl/map/m0/synlog/mb1_uB_fpga_mapper.srr  -jobname  "fpga_mapper"
+bexit
+r
+up
+up
+down
+r
+y
+up
+up
+up
+up
+down
+c
+up
+up
+up
+kill
+y
+bexit
+pwd
+set args   -prodtype protocompiler -encrypt -pro -rundir /slowfs/sbg_builds9/tarunk/tmp/base4_h80_r4_b1200_uni_full/slp_prj/mb1_uB/mb1_uB_hdl/map/m0 -part XCVU440-FLGA2892-1-c -haps_target HAPS-80 -enable_prepacking -use_vivado -overilog mb1_uB.vm -incremental_synthesis 0 -upf_iso_filter_elements_with_applies_to Enable -maxfan 10000 -m1 -pipe -verification_mode 0 -fixgatedclocks 1 -fixgeneratedclocks 1 -banetdly 1 -amptest 0 -split_generated_modules 1 -resolveMultipleDriver -summaryfile /slowfs/sbg_builds9/tarunk/tmp/base4_h80_r4_b1200_uni_full/slp_prj/mb1_uB/mb1_uB_hdl/map/m0/synlog/report/mb1_uB_fpga_mapper.xml -RWCheckOnRam 1 -protoware_mode -reporting_ctd 0 -preserve_slash_names -incremental_debug 1 -optimize_ngc -new_timebudgeting 1 -top_level_module TraceBuildLib.mb1_uB -formal_partition 0 -dc_root /global/apps2/syn_2016.03-SP1  -licensetype "ProtoCompilerMP"  -flow mapping -suppress_remap 1 -prjfile /slowfs/sbg_builds9/tarunk/tmp/base4_h80_r4_b1200_uni_full/slp_prj/mb1_uB/mb1_uB_hdl/map/m0/scratchproject.prs -implementation m0 -multisrs -oedif /slowfs/sbg_builds9/tarunk/tmp/base4_h80_r4_b1200_uni_full/slp_prj/mb1_uB/mb1_uB_hdl/map/m0/mb1_uB.edf -freq 1.000 -inld "/slowfs/sbg_builds9/tarunk/tmp/base4_h80_r4_b1200_uni_full/slp_prj/mb1_uB/mb1_uB_hdl/map/m0/mb1_uB/mb1_uB.srd"  -sap /slowfs/sbg_builds9/tarunk/tmp/base4_h80_r4_b1200_uni_full/slp_prj/mb1_uB/mb1_uB_hdl/map/m0/mb1_uB.sap -otap /slowfs/sbg_builds9/tarunk/tmp/base4_h80_r4_b1200_uni_full/slp_prj/mb1_uB/mb1_uB_hdl/map/m0/mb1_uB.tap -omap /slowfs/sbg_builds9/tarunk/tmp/base4_h80_r4_b1200_uni_full/slp_prj/mb1_uB/mb1_uB_hdl/map/m0/mb1_uB.map -devicelib /remote/sbg_rel/unix/protocompiler201703_247R/lib/xilinx/unisim_retarget.v -devicelib /remote/sbg_rel/unix/protocompiler201703_247R/lib/xilinx/unisim_vivado.v -sap /slowfs/sbg_builds9/tarunk/tmp/base4_h80_r4_b1200_uni_full/slp_prj/mb1_uB/mb1_uB_hdl/map/m0/mb1_uB.sap -ologparam "" -osyn /slowfs/sbg_builds9/tarunk/tmp/base4_h80_r4_b1200_uni_full/slp_prj/mb1_uB/mb1_uB_hdl/map/m0/mb1_uB.srm -prjdir /slowfs/sbg_builds9/tarunk/tmp/base4_h80_r4_b1200_uni_full/slp_prj/mb1_uB/mb1_uB_hdl/map/m0/ -prjname datastate -dc_naming -jobname fpga_mapper -fast_synthesis 1 -log "/slowfs/sbg_builds9/tarunk/tmp/base4_h80_r4_b1200_uni_full/slp_prj/mb1_uB/mb1_uB_hdl/map/m0/mb1_uB/mb1_uB.srr" -mptimestamp 1482178100 -cp "mb1_uB"
+i b
+r
+up
+up
+up
+up
+up
+up
+c
+up
+up
+up
+up
+up
+up
+up
+up
+up
+w20
+c
+up
+up
+up
+up
+up
+down
+up
+down
+p np
+p np->v_value
+kill
+n
+where
+up
+up
+up
+up
+up
+up
+up
+up
+quit
+n
+kill
+y
+i b
+r
+up
+up
+up
+nwrites nl "aaanl.srm"
+nwrites snl "aaasnl.srm"
+up
+up
+p nl
+nwrites nl "aaatop.srm"
+pwd
+down
+down
+p nss->snl
+p nss
+p *nss
+set $snl=0x42f9f868
+set $vi=0x299a0008
+down 8
+down 8
+up
+p port->casdout[i]
+p i
+p total_width
+p port->is_cascaded
+p port->casdout[i]
+p port->casdout[i-1]
+pnn port->casdout[i-1]
+up
+up
+w7
+b xcsim.c:1106
+p i
+down 7
+up
+p parity_width
+p port->dpout
+p parity_width
+p np
+p port->data_width
+p port->casdpout
+p *port->casdpout
+pnn port->casdpoutt
+pnn port->casdpout[1]
+pnn port->casdpout[2]
+pnn port->casdpout[3]
+p port->parity_width
+p port->data_width
+p j
+p i
+ p port->parity_width
+where
+p
+up
+down
+kill
+y
+r
+up
+down
+c
+c
+c
+c
+c
+w9
+c
+up
+up
+w7
+c
+w9
+where
+c
+c
+pwd
+quit
+set args --gtest_filter="MspFlowTest.MSPLogicPushOut24"
+b NSimVerifyCore
+r
+c
+nwrites vo->owner "aaatop2.srm
+nwrites vo->owner "aaatop2.srm"
+nwrites nl "aaanl2.srm"
+nwrites snl "aaasnl2.srm"
+pwd
+b NGetConeInstsR
+r
+y
+c
+up
+up
+p n_out
+p n_in
+down
+down
+set args --gtest_filter="MspFlowTest.MSPLogicPushOut24"
+kill
+y
+r
+c
+c
+c
+r
+c
+r
+c
+fin
+fin
+fin
+fin
+fin
+fin
+fin
+fin
+fin
+fin
+fin
+fin
+n
+p implInstCnt
+p refInstCnt
+jump 5025
+s
+n
+s
+pnn np
+n
+pnn ip
+n
+pnn xnp
+n
+s
+p NCONNTOIP(ptp)
+pnn NCONNTOIP(ptp)
+pnn np
+pnn NCONNTOIP(np->connss
+pnn NCONNTOIP(np->conns)
+p ptp->flags & CONN_O
+p ptp->flags & CONN_I
+btest "a" "b
+btest "a" "b"
+gtest
+source ~/.gdbinit 
+help gtest
+quit
+y
+help gtest
+doc gtest
+end
+set args --gtest_filter="MspFlowTest.MSPLogicPushOut24"
+quit
+set args  -prodtype  synplify_pro  -encrypt  -pro  -rundir  /slowfs/sbg_builds9/tarunk/regr/synreg_res/15632/feature_flow/xilinx/byte_enable/phase_I/mutually_exclusive/V5/wf/wf_V5_201303   -part XC5VLX20TFF323-1    -enable_prepacking -maxfan 10000 -m1 -pipe -verification_mode 0 -fixgatedclocks 1 -fixgeneratedclocks 1 -overilog "test01.vm" -summaryfile /slowfs/sbg_builds9/tarunk/regr/synreg_res/15632/feature_flow/xilinx/byte_enable/phase_I/mutually_exclusive/V5/wf/wf_V5_201303/synlog/report/test01_fpga_mapper.xml -RWCheckOnRam 1 -reporting_ctd 0 -preserve_slash_names  -formal_partition  0  -dc_root  /global/apps2/syn_2016.03-SP1  -licensetype  synplifypro  -flow mapping  -mp  4  -prjfile  /slowfs/sbg_builds9/tarunk/regr/synreg_res/15632/feature_flow/xilinx/byte_enable/phase_I/mutually_exclusive/V5/wf/wf_V5_201303/scratchproject.prs  -implementation  wf_V5_201303  -multisrs  -oedif  /slowfs/sbg_builds9/tarunk/regr/synreg_res/15632/feature_flow/xilinx/byte_enable/phase_I/mutually_exclusive/V5/wf/wf_V5_201303/test01.edf   -freq 1.000   /slowfs/sbg_builds9/tarunk/regr/synreg_res/15632/feature_flow/xilinx/byte_enable/phase_I/mutually_exclusive/V5/wf/wf_V5_201303/synwork/test01_prem.srd  -sap  /slowfs/sbg_builds9/tarunk/regr/synreg_res/15632/feature_flow/xilinx/byte_enable/phase_I/mutually_exclusive/V5/wf/wf_V5_201303/test01.sap  -otap  /slowfs/sbg_builds9/tarunk/regr/synreg_res/15632/feature_flow/xilinx/byte_enable/phase_I/mutually_exclusive/V5/wf/wf_V5_201303/test01.tap  -omap  /slowfs/sbg_builds9/tarunk/regr/synreg_res/15632/feature_flow/xilinx/byte_enable/phase_I/mutually_exclusive/V5/wf/wf_V5_201303/test01.map  -devicelib  /remote/sbg_rel/unix/latest_fpga201703/lib/xilinx/unisim_m10i.v  -devicelib  /remote/sbg_rel/unix/latest_fpga201703/lib/xilinx/unisim.v  -sap  /slowfs/sbg_builds9/tarunk/regr/synreg_res/15632/feature_flow/xilinx/byte_enable/phase_I/mutually_exclusive/V5/wf/wf_V5_201303/test01.sap  -ologparam  /slowfs/sbg_builds9/tarunk/regr/synreg_res/15632/feature_flow/xilinx/byte_enable/phase_I/mutually_exclusive/V5/wf/wf_V5_201303/syntmp/test01.plg  -osyn  /slowfs/sbg_builds9/tarunk/regr/synreg_res/15632/feature_flow/xilinx/byte_enable/phase_I/mutually_exclusive/V5/wf/wf_V5_201303/test01.srm  -prjdir  /slowfs/sbg_builds9/tarunk/regr/synreg_res/15632/feature_flow/xilinx/byte_enable/phase_I/mutually_exclusive/V5/wf/wf_V5_201303/  -prjname  test01  -log  /slowfs/sbg_builds9/tarunk/regr/synreg_res/15632/feature_flow/xilinx/byte_enable/phase_I/mutually_exclusive/V5/wf/wf_V5_201303/synlog/test01_fpga_mapper.srr  -jobname  "fpga_mapper"
+bexit
+r
+up
+up
+p i
+p nCount
+kill
+y
+r
+c
+r
+c
+b NSimRemoveOutPortKeeps
+r
+n
+pnn newnp
+pnn orignp
+n
+pnn orignp
+pnn newnp
+s
+n
+pnn dip
+n
+n
+pnn b
+n
+pnn orignp
+c
+quit
+bexit
+r
+p FEnt
+ptype FEnt
+c
+R
+r
+r
+pwd
+kill
+pwd
+quit
+set args   -mp  4  -prjfile  /remote/sbg_qaresults/regression/15784/feature_flow/random_testing/xilinx_crash/9000543414/scratchproject.prs  -implementation  9000543414  -prodtype  synplify_pro  -encrypt  -pro  -rundir  /remote/sbg_qaresults/regression/15784/feature_flow/random_testing/xilinx_crash/9000543414   -part XC7V2000TFLG1925-1    -enable_prepacking -use_vivado -overilog "avrvf_top.vm" -maxfan 10000 -m1 -verification_mode 0 -fixgatedclocks 1 -fixgeneratedclocks 1 -auto_constrain_io -summaryfile /remote/sbg_qaresults/regression/15784/feature_flow/random_testing/xilinx_crash/9000543414/synlog/report/avrvf_top_premap.xml -RWCheckOnRam 1 -reporting_ctd 0 -preserve_slash_names  -top_level_module  avrvf_top  -formal_partition  0  -dc_root  /global/apps2/syn_2016.03-SP1  -licensetype  synplifypro  -oedif  /remote/sbg_qaresults/regression/15784/feature_flow/random_testing/xilinx_crash/9000543414/avrvf_top.edf  -conchk_prepass  /remote/sbg_qaresults/regression/15784/feature_flow/random_testing/xilinx_crash/9000543414/avrvf_top_cck.rpt   -freq 100.000   -tcl  /remote/sbg_qaresults/regression/15784/feature_flow/random_testing/xilinx_crash/9000543414/avrvf_top_translated.fdc  -tcl  /remote/sbg_qaresults/regression/15784/feature_flow/random_testing/xilinx_crash/9000543414/__autocreated.fdc  /remote/sbg_qaresults/regression/15784/feature_flow/random_testing/xilinx_crash/9000543414/synwork/avrvf_top_mult.srs  -flow prepass  -gcc_prepass  -osrd  /remote/sbg_qaresults/regression/15784/feature_flow/random_testing/xilinx_crash/9000543414/synwork/avrvf_top_prem.srd  -qsap  /remote/sbg_qaresults/regression/15784/feature_flow/random_testing/xilinx_crash/9000543414/avrvf_top.sap  -devicelib  /slowfs/sbg_builds9/tarunk/code/maprc_lin6/fpga201703_1/lib/xilinx/unisim_retarget.v  -devicelib  /slowfs/sbg_builds9/tarunk/code/maprc_lin6/fpga201703_1/lib/xilinx/unisim_vivado.v  -ologparam  /remote/sbg_qaresults/regression/15784/feature_flow/random_testing/xilinx_crash/9000543414/syntmp/avrvf_top.plg  -osyn  /remote/sbg_qaresults/regression/15784/feature_flow/random_testing/xilinx_crash/9000543414/synwork/avrvf_top_prem.srd  -prjdir  /remote/sbg_qaresults/regression/15784/feature_flow/random_testing/xilinx_crash/9000543414/  -prjname  reproduce  -log  /remote/sbg_qaresults/regression/15784/feature_flow/random_testing/xilinx_crash/9000543414/synlog/avrvf_top_premap.srr  -jobname  "premap"
+bexit
+r
+up
+up
+w9
+set args   -mp  4  -prjfile  /remote/sbg_qaresults/regression/15784/feature_flow/random_testing/xilinx_crash/9000543414/scratchproject.prs  -implementation  9000543414  -prodtype  synplify_pro  -encrypt  -pro  -rundir  /remote/sbg_qaresults/regression/15784/feature_flow/random_testing/xilinx_crash/9000543414   -part XC7V2000TFLG1925-1    -enable_prepacking -use_vivado -overilog "avrvf_top.vm" -maxfan 10000 -m1 -verification_mode 0 -fixgatedclocks 1 -fixgeneratedclocks 1 -auto_constrain_io -summaryfile /remote/sbg_qaresults/regression/15784/feature_flow/random_testing/xilinx_crash/9000543414/synlog/report/avrvf_top_premap.xml -RWCheckOnRam 1 -reporting_ctd 0 -preserve_slash_names  -top_level_module  avrvf_top  -formal_partition  0  -dc_root  /global/apps2/syn_2016.03-SP1  -licensetype  synplifypro  -oedif  /remote/sbg_qaresults/regression/15784/feature_flow/random_testing/xilinx_crash/9000543414/avrvf_top.edf  -conchk_prepass  /remote/sbg_qaresults/regression/15784/feature_flow/random_testing/xilinx_crash/9000543414/avrvf_top_cck.rpt   -freq 100.000   -tcl  /remote/sbg_qaresults/regression/15784/feature_flow/random_testing/xilinx_crash/9000543414/__autocreated.fdc  /remote/sbg_qaresults/regression/15784/feature_flow/random_testing/xilinx_crash/9000543414/synwork/avrvf_top_mult.srs  -flow prepass  -gcc_prepass  -osrd  /remote/sbg_qaresults/regression/15784/feature_flow/random_testing/xilinx_crash/9000543414/synwork/avrvf_top_prem.srd  -qsap  /remote/sbg_qaresults/regression/15784/feature_flow/random_testing/xilinx_crash/9000543414/avrvf_top.sap  -devicelib  /slowfs/sbg_builds9/tarunk/code/maprc_lin6/fpga201703_1/lib/xilinx/unisim_retarget.v  -devicelib  /slowfs/sbg_builds9/tarunk/code/maprc_lin6/fpga201703_1/lib/xilinx/unisim_vivado.v  -ologparam  /remote/sbg_qaresults/regression/15784/feature_flow/random_testing/xilinx_crash/9000543414/syntmp/avrvf_top.plg  -osyn  /remote/sbg_qaresults/regression/15784/feature_flow/random_testing/xilinx_crash/9000543414/synwork/avrvf_top_prem.srd  -prjdir  /remote/sbg_qaresults/regression/15784/feature_flow/random_testing/xilinx_crash/9000543414/  -prjname  reproduce  -log  /remote/sbg_qaresults/regression/15784/feature_flow/random_testing/xilinx_crash/9000543414/synlog/avrvf_top_premap.srr  -jobname  "premap"
+r
+y
+up
+up
+down
+p n_sim_include_inv
+p instArr
+p iarr
+pnn iarr.data
+pnn iarr.data[0]
+pnn iarr.data[1]
+p iarr.data[1]
+up
+p waddrwidth
+p wAddrInvNets[0]
+p cnp
+p waddrwidth
+p cnp--
+p cnp->np
+pnn cnp->np
+kill
+y
+p sizeof(NNet)
+ptype _NNet
+ptype NNet
+p sizeof(int)
+quit
+p sizeof(NNet)
+quit
+p sizeof(NNet)
+ptype NNet
+set $net = (NNet *)0
+p &($net->h)
+p &($net->flags)
+p &($net->flags2)
+p &($net->scan)
+p &($net->nn_level)
+p sizeof(BHashEntry)
+ptype BHashEntry
+kill
+quit
+set args   -prodtype  synplify_pro  -encrypt  -pro  -rundir  /slowfs/sbg_builds9/tarunk/regr/synreg_res/39540/feature_flow/virtex5/migrate/nportram/rfrffdr_072209   -part XC5VLX20TFF323-1    -enable_prepacking -maxfan 10000 -m1 -pipe -verification_mode 0 -fixgatedclocks 1 -fixgeneratedclocks 1 -overilog "test.vm" -ovhdl "test.vhm" -summaryfile /slowfs/sbg_builds9/tarunk/regr/synreg_res/39540/feature_flow/virtex5/migrate/nportram/rfrffdr_072209/synlog/report/test_fpga_mapper.xml -RWCheckOnRam 1 -reporting_ctd 0 -preserve_slash_names  -formal_partition  0  -dc_root  /global/apps2/syn_2016.03-SP1  -licensetype  synplifypro  -flow mapping  -mp  4  -prjfile  /slowfs/sbg_builds9/tarunk/regr/synreg_res/39540/feature_flow/virtex5/migrate/nportram/rfrffdr_072209/scratchproject.prs  -implementation  rfrffdr_072209  -multisrs  -oedif  /slowfs/sbg_builds9/tarunk/regr/synreg_res/39540/feature_flow/virtex5/migrate/nportram/rfrffdr_072209/test.edf   -autoconstraint  -freq 1.000   /slowfs/sbg_builds9/tarunk/regr/synreg_res/39540/feature_flow/virtex5/migrate/nportram/rfrffdr_072209/synwork/test_prem.srd  -devicelib  /remote/sbg_rel/unix/latest_fpga201703/lib/xilinx/unisim_m10i.v  -devicelib  /remote/sbg_rel/unix/latest_fpga201703/lib/xilinx/unisim.v  -ologparam  /slowfs/sbg_builds9/tarunk/regr/synreg_res/39540/feature_flow/virtex5/migrate/nportram/rfrffdr_072209/syntmp/test.plg  -osyn  /slowfs/sbg_builds9/tarunk/regr/synreg_res/39540/feature_flow/virtex5/migrate/nportram/rfrffdr_072209/test.srm  -prjdir  /slowfs/sbg_builds9/tarunk/regr/synreg_res/39540/feature_flow/virtex5/migrate/nportram/rfrffdr_072209/  -prjname  test  -log  /slowfs/sbg_builds9/tarunk/regr/synreg_res/39540/feature_flow/virtex5/migrate/nportram/rfrffdr_072209/synlog/test_fpga_mapper.srr  -jobname  "fpga_mapper"
+bexit
+r
+up
+up
+up
+down
+nwrites onl "aaonl.srm"
+nwrites nl "aaanl.srm"
+nwrites snl "aasnl.srm"
+nwrites nl "aanl.srm"
+up
+p *nss
+cond 2 nss->snl == 0x7883428 && nss->vo == 0x7406428
+r
+y
+s
+cond 3 j==138
+c
+s
+b xcSimEvalBRAM
+c
+n
+s
+n
+s
+n
+s
+n
+ip pos_port
+p pos_port
+n
+s
+n
+p port->use_regout
+n
+s
+n
+p nxt_wraddr
+p nxt_rdaddr
+n
+p port->nxt_wraddr
+w5
+i b
+n
+n
+b xcSimEvalBRAMPortFEdge
+b xcSimEvalBRAMPort
+n
+p parity_width
+p total_width
+u 2247
+n
+fin
+n
+p porta->readport
+s
+p pos_port
+n
+s
+n
+s
+n
+p port->nxt_wraddr
+n
+p port->nxt_rdaddr
+n
+c
+n
+s
+n
+s
+n
+s
+up
+up
+up
+down 3
+up
+up
+up
+p ram->ports[porta->readport].nxt_wraddr
+p ram->ports[!porta->readport].nxt_wraddr
+p ram->ports[0].nxt_wraddr
+p ram->ports[1].nxt_wraddr
+kill
+y
+r
+dis 4 5 6 7
+c
+p j
+c
+c
+c
+quit
+set args   -prodtype  synplify_pro  -encrypt  -pro  -rundir  /SCRATCH/tarunk/sgreg.yQq4npT/86883.0/bugs/compiler_vhdl/9000575376   -part XC6SLX9CSG225-2    -enable_prepacking -maxfan 10000 -m1 -pipe -fixgatedclocks 1 -fixgeneratedclocks 1 -verification_mode 0 -summaryfile /SCRATCH/tarunk/sgreg.yQq4npT/86883.0/bugs/compiler_vhdl/9000575376/synlog/report/true_dp_bl_ram_fpga_mapper.xml -RWCheckOnRam 1 -reporting_ctd 0 -preserve_slash_names  -formal_partition  0  -dc_root  /global/apps2/syn_2016.03-SP1  -licensetype  synplifypro  -flow mapping  -mp  4  -prjfile  /SCRATCH/tarunk/sgreg.yQq4npT/86883.0/bugs/compiler_vhdl/9000575376/scratchproject.prs  -implementation  9000575376  -multisrs  -oedif  /SCRATCH/tarunk/sgreg.yQq4npT/86883.0/bugs/compiler_vhdl/9000575376/true_dp_bl_ram.edf   -autoconstraint  -freq 1.000   /SCRATCH/tarunk/sgreg.yQq4npT/86883.0/bugs/compiler_vhdl/9000575376/synwork/true_dp_bl_ram_prem.srd  -sap  /SCRATCH/tarunk/sgreg.yQq4npT/86883.0/bugs/compiler_vhdl/9000575376/true_dp_bl_ram.sap  -otap  /SCRATCH/tarunk/sgreg.yQq4npT/86883.0/bugs/compiler_vhdl/9000575376/true_dp_bl_ram.tap  -omap  /SCRATCH/tarunk/sgreg.yQq4npT/86883.0/bugs/compiler_vhdl/9000575376/true_dp_bl_ram.map  -devicelib  /slowfs/sbg_builds9/tarunk/code/maprc_lin6/fpga201703_1/lib/xilinx/unisim_m10i.v  -devicelib  /slowfs/sbg_builds9/tarunk/code/maprc_lin6/fpga201703_1/lib/xilinx/unisim.v  -sap  /SCRATCH/tarunk/sgreg.yQq4npT/86883.0/bugs/compiler_vhdl/9000575376/true_dp_bl_ram.sap  -ologparam  /SCRATCH/tarunk/sgreg.yQq4npT/86883.0/bugs/compiler_vhdl/9000575376/syntmp/true_dp_bl_ram.plg  -osyn  /SCRATCH/tarunk/sgreg.yQq4npT/86883.0/bugs/compiler_vhdl/9000575376/true_dp_bl_ram.srm  -prjdir  /SCRATCH/tarunk/sgreg.yQq4npT/86883.0/bugs/compiler_vhdl/9000575376/  -prjname  true_dp_bl_ram  -log  /SCRATCH/tarunk/sgreg.yQq4npT/86883.0/bugs/compiler_vhdl/9000575376/synlog/true_dp_bl_ram_fpga_mapper.srr  -jobname  "fpga_mapper"
+bexit
+r
+set args   -prodtype  synplify_pro  -encrypt  -pro  -rundir  /remote/sbg_qaresults/regression/86883/bugs/compiler_vhdl/9000575376   -part XC6SLX9CSG225-2    -enable_prepacking -maxfan 10000 -m1 -pipe -fixgatedclocks 1 -fixgeneratedclocks 1 -verification_mode 0 -summaryfile /remote/sbg_qaresults/regression/86883/bugs/compiler_vhdl/9000575376/synlog/report/true_dp_bl_ram_fpga_mapper.xml -RWCheckOnRam 1 -reporting_ctd 0 -preserve_slash_names  -formal_partition  0  -dc_root  /global/apps2/syn_2016.03-SP1  -licensetype  synplifypro  -flow mapping  -mp  4  -prjfile  /remote/sbg_qaresults/regression/86883/bugs/compiler_vhdl/9000575376/scratchproject.prs  -implementation  9000575376  -multisrs  -oedif  /remote/sbg_qaresults/regression/86883/bugs/compiler_vhdl/9000575376/true_dp_bl_ram.edf   -autoconstraint  -freq 1.000   /remote/sbg_qaresults/regression/86883/bugs/compiler_vhdl/9000575376/synwork/true_dp_bl_ram_prem.srd  -sap  /remote/sbg_qaresults/regression/86883/bugs/compiler_vhdl/9000575376/true_dp_bl_ram.sap  -otap  /remote/sbg_qaresults/regression/86883/bugs/compiler_vhdl/9000575376/true_dp_bl_ram.tap  -omap  /remote/sbg_qaresults/regression/86883/bugs/compiler_vhdl/9000575376/true_dp_bl_ram.map  -devicelib  /slowfs/sbg_builds9/tarunk/code/maprc_lin6/fpga201703_1/lib/xilinx/unisim_m10i.v  -devicelib  /slowfs/sbg_builds9/tarunk/code/maprc_lin6/fpga201703_1/lib/xilinx/unisim.v  -sap  /remote/sbg_qaresults/regression/86883/bugs/compiler_vhdl/9000575376/true_dp_bl_ram.sap  -ologparam  /remote/sbg_qaresults/regression/86883/bugs/compiler_vhdl/9000575376/syntmp/true_dp_bl_ram.plg  -osyn  /remote/sbg_qaresults/regression/86883/bugs/compiler_vhdl/9000575376/true_dp_bl_ram.srm  -prjdir  /remote/sbg_qaresults/regression/86883/bugs/compiler_vhdl/9000575376/  -prjname  true_dp_bl_ram  -log  /remote/sbg_qaresults/regression/86883/bugs/compiler_vhdl/9000575376/synlog/true_dp_bl_ram_fpga_mapper.srr  -jobname  "fpga_mapper"
+b xc_sim_eval_inst
+r
+pnn ip
+up
+up
+up
+up
+up
+fin
+dis 2
+up 3
+up 3
+up 3
+down
+up
+down
+down
+down
+down
+fin
+fin
+fin
+fin
+up
+up
+i 
+b nlsim.c:4215
+p *nss
+cond 3 nss->snl == 0x8367948 && nss->vo == 0x76cb6c8
+r
+y
+p j
+c
+dis 3
+c
+p j
+en 3
+r
+y
+dis 3
+cond 5 j>=57
+c
+s
+i b
+en 2
+c
+n
+s
+n
+s
+p ram->ports[0].nxt_wraddr
+p ram->ports[1].nxt_wraddr
+n
+s
+n
+s
+n
+p addr
+p port->addr_max
+n
+p port->data_width
+n
+s
+n
+up
+up
+down
+p ram->ports[0].nxt_wraddr
+p ram->ports[1].nxt_wraddr
+b xcsim.c:2842
+b xcsim.c:2898
+down 3
+n
+n
+c
+c
+n
+p ram->ports[0].nxt_wraddr
+p ram->ports[1].nxt_wraddr
+n
+s
+n
+p data_start
+p data_end
+n
+p porta->nxt_wrdata
+p porta->nxt_wrdata[0]
+p portb->nxt_wrdata[0]
+n
+p parity_start
+p parity_end
+p data_start
+p data_end
+b xcsim.c :2844
+jump xcsim.c :2844
+p data_start
+p data_end
+n
+p index_a
+p index_b
+p porta->nxt_wrdata[index_a]
+n
+p portb->nxt_wrdata[index_b]
+n
+p porta->nxt_wrdata[index_a]
+n
+n
+kill
+y
+kill
+r
+dis 5
+c
+dis 2
+c
+dis 6
+dis 7 8
+c
+dis 9
+c
+c
+pwd
+quit
+bexit
+set args  -prodtype  synplify_pro  -encrypt  -pro  -rundir  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29469/feature_flow/spartan6/migrate/v6/block_rams/ad_reg_single_port/test15   -part XC6SLX9CSG225-2    -enable_prepacking -maxfan 10000 -m1 -pipe -fixgatedclocks 1 -fixgeneratedclocks 1 -verification_mode 0 -overilog "test.vm" -summaryfile /slowfs/sbg_builds9/tarunk/regr/synreg_res/29469/feature_flow/spartan6/migrate/v6/block_rams/ad_reg_single_port/test15/synlog/report/test_fpga_mapper.xml -RWCheckOnRam 1 -reporting_ctd 0 -preserve_slash_names  -formal_partition  0  -dc_root  /global/apps2/syn_2016.03-SP1  -licensetype  synplifypro  -flow mapping  -mp  4  -prjfile  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29469/feature_flow/spartan6/migrate/v6/block_rams/ad_reg_single_port/test15/scratchproject.prs  -implementation  test15  -multisrs  -oedif  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29469/feature_flow/spartan6/migrate/v6/block_rams/ad_reg_single_port/test15/test.edf   -freq 1.000   /slowfs/sbg_builds9/tarunk/regr/synreg_res/29469/feature_flow/spartan6/migrate/v6/block_rams/ad_reg_single_port/test15/synwork/test_prem.srd  -sap  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29469/feature_flow/spartan6/migrate/v6/block_rams/ad_reg_single_port/test15/test.sap  -otap  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29469/feature_flow/spartan6/migrate/v6/block_rams/ad_reg_single_port/test15/test.tap  -omap  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29469/feature_flow/spartan6/migrate/v6/block_rams/ad_reg_single_port/test15/test.map  -devicelib  /remote/sbg_rel/unix/latest_fpga201703/lib/xilinx/unisim_m10i.v  -devicelib  /remote/sbg_rel/unix/latest_fpga201703/lib/xilinx/unisim.v  -sap  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29469/feature_flow/spartan6/migrate/v6/block_rams/ad_reg_single_port/test15/test.sap  -ologparam  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29469/feature_flow/spartan6/migrate/v6/block_rams/ad_reg_single_port/test15/syntmp/test.plg  -osyn  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29469/feature_flow/spartan6/migrate/v6/block_rams/ad_reg_single_port/test15/test.srm  -prjdir  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29469/feature_flow/spartan6/migrate/v6/block_rams/ad_reg_single_port/test15/  -prjname  test  -log  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29469/feature_flow/spartan6/migrate/v6/block_rams/ad_reg_single_port/test15/synlog/test_fpga_mapper.srr  -jobname  "fpga_mapper"
+r
+p portb
+up
+up
+down
+p ram->numports
+kill
+y
+r
+c
+quit
+bexit
+set args  -prodtype  synplify_pro  -encrypt  -pro  -rundir  /slowfs/sbg_builds9/tarunk/regr/synreg_res/20958/feature_flow/spartan6/migrate/v6/block_rams/ad_reg_single_port/test06   -part XC6SLX9CSG225-2    -enable_prepacking -maxfan 10000 -m1 -pipe -fixgatedclocks 1 -fixgeneratedclocks 1 -verification_mode 0 -overilog "test.vm" -summaryfile /slowfs/sbg_builds9/tarunk/regr/synreg_res/20958/feature_flow/spartan6/migrate/v6/block_rams/ad_reg_single_port/test06/synlog/report/test_fpga_mapper.xml -RWCheckOnRam 1 -reporting_ctd 0 -preserve_slash_names  -formal_partition  0  -dc_root  /global/apps2/syn_2016.03-SP1  -licensetype  synplifypro  -flow mapping  -mp  4  -prjfile  /slowfs/sbg_builds9/tarunk/regr/synreg_res/20958/feature_flow/spartan6/migrate/v6/block_rams/ad_reg_single_port/test06/scratchproject.prs  -implementation  test06  -multisrs  -oedif  /slowfs/sbg_builds9/tarunk/regr/synreg_res/20958/feature_flow/spartan6/migrate/v6/block_rams/ad_reg_single_port/test06/test.edf   -freq 1.000   /slowfs/sbg_builds9/tarunk/regr/synreg_res/20958/feature_flow/spartan6/migrate/v6/block_rams/ad_reg_single_port/test06/synwork/test_prem.srd  -sap  /slowfs/sbg_builds9/tarunk/regr/synreg_res/20958/feature_flow/spartan6/migrate/v6/block_rams/ad_reg_single_port/test06/test.sap  -otap  /slowfs/sbg_builds9/tarunk/regr/synreg_res/20958/feature_flow/spartan6/migrate/v6/block_rams/ad_reg_single_port/test06/test.tap  -omap  /slowfs/sbg_builds9/tarunk/regr/synreg_res/20958/feature_flow/spartan6/migrate/v6/block_rams/ad_reg_single_port/test06/test.map  -devicelib  /remote/sbg_rel/unix/latest_fpga201703/lib/xilinx/unisim_m10i.v  -devicelib  /remote/sbg_rel/unix/latest_fpga201703/lib/xilinx/unisim.v  -sap  /slowfs/sbg_builds9/tarunk/regr/synreg_res/20958/feature_flow/spartan6/migrate/v6/block_rams/ad_reg_single_port/test06/test.sap  -ologparam  /slowfs/sbg_builds9/tarunk/regr/synreg_res/20958/feature_flow/spartan6/migrate/v6/block_rams/ad_reg_single_port/test06/syntmp/test.plg  -osyn  /slowfs/sbg_builds9/tarunk/regr/synreg_res/20958/feature_flow/spartan6/migrate/v6/block_rams/ad_reg_single_port/test06/test.srm  -prjdir  /slowfs/sbg_builds9/tarunk/regr/synreg_res/20958/feature_flow/spartan6/migrate/v6/block_rams/ad_reg_single_port/test06/  -prjname  test  -log  /slowfs/sbg_builds9/tarunk/regr/synreg_res/20958/feature_flow/spartan6/migrate/v6/block_rams/ad_reg_single_port/test06/synlog/test_fpga_mapper.srr  -jobname  "fpga_mapper"
+r
+c
+quit
+bexit
+set args  -prodtype  synplify_premier_dp   -encrypt  -pro  -rundir  /slowfs/sbg_builds9/tarunk/regr/synreg_res/18124/slowfs/sbg_builds9/tarunk/regr/synreg_res/52217/bugs/xilinx/9000532567/logic   -part XC6VLX75TFF484-1    -enable_prepacking -incremental_synthesis 0 -maxfan 10000 -m1 -pipe -verification_mode 0 -fixgatedclocks 1 -fixgeneratedclocks 1 -banetdly 1 -amptest 0 -summaryfile /slowfs/sbg_builds9/tarunk/regr/synreg_res/18124/slowfs/sbg_builds9/tarunk/regr/synreg_res/52217/bugs/xilinx/9000532567/logic/synlog/report/proj_1_fpga_mapper.xml -RWCheckOnRam 1 -fast_synthesis 0 -advanced_synthesis -reporting_ctd 0 -preserve_slash_names -optimize_ngc  -top_level_module  fpga_top  -formal_partition  0  -licensetype  synplifypremierdp_ipro  -flow mapping  -mp  4  -prjfile  /slowfs/sbg_builds9/tarunk/regr/synreg_res/18124/slowfs/sbg_builds9/tarunk/regr/synreg_res/52217/bugs/xilinx/9000532567/logic/scratchproject.prs  -implementation  logic  -multisrs  -oedif  /slowfs/sbg_builds9/tarunk/regr/synreg_res/18124/slowfs/sbg_builds9/tarunk/regr/synreg_res/52217/bugs/xilinx/9000532567/logic/proj_1.edf   -freq 1.000   /slowfs/sbg_builds9/tarunk/regr/synreg_res/18124/slowfs/sbg_builds9/tarunk/regr/synreg_res/52217/bugs/xilinx/9000532567/logic/synwork/proj_1_prem.srd  -sap  /slowfs/sbg_builds9/tarunk/regr/synreg_res/18124/slowfs/sbg_builds9/tarunk/regr/synreg_res/52217/bugs/xilinx/9000532567/logic/proj_1.sap  -otap  /slowfs/sbg_builds9/tarunk/regr/synreg_res/18124/slowfs/sbg_builds9/tarunk/regr/synreg_res/52217/bugs/xilinx/9000532567/logic/proj_1.tap  -omap  /slowfs/sbg_builds9/tarunk/regr/synreg_res/18124/slowfs/sbg_builds9/tarunk/regr/synreg_res/52217/bugs/xilinx/9000532567/logic/proj_1.map  -devicelib  /slowfs/sbg_builds9/tarunk/code/maprc_lin6/fpga201703_1/lib/xilinx/unisim_m10i.v  -devicelib  /slowfs/sbg_builds9/tarunk/code/maprc_lin6/fpga201703_1/lib/xilinx/unisim.v  -sap  /slowfs/sbg_builds9/tarunk/regr/synreg_res/18124/slowfs/sbg_builds9/tarunk/regr/synreg_res/52217/bugs/xilinx/9000532567/logic/proj_1.sap  -ologparam  /slowfs/sbg_builds9/tarunk/regr/synreg_res/18124/slowfs/sbg_builds9/tarunk/regr/synreg_res/52217/bugs/xilinx/9000532567/logic/syntmp/proj_1.plg  -osyn  /slowfs/sbg_builds9/tarunk/regr/synreg_res/18124/slowfs/sbg_builds9/tarunk/regr/synreg_res/52217/bugs/xilinx/9000532567/logic/proj_1.srm  -prjdir  /slowfs/sbg_builds9/tarunk/regr/synreg_res/18124/slowfs/sbg_builds9/tarunk/regr/synreg_res/52217/bugs/xilinx/9000532567_201609/  -prjname  proj_1  -log  /slowfs/sbg_builds9/tarunk/regr/synreg_res/18124/slowfs/sbg_builds9/tarunk/regr/synreg_res/52217/bugs/xilinx/9000532567/logic/synlog/proj_1_fpga_mapper.srr  -jobname  "fpga_mapper"
+b NPropConstThroughRAM1
+r
+i b
+r
+y
+u 6000
+n
+b 6027
+jump 6027
+s
+n
+r
+y
+c
+s
+n
+p prop_val
+r
+y
+c
+n
+c
+kill
+y
+dis 2 3
+r
+c
+set args  -mp  4  -prjfile  /slowfs/sbg_builds9/tarunk/regr/synreg_res/18124/slowfs/sbg_builds9/tarunk/regr/synreg_res/52217/bugs/xilinx/9000532567/logic/scratchproject.prs  -implementation  logic  -prodtype  synplify_premier_dp  -encrypt  -pro  -rundir  /slowfs/sbg_builds9/tarunk/regr/synreg_res/18124/slowfs/sbg_builds9/tarunk/regr/synreg_res/52217/bugs/xilinx/9000532567/logic   -part XC6VLX75TFF484-1    -enable_prepacking -incremental_synthesis 0 -maxfan 10000 -m1 -pipe -verification_mode 0 -fixgatedclocks 1 -fixgeneratedclocks 1 -banetdly 1 -amptest 0 -summaryfile /slowfs/sbg_builds9/tarunk/regr/synreg_res/18124/slowfs/sbg_builds9/tarunk/regr/synreg_res/52217/bugs/xilinx/9000532567/logic/synlog/report/proj_1_premap.xml -RWCheckOnRam 1 -fast_synthesis 0 -advanced_synthesis -reporting_ctd 0 -preserve_slash_names -optimize_ngc  -top_level_module  fpga_top  -formal_partition  0  -oedif  /slowfs/sbg_builds9/tarunk/regr/synreg_res/18124/slowfs/sbg_builds9/tarunk/regr/synreg_res/52217/bugs/xilinx/9000532567/logic/proj_1.edf  -conchk_prepass  /slowfs/sbg_builds9/tarunk/regr/synreg_res/18124/slowfs/sbg_builds9/tarunk/regr/synreg_res/52217/bugs/xilinx/9000532567/logic/proj_1_cck.rpt   -freq 1.000   /slowfs/sbg_builds9/tarunk/regr/synreg_res/18124/slowfs/sbg_builds9/tarunk/regr/synreg_res/52217/bugs/xilinx/9000532567/logic/synwork/proj_1_mult.srs  -flow prepass  -gcc_prepass  -osrd  /slowfs/sbg_builds9/tarunk/regr/synreg_res/18124/slowfs/sbg_builds9/tarunk/regr/synreg_res/52217/bugs/xilinx/9000532567/logic/synwork/proj_1_prem.srd  -qsap  /slowfs/sbg_builds9/tarunk/regr/synreg_res/18124/slowfs/sbg_builds9/tarunk/regr/synreg_res/52217/bugs/xilinx/9000532567/logic/proj_1.sap  -devicelib  /slowfs/sbg_builds9/tarunk/code/maprc_lin6/fpga201703_1/lib/xilinx/unisim_m10i.v  -devicelib  /slowfs/sbg_builds9/tarunk/code/maprc_lin6/fpga201703_1/lib/xilinx/unisim.v  -ologparam  /slowfs/sbg_builds9/tarunk/regr/synreg_res/18124/slowfs/sbg_builds9/tarunk/regr/synreg_res/52217/bugs/xilinx/9000532567/logic/syntmp/proj_1.plg  -osyn  /slowfs/sbg_builds9/tarunk/regr/synreg_res/18124/slowfs/sbg_builds9/tarunk/regr/synreg_res/52217/bugs/xilinx/9000532567/logic/synwork/proj_1_prem.srd  -prjdir  /slowfs/sbg_builds9/tarunk/regr/synreg_res/18124/slowfs/sbg_builds9/tarunk/regr/synreg_res/52217/bugs/xilinx/9000532567_201609/  -prjname  proj_1  -log  /slowfs/sbg_builds9/tarunk/regr/synreg_res/18124/slowfs/sbg_builds9/tarunk/regr/synreg_res/52217/bugs/xilinx/9000532567/logic/synlog/proj_1_premap.srr  -jobname  "premap"
+r
+up
+up
+up
+up
+up
+down
+up
+up
+up
+up
+up
+down 6
+down 6
+up 2
+up 2
+p pos
+r
+y
+p width
+p addrwidth
+n
+p n_pininfo[0].width
+u 6295
+p n_pininfo[1].width
+r
+y
+c
+c
+c
+up
+up
+up
+c
+r
+c
+r
+y
+c
+p verify=1
+c
+up 
+up 
+up 
+c
+i b
+en 2 3
+r
+c
+c
+c
+s
+n
+n
+p verify=1
+c
+c
+c
+c
+r
+del 6
+c
+del 2
+c
+p verify=1
+c
+s
+n
+p prop_val
+kill
+y
+quit
+kill
+r
+up
+down
+up
+up
+up
+up
+up
+up
+up
+up
+down
+down
+down
+down
+down
+down
+where 15
+kill
+y
+pwd
+kill
+r
+ptype BName
+up
+up
+up
+up
+up
+down
+up
+pnn NDefaultDesign
+p NDefaultDesign->h.name
+p &NDefaultDesign->h.name
+ptype NDefaultDesign->h.name
+p sizeof(BName)
+kill
+y
+quit
+set args  -mp  4  -prjfile  /slowfs/sbg_builds9/tarunk/regr/synreg_res/13203/bugs/xilinx/9000463410/scratchproject.prs  -implementation  9000463410  -prodtype  synplify_pro  -encrypt  -pro  -rundir  /slowfs/sbg_builds9/tarunk/regr/synreg_res/13203/bugs/xilinx/9000463410   -part XC5VLX20TFF323-1    -enable_prepacking -maxfan 10000 -m1 -pipe -verification_mode 0 -fixgatedclocks 1 -fixgeneratedclocks 1 -summaryfile /slowfs/sbg_builds9/tarunk/regr/synreg_res/13203/bugs/xilinx/9000463410/synlog/report/testcase_premap.xml -RWCheckOnRam 1 -reporting_ctd 0 -preserve_slash_names  -formal_partition  0  -dc_root  /global/apps2/syn_2016.03-SP1  -oedif  /slowfs/sbg_builds9/tarunk/regr/synreg_res/13203/bugs/xilinx/9000463410/testcase.edf  -conchk_prepass  /slowfs/sbg_builds9/tarunk/regr/synreg_res/13203/bugs/xilinx/9000463410/testcase_cck.rpt   -autoconstraint  -freq 1.000   /slowfs/sbg_builds9/tarunk/regr/synreg_res/13203/bugs/xilinx/9000463410/synwork/testcase_mult.srs  -flow prepass  -gcc_prepass  -osrd  /slowfs/sbg_builds9/tarunk/regr/synreg_res/13203/bugs/xilinx/9000463410/synwork/testcase_prem.srd  -qsap  /slowfs/sbg_builds9/tarunk/regr/synreg_res/13203/bugs/xilinx/9000463410/testcase.sap  -devicelib  /slowfs/sbg_builds9/tarunk/code/maprc_lin6/fpga201703_1/lib/xilinx/unisim_m10i.v  -devicelib  /slowfs/sbg_builds9/tarunk/code/maprc_lin6/fpga201703_1/lib/xilinx/unisim.v  -ologparam  /slowfs/sbg_builds9/tarunk/regr/synreg_res/13203/bugs/xilinx/9000463410/syntmp/testcase.plg  -osyn  /slowfs/sbg_builds9/tarunk/regr/synreg_res/13203/bugs/xilinx/9000463410/synwork/testcase_prem.srd  -prjdir  /slowfs/sbg_builds9/tarunk/regr/synreg_res/13203/bugs/xilinx/9000463410/  -prjname  testcase  -log  /slowfs/sbg_builds9/tarunk/regr/synreg_res/13203/bugs/xilinx/9000463410/synlog/testcase_premap.srr  -jobname  "premap"
+bexit
+r
+p clkIndex
+p sigType
+kill
+y
+quit
+set args   -prodtype  protocompiler  -encrypt  -pro  -rundir  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29157/bugs/amplify/9000283421/synregtest_db/map/m0   -part XC7V2000TFLG1925-1    -haps_target HAPS-70 -use_vivado -incremental_synthesis 0 -maxfan 32 -m1 -pipe -verification_mode 0 -retiming -fixgatedclocks 1 -fixgeneratedclocks 1 -banetdly 1 -amptest 0 -split_generated_modules 1 -resolveMultipleDriver -summaryfile /slowfs/sbg_builds9/tarunk/regr/synreg_res/29157/bugs/amplify/9000283421/synregtest_db/map/m0/synlog/report/usr_logic_fpga_mapper.xml -RWCheckOnRam 1 -fast_synthesis 1 -protoware_mode -reporting_ctd 0 -preserve_slash_names -incremental_debug 0 -optimize_ngc -new_timebudgeting 1  -top_level_module  zucchini_top_fpga_A  -formal_partition  0  -dc_root  /global/apps2/syn_2016.03-SP1  -licensetype  ProtoCompiler  -flow mapping  -mp  4  -prjfile  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29157/bugs/amplify/9000283421/synregtest_db/map/m0/scratchproject.prs  -implementation  m0  -multisrs  -ta_num_paths  20  -ta_num_points  100  -oedif  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29157/bugs/amplify/9000283421/synregtest_db/map/m0/usr_logic.edf   -freq 1.000   /slowfs/sbg_builds9/tarunk/regr/synreg_res/29157/bugs/amplify/9000283421/synregtest_db/map/m0/synwork/usr_logic_prem.srd  -sap  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29157/bugs/amplify/9000283421/synregtest_db/map/m0/usr_logic.sap  -otap  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29157/bugs/amplify/9000283421/synregtest_db/map/m0/usr_logic.tap  -omap  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29157/bugs/amplify/9000283421/synregtest_db/map/m0/usr_logic.map  -devicelib  /remote/sbg_rel/unix/protocompiler201703sp1_035R/lib/xilinx/unisim_retarget.v  -devicelib  /remote/sbg_rel/unix/protocompiler201703sp1_035R/lib/xilinx/unisim_vivado.v  -sap  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29157/bugs/amplify/9000283421/synregtest_db/map/m0/usr_logic.sap  -ologparam  ""  -osyn  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29157/bugs/amplify/9000283421/synregtest_db/map/m0/usr_logic.srm  -prjdir  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29157/bugs/amplify/9000283421/synregtest_db/map/m0/  -prjname  datastate  -log  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29157/bugs/amplify/9000283421/synregtest_db/map/m0/synlog/usr_logic_fpga_mapper.srr  -jobname  "fpga_mapper"
+bexit
+pwd
+r
+up
+up
+up
+p a
+set args  -prodtype  protocompiler  -encrypt  -pro  -rundir  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29157/bugs/amplify/9000283421/synregtest_db/map/mm   -part XC7V2000TFLG1925-1    -haps_target HAPS-70 -use_vivado -incremental_synthesis 0 -maxfan 32 -m1 -pipe -verification_mode 0 -retiming -fixgatedclocks 1 -fixgeneratedclocks 1 -banetdly 1 -amptest 0 -split_generated_modules 1 -resolveMultipleDriver -summaryfile /slowfs/sbg_builds9/tarunk/regr/synreg_res/29157/bugs/amplify/9000283421/synregtest_db/map/mm/synlog/report/usr_logic_fpga_mapper.xml -RWCheckOnRam 1 -fast_synthesis 1 -protoware_mode -reporting_ctd 0 -preserve_slash_names -incremental_debug 0 -optimize_ngc -new_timebudgeting 1  -top_level_module  zucchini_top_fpga_A  -formal_partition  0  -dc_root  /global/apps2/syn_2016.03-SP1  -licensetype  ProtoCompiler  -flow mapping  -mp  4  -prjfile  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29157/bugs/amplify/9000283421/synregtest_db/map/mm/scratchproject.prs  -implementation  mm  -multisrs  -ta_num_paths  20  -ta_num_points  100  -oedif  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29157/bugs/amplify/9000283421/synregtest_db/map/mm/usr_logic.edf   -freq 1.000   /slowfs/sbg_builds9/tarunk/regr/synreg_res/29157/bugs/amplify/9000283421/synregtest_db/map/mm/synwork/usr_logic_prem.srd  -sap  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29157/bugs/amplify/9000283421/synregtest_db/map/mm/usr_logic.sap  -otap  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29157/bugs/amplify/9000283421/synregtest_db/map/mm/usr_logic.tap  -omap  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29157/bugs/amplify/9000283421/synregtest_db/map/mm/usr_logic.map  -devicelib  /remote/sbg_rel/unix/protocompiler201703sp1_035R/lib/xilinx/unisim_retarget.v  -devicelib  /remote/sbg_rel/unix/protocompiler201703sp1_035R/lib/xilinx/unisim_vivado.v  -sap  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29157/bugs/amplify/9000283421/synregtest_db/map/mm/usr_logic.sap  -ologparam  ""  -osyn  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29157/bugs/amplify/9000283421/synregtest_db/map/mm/usr_logic.srm  -prjdir  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29157/bugs/amplify/9000283421/synregtest_db/map/mm/  -prjname  datastate  -log  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29157/bugs/amplify/9000283421/synregtest_db/map/mm/synlog/usr_logic_fpga_mapper.srr  -jobname  "fpga_mapper"
+r
+y
+p i
+p j
+p k
+p wmap
+p wmap[k]
+p SIM_SLOT
+p sim_vecp
+up
+nwrites nl "aaanl.srm"
+pwd
+down 
+p wmap[17]
+p wmap[16]
+p wmap[15]
+p wmap[14]
+p wmap[13]
+p wmap[12]
+p wmap[11]
+p wmap[10]
+p addr_map[j]
+p cnt
+kill
+y
+r
+b xcsim.c :4003
+r
+y
+s
+n
+p vpRAMB36_EXP
+pnn vpRAMB36_EXP
+pnn vpRAMB36_EXP->owner
+c
+dis 2
+c
+nwrites nl "aaanl2.srm"
+en 2
+r
+y
+n
+pnn ip
+pnn ip->instof->owner
+p BNameStr(ip->instof->owner->h.name)
+cond 2 !strcmp(BNameStr(ip->instof->owner->h.name), "RAMB36_EXP")
+c
+up
+nwrites nl "aaanl2.srm"
+i b
+set $cnt=0
+command 2 
+p $cnt++
+end
+r
+n
+cond 2
+r
+y
+p $cnt
+command 2
+p $cnt++
+continue
+end
+c
+i b
+b xcsim.c:4004
+cond 3 $cnt==2657
+set $cnt=0
+r
+y
+n
+pnn ip->instof->owner
+c
+up
+b NSimVerifyCore
+cond 4 nss==0x267199e8
+r
+y
+i b
+command 2
+end
+c
+del 4
+set $cnt=0
+command 2
+p $cnt++
+continue
+end
+r
+y
+up
+kill
+y
+r
+up
+up
+up
+up
+up
+up
+p nl
+up
+down
+nwrites nl "aaanl2.srm"
+kill
+y
+r
+c
+c
+i b
+command 2
+end
+dis 2
+dis 3
+c
+kill
+y
+b xcsim.c :4017
+r
+up
+up
+up
+up
+up
+up
+nwrites nl "aaanl2.srm"
+nwrites nl "aaanl2.srm"
+up
+down
+b NSimCapture
+set $cnt=0
+command 6
+p ++$cnt
+continue
+end
+r
+y
+up
+up
+up
+up
+up
+up
+up
+up
+up
+down 10
+up 3
+p p
+up
+up
+down
+p cp[0] != BMEM_PAGE_ENDPAT
+p cp[1] != BMEM_PAGE_ENDPAT
+p cp[2] != BMEM_PAGE_ENDPAT
+p cp[3] != BMEM_PAGE_ENDPAT
+p SIM_OFFSET
+set $cnt=0
+b nlsim.c:4695
+cond 7 $cnt==237
+r
+y
+n
+pnn ip->instof->owner
+p ip->instof
+n
+s
+n
+p BDAGetCount(iarr)
+n
+i b
+b NSimCheckInstHasModel
+c
+dis 8
+set $cnt=0
+r
+y
+kill
+y
+r
+c
+r
+c
+c
+c
+dis 2 3 4 5 6 7 8
+dis 9 10
+c
+c
+help gtest
+c
+i b
+quit
+cd set args   -prodtype  protocompiler  -encrypt  -pro  -rundir  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29157/bugs/amplify/9000283421/synregtest_db/map/mm   -part XC7V2000TFLG1925-1    -haps_target HAPS-70 -use_vivado -incremental_synthesis 0 -maxfan 32 -m1 -pipe -verification_mode 0 -retiming -fixgatedclocks 1 -fixgeneratedclocks 1 -banetdly 1 -amptest 0 -split_generated_modules 1 -resolveMultipleDriver -summaryfile /slowfs/sbg_builds9/tarunk/regr/synreg_res/29157/bugs/amplify/9000283421/synregtest_db/map/mm/synlog/report/usr_logic_fpga_mapper.xml -RWCheckOnRam 1 -fast_synthesis 1 -protoware_mode -reporting_ctd 0 -preserve_slash_names -incremental_debug 0 -optimize_ngc -new_timebudgeting 1  -top_level_module  zucchini_top_fpga_A  -formal_partition  0  -dc_root  /global/apps2/syn_2016.03-SP1  -licensetype  ProtoCompiler  -flow mapping  -mp  4  -prjfile  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29157/bugs/amplify/9000283421/synregtest_db/map/mm/scratchproject.prs  -implementation  mm  -multisrs  -ta_num_paths  20  -ta_num_points  100  -oedif  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29157/bugs/amplify/9000283421/synregtest_db/map/mm/usr_logic.edf   -freq 1.000   /slowfs/sbg_builds9/tarunk/regr/synreg_res/29157/bugs/amplify/9000283421/synregtest_db/map/mm/synwork/usr_logic_prem.srd  -sap  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29157/bugs/amplify/9000283421/synregtest_db/map/mm/usr_logic.sap  -otap  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29157/bugs/amplify/9000283421/synregtest_db/map/mm/usr_logic.tap  -omap  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29157/bugs/amplify/9000283421/synregtest_db/map/mm/usr_logic.map  -devicelib  /remote/sbg_rel/unix/protocompiler201703sp1_035R/lib/xilinx/unisim_retarget.v  -devicelib  /remote/sbg_rel/unix/protocompiler201703sp1_035R/lib/xilinx/unisim_vivado.v  -sap  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29157/bugs/amplify/9000283421/synregtest_db/map/mm/usr_logic.sap  -ologparam  ""  -osyn  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29157/bugs/amplify/9000283421/synregtest_db/map/mm/usr_logic.srm  -prjdir  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29157/bugs/amplify/9000283421/synregtest_db/map/mm/  -prjname  datastate  -log  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29157/bugs/amplify/9000283421/synregtest_db/map/mm/synlog/usr_logic_fpga_mapper.srr  -jobname  "fpga_mapper"
+bexit
+r
+up
+down
+up
+up
+down
+down
+down
+up
+up
+kill
+y
+pwd
+r
+quit
+y
+set args   -prodtype  protocompiler  -encrypt  -pro  -rundir  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29157/bugs/amplify/9000283421/synregtest_db/map/mm   -part XC7V2000TFLG1925-1    -haps_target HAPS-70 -use_vivado -incremental_synthesis 0 -maxfan 32 -m1 -pipe -verification_mode 0 -retiming -fixgatedclocks 1 -fixgeneratedclocks 1 -banetdly 1 -amptest 0 -split_generated_modules 1 -resolveMultipleDriver -summaryfile /slowfs/sbg_builds9/tarunk/regr/synreg_res/29157/bugs/amplify/9000283421/synregtest_db/map/mm/synlog/report/usr_logic_fpga_mapper.xml -RWCheckOnRam 1 -fast_synthesis 1 -protoware_mode -reporting_ctd 0 -preserve_slash_names -incremental_debug 0 -optimize_ngc -new_timebudgeting 1  -top_level_module  zucchini_top_fpga_A  -formal_partition  0  -dc_root  /global/apps2/syn_2016.03-SP1  -licensetype  ProtoCompiler  -flow mapping  -mp  4  -prjfile  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29157/bugs/amplify/9000283421/synregtest_db/map/mm/scratchproject.prs  -implementation  mm  -multisrs  -ta_num_paths  20  -ta_num_points  100  -oedif  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29157/bugs/amplify/9000283421/synregtest_db/map/mm/usr_logic.edf   -freq 1.000   /slowfs/sbg_builds9/tarunk/regr/synreg_res/29157/bugs/amplify/9000283421/synregtest_db/map/mm/synwork/usr_logic_prem.srd  -sap  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29157/bugs/amplify/9000283421/synregtest_db/map/mm/usr_logic.sap  -otap  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29157/bugs/amplify/9000283421/synregtest_db/map/mm/usr_logic.tap  -omap  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29157/bugs/amplify/9000283421/synregtest_db/map/mm/usr_logic.map  -devicelib  /remote/sbg_rel/unix/protocompiler201703sp1_035R/lib/xilinx/unisim_retarget.v  -devicelib  /remote/sbg_rel/unix/protocompiler201703sp1_035R/lib/xilinx/unisim_vivado.v  -sap  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29157/bugs/amplify/9000283421/synregtest_db/map/mm/usr_logic.sap  -ologparam  ""  -osyn  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29157/bugs/amplify/9000283421/synregtest_db/map/mm/usr_logic.srm  -prjdir  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29157/bugs/amplify/9000283421/synregtest_db/map/mm/  -prjname  datastate  -log  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29157/bugs/amplify/9000283421/synregtest_db/map/mm/synlog/usr_logic_fpga_mapper.srr  -jobname  "fpga_mapper"
+bexit
+r
+up
+up
+up
+up
+up
+kill
+y
+r
+up 3
+up 3
+up 3
+down
+down
+down
+down
+kill
+y
+r
+up
+up
+up
+up
+up
+kill
+y
+r
+up
+up
+up
+up
+kill
+y
+r
+c
+quit
+set args   -prodtype  synplify_pro  -encrypt  -pro  -rundir  /slowfs/sbg_builds9/tarunk/regr/synreg_res/20796/feature_flow/xilinx/byte_enable/non_mutually_exclusive/SPRAM/read_first/limitation_rf/test04_rf_rst_ren_wen_verilog_201009   -part XC5VLX20TFF323-1    -enable_prepacking -maxfan 10000 -m1 -pipe -verification_mode 0 -fixgatedclocks 1 -fixgeneratedclocks 1 -overilog "test04.vm" -summaryfile /slowfs/sbg_builds9/tarunk/regr/synreg_res/20796/feature_flow/xilinx/byte_enable/non_mutually_exclusive/SPRAM/read_first/limitation_rf/test04_rf_rst_ren_wen_verilog_201009/synlog/report/test04_fpga_mapper.xml -RWCheckOnRam 1 -reporting_ctd 0 -preserve_slash_names  -formal_partition  0  -dc_root  /global/apps2/syn_2016.03-SP1  -licensetype  synplifypro  -flow mapping  -mp  4  -prjfile  /slowfs/sbg_builds9/tarunk/regr/synreg_res/20796/feature_flow/xilinx/byte_enable/non_mutually_exclusive/SPRAM/read_first/limitation_rf/test04_rf_rst_ren_wen_verilog_201009/scratchproject.prs  -implementation  test04_rf_rst_ren_wen_verilog_201009  -multisrs  -oedif  /slowfs/sbg_builds9/tarunk/regr/synreg_res/20796/feature_flow/xilinx/byte_enable/non_mutually_exclusive/SPRAM/read_first/limitation_rf/test04_rf_rst_ren_wen_verilog_201009/test04.edf   -freq 1.000   /slowfs/sbg_builds9/tarunk/regr/synreg_res/20796/feature_flow/xilinx/byte_enable/non_mutually_exclusive/SPRAM/read_first/limitation_rf/test04_rf_rst_ren_wen_verilog_201009/synwork/test04_prem.srd  -sap  /slowfs/sbg_builds9/tarunk/regr/synreg_res/20796/feature_flow/xilinx/byte_enable/non_mutually_exclusive/SPRAM/read_first/limitation_rf/test04_rf_rst_ren_wen_verilog_201009/test04.sap  -otap  /slowfs/sbg_builds9/tarunk/regr/synreg_res/20796/feature_flow/xilinx/byte_enable/non_mutually_exclusive/SPRAM/read_first/limitation_rf/test04_rf_rst_ren_wen_verilog_201009/test04.tap  -omap  /slowfs/sbg_builds9/tarunk/regr/synreg_res/20796/feature_flow/xilinx/byte_enable/non_mutually_exclusive/SPRAM/read_first/limitation_rf/test04_rf_rst_ren_wen_verilog_201009/test04.map  -devicelib  /remote/sbg_rel/unix/syn201703sp1_054R/lib/xilinx/unisim_m10i.v  -devicelib  /remote/sbg_rel/unix/syn201703sp1_054R/lib/xilinx/unisim.v  -sap  /slowfs/sbg_builds9/tarunk/regr/synreg_res/20796/feature_flow/xilinx/byte_enable/non_mutually_exclusive/SPRAM/read_first/limitation_rf/test04_rf_rst_ren_wen_verilog_201009/test04.sap  -ologparam  /slowfs/sbg_builds9/tarunk/regr/synreg_res/20796/feature_flow/xilinx/byte_enable/non_mutually_exclusive/SPRAM/read_first/limitation_rf/test04_rf_rst_ren_wen_verilog_201009/syntmp/test04.plg  -osyn  /slowfs/sbg_builds9/tarunk/regr/synreg_res/20796/feature_flow/xilinx/byte_enable/non_mutually_exclusive/SPRAM/read_first/limitation_rf/test04_rf_rst_ren_wen_verilog_201009/test04.srm  -prjdir  /slowfs/sbg_builds9/tarunk/regr/synreg_res/20796/feature_flow/xilinx/byte_enable/non_mutually_exclusive/SPRAM/read_first/limitation_rf/test04_rf_rst_ren_wen_verilog_201009/  -prjname  test04  -log  /slowfs/sbg_builds9/tarunk/regr/synreg_res/20796/feature_flow/xilinx/byte_enable/non_mutually_exclusive/SPRAM/read_first/limitation_rf/test04_rf_rst_ren_wen_verilog_201009/synlog/test04_fpga_mapper.srr  -jobname  "fpga_mapper"
+bexit
+r
+up
+up
+up
+down
+nwrites onl "aaaonl.srm"
+nwrites nl "aaanl.srm"
+nwrites nl "aaasnl.srm"
+nwrites snl "aaasnl.srm"
+kill
+y
+r
+up
+up
+up
+up
+kill
+y
+b xcgenram.c :21405
+r
+b xcgenram.c :21219
+r
+y
+p verify_xc_merge_two_rams = 1
+c
+s
+s
+c
+s
+p debug=10
+c
+r
+y
+dis 4
+c
+p verify_xc_merge_two_rams = 1
+en 4
+c
+s
+kill
+y
+r
+dis 4
+c
+p verify_xc_merge_two_rams = 1
+c
+en 4
+c
+s
+kill
+y
+quit
+bexit
+set args  -prodtype  synplify_premier_dp  -encrypt  -pro  -rundir  /slowfs/sbg_builds9/tarunk/tests/tmp/crash1/rev_1   -part XC7VX485TFFG1157-1    -enable_prepacking -use_vivado -overilog "top.vm" -advanced_synthesis -incremental_synthesis 0 -maxfan 10000 -m1 -pipe -verification_mode 0 -fixgatedclocks 1 -fixgeneratedclocks 1 -banetdly 1 -amptest 0 -summaryfile /slowfs/sbg_builds9/tarunk/tests/tmp/crash1/rev_1/synlog/report/top_fpga_mapper.xml -RWCheckOnRam 1 -fast_synthesis 0 -reporting_ctd 0 -preserve_slash_names -optimize_ngc  -formal_partition  0  -licensetype  synplifypremierdp_ipro  -flow mapping  -mp  4  -prjfile  /slowfs/sbg_builds9/tarunk/tests/tmp/crash1/rev_1/scratchproject.prs  -implementation  rev_1  -multisrs  -oedif  /slowfs/sbg_builds9/tarunk/tests/tmp/crash1/rev_1/top.edf   -autoconstraint  -freq 1.000   /slowfs/sbg_builds9/tarunk/tests/tmp/crash1/rev_1/synwork/top_prem.srd  -sap  /slowfs/sbg_builds9/tarunk/tests/tmp/crash1/rev_1/top.sap  -otap  /slowfs/sbg_builds9/tarunk/tests/tmp/crash1/rev_1/top.tap  -omap  /slowfs/sbg_builds9/tarunk/tests/tmp/crash1/rev_1/top.map  -devicelib  /slowfs/sbg_builds9/tarunk/code/maprc_lin6/fpga201703_1/lib/xilinx/unisim_retarget.v  -devicelib  /slowfs/sbg_builds9/tarunk/code/maprc_lin6/fpga201703_1/lib/xilinx/unisim_vivado.v  -sap  /slowfs/sbg_builds9/tarunk/tests/tmp/crash1/rev_1/top.sap  -ologparam  /slowfs/sbg_builds9/tarunk/tests/tmp/crash1/rev_1/syntmp/top.plg  -osyn  /slowfs/sbg_builds9/tarunk/tests/tmp/crash1/rev_1/top.srm  -prjdir  /slowfs/sbg_builds9/tarunk/tests/tmp/crash1/  -prjname  top  -log  /slowfs/sbg_builds9/tarunk/tests/tmp/crash1/rev_1/synlog/top_fpga_mapper.srr  -jobname  "fpga_mapper"
+r
+uo
+up
+up
+simnl "aa"
+nwrites snl "aasnl.srm"
+up
+down
+nwrites snl "aasnl.srm"
+quit
+y
+bexit
+set args   -prodtype  synplify_pro  -encrypt  -pro  -rundir  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29740/bugs/xilinx/9000337893_ram1_inference_vhdl_201303   -part XC5VLX20TFF323-1    -enable_prepacking -maxfan 10000 -m1 -pipe -verification_mode 0 -fixgatedclocks 1 -fixgeneratedclocks 1 -summaryfile /slowfs/sbg_builds9/tarunk/regr/synreg_res/29740/bugs/xilinx/9000337893_ram1_inference_vhdl_201303/synlog/report/example_fpga_mapper.xml -RWCheckOnRam 1 -reporting_ctd 0 -preserve_slash_names  -formal_partition  0  -dc_root  /global/apps2/syn_2016.12-SP2  -licensetype  synplifypro  -flow mapping  -mp  4  -prjfile  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29740/bugs/xilinx/9000337893_ram1_inference_vhdl_201303/scratchproject.prs  -implementation  9000337893_ram1_inference_vhdl_201303  -multisrs  -oedif  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29740/bugs/xilinx/9000337893_ram1_inference_vhdl_201303/example.edf   -autoconstraint  -freq 1.000   /slowfs/sbg_builds9/tarunk/regr/synreg_res/29740/bugs/xilinx/9000337893_ram1_inference_vhdl_201303/synwork/example_prem.srd  -sap  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29740/bugs/xilinx/9000337893_ram1_inference_vhdl_201303/example.sap  -otap  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29740/bugs/xilinx/9000337893_ram1_inference_vhdl_201303/example.tap  -omap  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29740/bugs/xilinx/9000337893_ram1_inference_vhdl_201303/example.map  -devicelib  /remote/sbg_rel/unix/syn201709_134R/lib/xilinx/unisim_m10i.v  -devicelib  /remote/sbg_rel/unix/syn201709_134R/lib/xilinx/unisim.v  -sap  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29740/bugs/xilinx/9000337893_ram1_inference_vhdl_201303/example.sap  -ologparam  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29740/bugs/xilinx/9000337893_ram1_inference_vhdl_201303/syntmp/example.plg  -osyn  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29740/bugs/xilinx/9000337893_ram1_inference_vhdl_201303/example.srm  -prjdir  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29740/bugs/xilinx/9000337893_ram1_inference_vhdl_201303/  -prjname  example  -log  /slowfs/sbg_builds9/tarunk/regr/synreg_res/29740/bugs/xilinx/9000337893_ram1_inference_vhdl_201303/synlog/example_fpga_mapper.srr  -jobname  "fpga_mapper"
+b xcUnfracRegsGeneric
+r
+dis 2
+r
+n
+c
+en 2
+r
+y
+dis 2
+c
+c
+c
+dis 5
+c
+n
+p count
+cond 10 j==128
+r
+y
+c
+cond 10 j==127
+r
+y
+n
+p count
+c
+p j
+n
+pnn flop
+n
+u 16865
+n
+pnn flop
+n
+pwd
+pwd
+b NSimInit
+w9
+kill
+y
+quit
+set args  -prodtype  synplify_premier_dp  -encrypt  -pro  -rundir  /slowfs/sbg_builds9/tarunk/tests/samples/regs/reg1/virtex8   -part XCVU095-FFVC1517-3-e    -enable_prepacking -use_vivado -overilog "and.vm" -advanced_synthesis -incremental_synthesis 0 -maxfan 10000 -m1 -pipe -verification_mode 0 -fixgatedclocks 1 -fixgeneratedclocks 1 -banetdly 1 -amptest 0 -summaryfile /slowfs/sbg_builds9/tarunk/tests/samples/regs/reg1/virtex8/synlog/report/and_fpga_mapper.xml -RWCheckOnRam 1 -fast_synthesis 0 -reporting_ctd 0 -preserve_slash_names -optimize_ngc  -formal_partition  0  -licensetype  synplifypremierdp_ipro  -flow mapping  -mp  4  -prjfile  /slowfs/sbg_builds9/tarunk/tests/samples/regs/reg1/virtex8/scratchproject.prs  -implementation  virtex8  -multisrs  -oedif  /slowfs/sbg_builds9/tarunk/tests/samples/regs/reg1/virtex8/and.edf   -autoconstraint  -freq 1.000   /slowfs/sbg_builds9/tarunk/tests/samples/regs/reg1/virtex8/synwork/and_prem.srd  -sap  /slowfs/sbg_builds9/tarunk/tests/samples/regs/reg1/virtex8/and.sap  -otap  /slowfs/sbg_builds9/tarunk/tests/samples/regs/reg1/virtex8/and.tap  -omap  /slowfs/sbg_builds9/tarunk/tests/samples/regs/reg1/virtex8/and.map  -devicelib  /slowfs/sbg_builds9/tarunk/code/maprc_lin6/fpga201703_1/lib/xilinx/unisim_retarget.v  -devicelib  /slowfs/sbg_builds9/tarunk/code/maprc_lin6/fpga201703_1/lib/xilinx/unisim_vivado.v  -sap  /slowfs/sbg_builds9/tarunk/tests/samples/regs/reg1/virtex8/and.sap  -ologparam  /slowfs/sbg_builds9/tarunk/tests/samples/regs/reg1/virtex8/syntmp/and.plg  -osyn  /slowfs/sbg_builds9/tarunk/tests/samples/regs/reg1/virtex8/and.srm  -prjdir  /slowfs/sbg_builds9/tarunk/tests/samples/regs/reg1/  -prjname  and  -log  /slowfs/sbg_builds9/tarunk/tests/samples/regs/reg1/virtex8/synlog/and_fpga_mapper.srr  -jobname  "fpga_mapper"
+bexit
+b nlsim.c :5467
+r
+p (useNewSimInfra)=1
+n
+c
+c
+r
+c
+c
+r
+p (useNewSimInfra)=1
+c
+b nlsim.c :341
+c
+dis 3
+c
+c
+r
+c
+c
+en 3
+r
+c
+c
+dis 3
+c
+c
+r
+c
+c
+c
+quit
+set args  -prodtype  synplify_premier_dp  -encrypt  -pro  -rundir  /slowfs/sbg_builds9/tarunk/regr/synreg_res/37453/feature_flow/xilinx/ram2/vlog/sync_reg_virtex/rev_1   -part XC5VLX20TFF323-1    -enable_prepacking -incremental_synthesis 0 -maxfan 10000 -m1 -pipe -verification_mode 0 -fixgatedclocks 1 -fixgeneratedclocks 1 -banetdly 1 -amptest 0 -summaryfile /slowfs/sbg_builds9/tarunk/regr/synreg_res/37453/feature_flow/xilinx/ram2/vlog/sync_reg_virtex/rev_1/synlog/report/synReset_fpga_mapper.xml -RWCheckOnRam 1 -fast_synthesis 0 -advanced_synthesis -reporting_ctd 0 -preserve_slash_names -optimize_ngc  -formal_partition  0  -licensetype  synplifypremierdp_ipro  -flow mapping  -mp  4  -prjfile  /slowfs/sbg_builds9/tarunk/regr/synreg_res/37453/feature_flow/xilinx/ram2/vlog/sync_reg_virtex/rev_1/scratchproject.prs  -implementation  rev_1  -multisrs  -oedif  /slowfs/sbg_builds9/tarunk/regr/synreg_res/37453/feature_flow/xilinx/ram2/vlog/sync_reg_virtex/rev_1/synReset.edf   -freq 1.000   -tcl  /slowfs/sbg_builds9/tarunk/regr/synreg_res/37453/feature_flow/xilinx/ram2/vlog/sync_reg_virtex/synReset.sdc  /slowfs/sbg_builds9/tarunk/regr/synreg_res/37453/feature_flow/xilinx/ram2/vlog/sync_reg_virtex/rev_1/synwork/synReset_prem.srd  -sap  /slowfs/sbg_builds9/tarunk/regr/synreg_res/37453/feature_flow/xilinx/ram2/vlog/sync_reg_virtex/rev_1/synReset.sap  -otap  /slowfs/sbg_builds9/tarunk/regr/synreg_res/37453/feature_flow/xilinx/ram2/vlog/sync_reg_virtex/rev_1/synReset.tap  -omap  /slowfs/sbg_builds9/tarunk/regr/synreg_res/37453/feature_flow/xilinx/ram2/vlog/sync_reg_virtex/rev_1/synReset.map  -devicelib  /slowfs/sbg_builds9/tarunk/code/maprc_lin6/fpga201703_1/lib/xilinx/unisim_m10i.v  -devicelib  /slowfs/sbg_builds9/tarunk/code/maprc_lin6/fpga201703_1/lib/xilinx/unisim.v  -sap  /slowfs/sbg_builds9/tarunk/regr/synreg_res/37453/feature_flow/xilinx/ram2/vlog/sync_reg_virtex/rev_1/synReset.sap  -ologparam  /slowfs/sbg_builds9/tarunk/regr/synreg_res/37453/feature_flow/xilinx/ram2/vlog/sync_reg_virtex/rev_1/syntmp/synReset.plg  -osyn  /slowfs/sbg_builds9/tarunk/regr/synreg_res/37453/feature_flow/xilinx/ram2/vlog/sync_reg_virtex/rev_1/synReset.srm  -prjdir  /slowfs/sbg_builds9/tarunk/regr/synreg_res/37453/feature_flow/xilinx/ram2/vlog/sync_reg_virtex/  -prjname  synReset  -log  /slowfs/sbg_builds9/tarunk/regr/synreg_res/37453/feature_flow/xilinx/ram2/vlog/sync_reg_virtex/rev_1/synlog/synReset_fpga_mapper.srr  -jobname  "fpga_mapper"
+bexit
+r
+up
+up
+c
+pwd
+:q
+quit

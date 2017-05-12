@@ -1,0 +1,299 @@
+#
+
+######### Debugging forked processes ###########
+# By default, when a program forks, gdb will continue to debug the parent process and the child process will run unimpeded. To follow the child process instead of the parent process, use the command set follow-fork-mode.
+# follow-fork-mode parent(default)=follow parent after fork, child=follow child after fork
+# ask= debugger will ask for one of the above choices.
+set follow-fork-mode parent
+#set follow-fork-mode child
+# detach-on-fork - Tells gdb whether to detach one of the processes after a fork.
+# on(default)= follow child or parent (based upon follow-fork-mode).
+# off= Both processes will be held under the control of gdb. One process (child or parent, depending on the value of follow-fork-mode) is debugged as usual, while the other is held suspended.
+set detach-on-fork on
+#set detach-on-fork off
+
+# List the forked processes under the control of gdb 
+# (gdb) info inferiors
+# Switch from one fork to another
+# (gdb) inferior 2
+# To quit debugging one of the forked processes, detach from it(allowing it to run independently)
+# (gdb) detach inferiors 2
+# or kill it using 
+# (gdb) kill inferiors 2
+# Use the catch command to make gdb stop whenever a fork, vfork, or exec call is made.
+
+set print inferior-events on
+
+# (gdb) clone-inferior
+
+##################################################
+#   GDB common user defined function
+##################################################
+
+define helpu
+help user-defined
+end
+document helpu
+Display help summary for user defined functions
+end
+
+define ud
+up
+down
+end
+document ud
+Print 2 levels of function call
+end
+
+define udd
+up 2
+down
+down
+end
+document udd
+Print 3 levels of function call
+end
+
+define fins
+finish
+step
+end
+document fins
+Finish current function and step into next function.
+Usefull when function call statement arguments has other function calls like
+out = func(min(a, b), max(a, c));
+end
+
+# Short names for where/bt with number of levels/frames
+define w3
+where 3
+end
+define w4
+where 4
+end
+define w5
+where 5
+end
+define w6
+where 6
+end
+define w7
+where 7
+end
+define w8
+where 8
+end
+define w9
+where 9
+end
+define w10
+where 10
+end
+define w12
+where 12
+end
+define w15
+where 15
+end
+define w20
+where 20
+end
+
+define soc
+    source gdbcmd
+end
+document soc
+soc: sources gdbcmd file in current directory
+end
+
+
+
+
+##################################################
+#   Code related user defined function
+##################################################
+
+
+define nwrite
+    if $argc != 1
+        help nwrite
+    else
+        print NWrites(NDefaultDesign->rootnl, $arg0)
+        #set $name = malloc(256)
+        #call srtcpy(($name), ($arg0))
+        #call srtcat(($name), ".srm")
+        #shell /remote/sbgindia_pe/unix/bin/decsyn $arg0 $name
+    end
+end
+document nwrite
+Dump netlist for NDefaultDesign->rootnl to file arg0
+end
+
+define nwrites
+    if $argc != 2
+        help nwrites
+    else
+        print NWrites($arg0, $arg1)
+    end
+end
+document nwrites
+Dump netlist for nl pointer arg0 to file arg1
+end
+
+define simnl
+    if $argc != 1
+        help simnl
+    else
+        print NWrites(snl, $arg0 "snl.srm")
+        print NWrites(nl, $arg0 "nl.srm")
+        print NWrites(onl, $arg0 "onl.srm")
+    end
+end
+document simnl
+Dump simulation netlists
+Uses: simnl "aa"
+    Must be used in function NSimVerifyCore()
+    It will dump netlists aaonl.srm aanl.srm and aasnl.srm
+end
+
+define bexit
+break Bexit
+end
+document bexit
+Put Breakpoint at function Bexit()
+end
+
+define bstart
+break NFlowMapCompilePoint
+end
+document bstart
+Put Breakpoint at function NFlowMapCompilePoint()
+end
+alias b0 = bstart
+
+define brtl
+break NFlowPerformRtlOpt
+end
+document brtl
+Put Breakpoint at function NFlowPerformRtlOpt()
+end
+alias b1 = brtl
+
+define blogic
+break NFlowPerformLogicOpt
+end
+document blogic
+Put Breakpoint at function NFlowPerformLogicOpt()
+end
+alias b2 = blogic
+
+define bgentime
+break NFlowPerformGenericTimingOpt
+end
+document bgentime
+Put Breakpoint at function NFlowPerformGenericTimingOpt()
+end
+alias b3 = bgentime
+
+define bmap
+break NFlowPerformMapping
+end
+document bmap
+Put Breakpoint at function NFlowPerformMapping()
+end
+alias b4 = bmap
+
+define btechtime
+break NFlowPerformTechTimingOpt
+end
+document btechtime
+Put Breakpoint at function NFlowPerformTechTimingOpt()
+end
+alias b5 = btechtime
+
+define bvera
+break al_write_verilog
+end
+document bvera
+Put Breakpoint at function al_write_verilog()
+end
+
+define bverx
+break xc_write_verilog
+end
+document bverx
+Put Breakpoint at function xc_write_verilog()
+end
+alias b6 = bverx
+
+define bvqm
+break algenWriteVqm
+break al_write_vqm
+end
+document bvqm
+Put Breakpoint at function algenWriteVqm() and al_write_vqm()
+end
+
+define btest
+    print " " $arg0 "_" $arg1 "_Test::TestBody "
+    python gdb.execute( "break " + $arg0 + "_" + $arg1 + "_Test::TestBody ")
+end
+document btest
+Put Breakpoint at gogle test function 
+end
+
+define gtest
+    python gdb.execute("set args --gtest_filter=\"" + $arg0 + "\"")
+end
+document gtest
+Run single gogle test 
+arg0 in the form "MspFlowTest.MSPLogicPushOut"
+end
+
+
+define pn
+    if $argc != 1
+        help pn
+    else
+        print BNameStr($arg0)
+        #print ($arg0)->bname_buf_
+    end
+end
+document pn
+Print BNameStr(arg0) //buffer bname_buf_ for BName arg0
+end
+
+define pnn
+    if $argc != 1
+        help pn
+    else
+        pn ($arg0)->h.name
+    end
+end
+document pnn
+Print BNameStr(arg0->h.name)
+end
+
+define pp
+    if $argc != 1
+        help pp
+    else
+        pn ($arg0)->n
+        if ($arg0)->kind == 1
+            p ($arg0)->u.s
+            p ($arg0)->kind
+        else
+            if ($arg0)->kind == 2 
+                p "Unsupported.. fix gdb fun"
+            end
+        end
+    end
+end
+document pp
+Print Property info for BProp* arg0
+end
+
+
+
+
+

@@ -1,0 +1,72 @@
+#!/bin/sh
+#
+#                        Synopsys ViewConnect 2005.05
+#
+#        Copyright (c) 2000,2001,2002,2003,2004,2005 by Synopsys, Inc.
+#                          ALL RIGHTS RESERVED
+#
+# Default xstartup for Synopsys ViewConnect 2005.05 collaboration tool.
+#
+# Linux windows manager preference:
+#   1. Gnome -> 2. KDE  -> 3. Motif -> 4. twm
+#
+# Solaris windows manager preference:
+#   1. CDE -> 2. OpenWin -> 3. twm
+#
+# HP-UX windows manager preference:
+#   1. CDE -> 2. Motif -> 3. twm
+#
+
+# old system has cutbuffer, new system has two selections (the PRIMARY and the CLIPBOARD)
+# vncconfig synchronises windows-clipboard to cutbuffer.
+# autocutsel will synchronise linux-CLIPBOARD to cutbuffer (default)
+# one can use autocutsel to synchronise linux-PRIMARY selection to cutbuffer as well.
+
+exec /depot/autocutsel-0.8.1/bin/autocutsel &
+#exec /depot/autocutsel-0.8.1/bin/autocutsel -s PRIMARY -buttonup -fork &
+export XKL_XMODMAP_DISABLE=1
+
+cd $HOME
+
+[ -r $HOME/.Xresources ] && xrdb $HOME/.Xresources
+#[ -r $HOME/.Xresources ] && xrdb -merge $HOME/.Xresources
+#xsetroot -solid black
+#xterm -geometry 80x24+10+10 -ls -title "$VNCDESKTOP Desktop" &
+
+if [ `uname -s` = "Linux" ] ; then
+  if [ -f /usr/bin/gnome-session ] ; then
+    unset SESSION_MANAGER
+    xsession=/usr/bin/gnome-session
+  elif [ -f /usr/X11R6/bin/kde ] ; then
+    xsession=/usr/X11R6/bin/kde
+  elif [ -f /usr/X11R6/bin/mwm ] ; then
+    xsession=/usr/X11R6/bin/mwm
+  else
+    xsession=twm
+  fi
+elif [ `uname -s` = "SunOS" ] ; then
+  if [ -f /usr/dt/bin/Xsession ] ; then
+    unset SESSION_MANAGER
+    xsession=/usr/bin/gnome-session
+  elif [ -f /usr/openwin/bin/openwin ]; then
+     xsession=/usr/openwin/bin/openwin
+  else
+     xsession=twm
+  fi
+elif [ `uname -s` = "HP-UX" ] ; then
+  if [ -f /usr/dt/bin/Xsession ] ; then
+    xsession=/usr/dt/bin/Xsession
+  elif [ -f /usr/bin/X11/mwm ]; then
+    xsession=/usr/bin/X11/mwm
+  else
+    xsession=twm
+  fi
+else
+  xsession=twm
+fi
+
+[ -r $xsession ] && exec $xsession
+
+vncconfig -iconic -nowin &
+klipper &
+
