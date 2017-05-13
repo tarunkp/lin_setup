@@ -1,0 +1,15 @@
+- clean: ['~']
+
+- link:
+    ~/.bashrc: configs/bash/d_bashrc
+    ~/.inputrc: configs/readline/d_inputrc
+    ~/.tmux.conf: configs/tmux/d_tmux.conf
+    ~/.gdbinit: configs/gdb/d_gdbinit
+    ~/.cgdb/cgdbrc: configs/cgdb/cgdbrc
+    ~/.vimrc: configs/vim/d_vimrc
+    ~/.vnc/xstartup: configs/vnc/xstartup
+    ~/.Xresources: configs/X/d_Xresources
+    ~/.Xdefaults: configs/X/d_Xdefaults
+    ~/.fonts.conf: configs/display/d_fonts.conf
+
+
