@@ -1,8 +1,8 @@
 - clean: ['~']
 
 - link:
-    ~/.Xresources: configs/X/d_Xresources
-    ~/.Xdefaults: configs/X/d_Xdefaults
+    ~/.Xresources: configs/display/d_Xresources
+    ~/.Xdefaults: configs/display/d_Xdefaults
     ~/.fonts.conf: configs/display/d_fonts.conf
 
 
